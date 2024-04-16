@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-
 const { color } = require('framer-motion')
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
@@ -21,7 +20,12 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 19s linear infinite',
+      },
+      backgroundImage: {
+        circularLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 10%);'
       }
+      
+      
     },
   },
   plugins: [],
