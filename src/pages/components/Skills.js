@@ -22,7 +22,7 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
     return (
         <>
-            <h2 className='font-bold text-8xl mt-64 w-full text-center'>Habilidades</h2>
+            <h2 className='font-bold text-6xl mt-64 w-full text-center'>Habilidades</h2>
             <div className='w-full h-screen relative flex items-center justify-center bg-circularLight'>
 
                 <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer

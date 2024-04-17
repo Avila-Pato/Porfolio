@@ -6,7 +6,8 @@ import profilePic from '../../public/images//profile/developer-pato.jpg'
 import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from './components/Skills'
-import Experience from './components/experience'
+import Experience from './components/Experience'
+import Education from './components/Education'
 
 const AnimatedNumber = ({value}) => {
   const  ref  = useRef(null);
@@ -20,11 +21,7 @@ const AnimatedNumber = ({value}) => {
       if(isInView) {
         motionValue.set(value);
       }
-  },[isInView, value, motionValue] )
-
-
-
-
+  },[isInView, value, motionValue] );
 useEffect(() => {
   springValue.on('change',(latest) => {
       if(ref.current && latest.toFixed(0) <= value) {
@@ -36,21 +33,19 @@ useEffect(() => {
   return <span ref={ref}></span>
 }
 
-
-
 const about = () => {
   return (
     <>
       <Head>
-        <title>Codebucks | About page </title>
+        <title> Portfolio  </title>
         <meta name='description' content='any description' />
       </Head>
-      <main className='flex w-full flex-col items-center justify-center'>
-        <Layout classname='pt-16'>
-          <AnimatedText text='La pasión alimenta el propósito' className='mb-16'/>
+      <main className='flex w-full flex-col items-center justify-center ' >
+        <Layout classname='pt-16 bg'>
+          <AnimatedText text='La pasión alimenta el propósito.' className='mb-16  text-4xl'/>
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-3 flex flex-col items-center justify-center'>
-              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biografia</h2>
+              <h2 className='mb-4 text-2xl font-bold uppercase text-dark/75'>Biografia</h2>
 
               <p className='font-medium'>
                 Hola, soy Patricio, un desarrollador web autodidacta con pasión por crear experiencias digitales interactivas, funcionales y centradas en el usuario. Con 1 año de experiencia en el campo, siempre estoy buscando nuevas e innovadoras formas de dar vida a las Paginas webs.
@@ -75,7 +70,7 @@ const about = () => {
                 <span className='inline-block text-7xl font-bold'>
                 <AnimatedNumber value={6}/>+
                 </span>
-                  <h2 className='text-xl font-medium capitalize text-dark/75'>Experiencia laboral</h2>
+                  <h2 className='text-xl font-medium capitalize text-dark/75 '>Experiencia laboral</h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
@@ -94,6 +89,7 @@ const about = () => {
             </div>
             <Skills/>
              <Experience/>
+             <Education/>
         </Layout>
       </main>
     </>

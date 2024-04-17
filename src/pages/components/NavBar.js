@@ -23,15 +23,15 @@ const CustomLink = ({ href, title, className }) => {
 
 const NavBar = () => {
   return (
-    <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
+    <header className='w-full px-32 py-9 font-medium flex items-center justify-between text-xl '>
       <nav>
         <CustomLink href="/" title="Inicio" className='mr-4' />
         <CustomLink href="/about" title="De Mi" className='mr-4' />
-        <CustomLink href="/projectos" title="Proyectos" className='mr-4' />
+        <CustomLink href="/projects" title="Proyectos" className='mr-4' />
         <CustomLink href="/articulos" title="Articulos" className='mr-4' />
 
       </nav>
-      <nav className='flex items-center justify-center flex-wrap'>
+      <nav className='flex items-center justify-center flex-wrap text-xl '>
 
         <motion.a href="https://twitter.com/avilaf1998" target={"_blank"}
           whileHover={{ y: -2 }}
