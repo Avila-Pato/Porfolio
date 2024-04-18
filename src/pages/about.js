@@ -8,6 +8,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Education from './components/Education'
+import Course from './components/Couse'
 
 const AnimatedNumber = ({value}) => {
   const  ref  = useRef(null);
@@ -42,7 +43,7 @@ const about = () => {
       </Head>
       <main className='flex w-full flex-col items-center justify-center ' >
         <Layout classname='pt-16 bg'>
-          <AnimatedText text='La pasión alimenta el propósito.' className='mb-16  text-4xl'/>
+          <AnimatedText text='La pasión alimenta el propósito.' className='mb-10 text-2xl lg:text-3xl font-bold '/>
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-3 flex flex-col items-center justify-center'>
               <h2 className='mb-4 text-2xl font-bold uppercase text-dark/75'>Biografia</h2>
@@ -90,6 +91,7 @@ const about = () => {
             <Skills/>
              <Experience/>
              <Education/>
+             <Course/>
         </Layout>
       </main>
     </>

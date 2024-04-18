@@ -41,7 +41,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                     <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link>
                     <Link href={link} target='_blank'
                         className='ml-4 rounded-lg bg-dark text-light
-                p-2 px-6 text-lg font-semibold'>Visita los Proyectos</Link>
+                p-2 px-6 text-lg font-semibold'>Visitalo</Link>
                 </div>
             </div>
         </article>
@@ -74,11 +74,7 @@ const Project = ({ type, title, img, link, github, summary }) => {
                 </Link>
                 <p className='my-2 font-medium text-dark'>{summary}</p>
                 <div className='w-full mt-2 flex items-center justify-between'>
-                <Link href={link} target='_blank'
-                className='text-lg font-semibold underline'
-                >
-                Visitalo
-                </Link>
+                
                     <Link href={github} target='_blank' className='w-8'> 
                     <GithubIcon /> {""}
                     </Link>
@@ -102,10 +98,11 @@ const projects = () => {
             </Head>
             <main>
                 <Layout classname='pt-16'>
-                    <AnimatedText text="Imaginación  sobre el Conocimiento" 
-                    className='text-4xl mb-16' 
-                    
-                     />
+                <AnimatedText 
+    text="Bienvenido a Mis Proyectos" 
+    className='mb-10 text-xl lg:text-2xl font-bold' 
+/>
+
 
                     <div className='grid grid-cols-12 gap-24'>
                         <div className='col-span-12'>
@@ -114,8 +111,8 @@ const projects = () => {
                                 img={project1}
                                 summary="Este proyecto que recrea el sitio web oficial de Tesla utilizando Astro como generador de sitios front-end. Astro, conocido por su rendimiento excepcionalmente rápido, se combina con las tecnologías modernas como React.js y TypeScript para construir una versión eficiente y receptiva del sitio web de Tesla"
 
-                                link="https://github.com/Avila-Pato/Web-astro"
-                                github="https://github.com/Avila-Pato"
+                                link="https://645e81ce9873bb1e1ada2033--wonderful-cucurucho-12c589.netlify.app/"
+                                github="https://github.com/Avila-Pato/Web-astro"
                                 type="Proyectos Destacados"
                             />
                         </div>
@@ -125,7 +122,7 @@ const projects = () => {
                                 img={project2}
                                 summary="Este repositorio contiene una versión del popular servicio de música Spotify, creado utilizando Astro. Presenta una interfaz web que asegura un rendimiento destacado. Es una herramienta educativa diseñada para explorar el desarrollo de aplicaciones web modernas utilizando Astro."
                                 link="https://github.com/Avila-Pato/Clon-Spotify"
-                                github="https://github.com/Avila-Pato"
+                                github="https://github.com/Avila-Pato/Clon-Spotify"
                                 type="Proyectos Destacados"
                             />
                         </div>
@@ -135,7 +132,7 @@ const projects = () => {
                                 img={project3}
                                 summary="Este un proyecto que replica la funcionalidad y la apariencia de una aplicación o sitio web de pronóstico del tiempo. Desarrollado con React y Vite, este clon ofrece una experiencia de usuario similar a la de las aplicaciones de pronóstico del tiempo"
                                 link="https://github.com/Avila-Pato/Weather-React"
-                                github="https://github.com/Avila-Pato"
+                                github="https://github.com/Avila-Pato/Weather-React"
                                 type="Proyectos Destacados"
                             />
                         </div>
@@ -145,7 +142,7 @@ const projects = () => {
                                 img={project4}
                                 summary="Este proyecto es una implementación básica de un React Router (Demo), añadiendo la capacidad de navegación multiples funcionamientos y enrutamientos a una aplicación React desarrollada con TypeScript."
                                 link=" https://github.com/Avila-Pato/Task-React-Typescript"
-                                github="https://github.com/Avila-Pato"
+                                github="https://github.com/Avila-Pato/Task-React-Typescript"
                                 type="Proyectos Destacados"
                             />
                         </div>
@@ -157,7 +154,7 @@ const projects = () => {
                                  details regarding almost the cryptocurrency. you can exactly convert the price in yerar
                                   local currency"
                                 link="https://github.com/Avila-Pato/React-Router-Demo"
-                                github="https://github.com/Avila-Pato"
+                                github="https://github.com/Avila-Pato/React-Router-Demo"
                                 type="Proyectos Destacados"
                             />
                         </div>
@@ -169,7 +166,7 @@ const projects = () => {
                         details regarding almost the cryptocurrency. you can exactly convert the price in yerar
                         local currency"
                                 link="https://github.com/Avila-Pato/Back-end-Server_angular-node-sequelize"
-                                github="https://github.com/Avila-Pato"
+                                github="https://github.com/Avila-Pato/Back-end-Server_angular-node-sequelize"
                                 type="Proyectos Destacados"
                             />
                         </div>

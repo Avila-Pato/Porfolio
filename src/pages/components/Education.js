@@ -5,7 +5,7 @@ import LilIcon from './LilIcon'
 
 const Details = ({ type, time, place, info }) => {
     const ref = useRef(null);
-    return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto  flex flex-col items-center
+    return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto  items-center
   justify-between'>
 
         <LilIcon reference={ref} />
@@ -34,7 +34,7 @@ const Education = () => {
         }
     );
     return (
-        <div className='my-64'>
+        <div className='my-48'>
             <h2 className='font-bold text-5xl mb-32 w-full text-center'>
                 Educación
             </h2>
@@ -45,25 +45,25 @@ const Education = () => {
                     className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top' />
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
+                
+
                 <Details
-                        type="Duoc"
-                        time="2023-2025"
-                        place="Santiago"
-                        info="Carrera en analista programador "
+                        type="Campus virtual – IPLACEX"
+                        time="2019-2025"
+                        place="Santiago, Región Metropolitana"
+                        info=" Analista Programador 
+                     "
                     />
-                    <Details
-                        type="Iplacex"
-                        time="2023-2025"
-                        place="Santiago"
-                        info="Carrera en analista programador "
-                    />
-                    <Details
-                        type="Koe"
-                        time="2023-2025"
-                        place="Santiago"
-                        info="Carrera en analista programador "
+                <Details
+                        
+                        type="Sede – Duoc UC"
+                        time="2019-2023"
+                        place="San Bernardo,Región Metropolitana"
+                        info="Turismo y Hoteleria "
                     />
                    
+                    
+
                 </ul>
             </div>
         </div>

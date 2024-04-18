@@ -57,56 +57,67 @@ const ref  = useRef(null);
 
             position="Agente de viajes"
             companyLink="Multiviajes"
-            company="@Google "
             time="2018-2019 "   
-            address="Santiago "
-            work="Worked on a team responsible for developing new features for Google's
-          search engine, including improving the accuracy and relevance of search results and
-          developing new tools for data analysis and visualization."
+            address=" Santiago | Calle Ahumada "
+            work="Experiencia de ventas de paquetes turísticos,
+            centrada en abordar las necesidades integrales
+            de los clientes a lo largo de todo su viaje.
+            brindando orientación y experiencias de viaje
+            satisfactorias.
+            "
           />
           <Details
 
-            position="Software Engineer"
+            position="Promotor turístico (Travél Rock)"
             companyLink="www.google.com"
-            company="@Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
+            time="2019-2020 "
+            address=" Santiago | Providencia"
+            work="Promotor enfocado en giras de viajes a Bariloche
+            para residencias estudiantiles. Presentando
+            actividades, opciones de alojamiento, seguros y
+            rutas. Enfoque en proporcionar experiencias
+            personalizadas.
+            "
           />
+        
           <Details
 
-            position="Software Engineer"
+            position="Operador de turismo(Rutacruz)-Practica profesiona"
             companyLink="www.google.com"
-            company="@Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
-          />
-          <Details
+            time="2020-2021"
+            address="Santiago | San Antonio 65"
+            work="Venta y promoción del producto
+            dentro del stand y exterior.
+            Gestión de experiencia
+            Propuesta de nuevos productos
+            Apoyo en gestión de Tours en Santiago
+            "
+                      />
+                        <Details
 
-            position="Software Engineer"
+            position="Staff (Turistik)"
             companyLink="www.google.com"
-            company="@Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
-          />
-          <Details
+            time="2022-2023-Present"
+            address=" Santiago | Calle Pedro De Valdivia"
+            work="Experiencia multifacética en diversos
+            departamentos del parque, desde anfitrión y
+            ventas, manejo de grupos y atención al público.
+            Especializado en operaciones específicas como
+            teleférico, funicular .
+            "
+            />
+                      <Details
 
-            position="Software Engineer"
+            position="Recepcionista (Hostel Cienfuegos)"
             companyLink="www.google.com"
-            company="@Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
+            time="2023-2023"
+            address=" Santiago | CienFuegos 151"
+            work="Registro de llegadas y la gestión de
+            la reserva y check-out.
+            Registro de transacciones financiaras
+            incluyendo facturación y procesamiento
+            de pagos.
+"
           />
         </ul>
       </div>
