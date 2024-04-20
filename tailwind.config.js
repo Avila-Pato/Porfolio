@@ -4,9 +4,9 @@ const { color } = require('framer-motion')
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
-
-
+  content: ["./src/**/*.{html,js}"
+],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -22,7 +22,9 @@ module.exports = {
         'spin-slow': 'spin 19s linear infinite',
       },
       backgroundImage: {
-        circularLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 10%);'
+        circularLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 10%);',
+        circularDark: 'repeating-radial-gradient(rgba(255,255,255,0.4) 2px,#1b1b1b 8px,#1b1b1b 10%);'
+
       }
       
       
