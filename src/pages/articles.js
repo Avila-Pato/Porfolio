@@ -4,8 +4,8 @@ import Layout from './components/Layout'
 import AnimatedText from './components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
-import article1 from '../../public/images/articles/pagination component in reactjs.jpg'
-import article2 from '../../public/images/articles/create modal component in react using react portals.png'
+import article1 from '../../public/images/articles/Retos Javascript (2).jpeg'
+import article2 from '../../public/images/articles/Javascript Retos.jpeg'
 import article3 from '../../public/images/articles/create loading screen in react js.jpg'
 import article4 from '../../public/images/articles/What is higher order component in React.jpg'
 import article5 from '../../public/images/articles/What is Redux with easy explanation.png'
@@ -132,20 +132,20 @@ const articles = () => {
                     />
                     <ul className="grid grid-cols-2 gap-16 ">
                         <FeaturedArticles
-                            title="Build a custom pagination component in reactjs from scratch"
-                            summary="learn how to build a custom pagination component in reactjs from scratch
-                            follow along as we build a reusable pagination component in reactjs"
-                            time="9 min read"
-                            link="/"
+                            title="Potenciando el desarrollo web"
+                            summary=" Ya seas un principiante que está aprendiendo los conceptos básicos o un desarrollador experimentado que busca desafíos más avanzados, la pagina web
+                            ofrece multiples ejercicios para mejorar el desarrollo web. "
+                            time="000 min read"
+                            link="https://lenguajejs.com/retos/"
                             img={article1}
                         />
 
                         <FeaturedArticles
-                            title="Build a custom pagination component in reactjs from scratch"
-                            summary="learn how to build a custom pagination component in reactjs from scratch
-                            follow along as we build a reusable pagination component in reactjs"
+                            title="Potenciando el Desarrollo logistico"
+                            summary=" Una amplia gama de ejercicios diseñados para mejorar tus habilidades cognitivas y velocidad de ejecución. fortaleza, nivel logistico, cada  diseñado para desafiar y pensar de manera creativa para problemas logísticos complejos.
+                             "
                             time="9 min read"
-                            link="/"
+                            link="https://adventjs.dev/es"
                             img={article2}
                         />
                     </ul>
