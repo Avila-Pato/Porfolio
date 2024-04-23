@@ -6,9 +6,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import article1 from '../../public/images/articles/Retos Javascript (2).jpeg'
 import article2 from '../../public/images/articles/Javascript Retos.jpeg'
-import article3 from '../../public/images/articles/create loading screen in react js.jpg'
-import article4 from '../../public/images/articles/What is higher order component in React.jpg'
-import article5 from '../../public/images/articles/What is Redux with easy explanation.png'
+import article3 from '../../public/images/articles/nexjt.nexjtt.jpg'
+import article4 from '../../public/images/articles/javascript.png'
+import article5 from '../../public/images/articles/ANGULAR-JS.jpg'
+import article6 from '../../public/images/articles/REACT.jpg'
+import article7 from '../../public/images/articles/miduddev.jpg'
+import article8 from '../../public/images/articles/hqdefault.jpg'
 
 import { motion, useMotionValue } from 'framer-motion'
 
@@ -38,7 +41,7 @@ const MovingImg = ({ title, img, link }) => {
             onMouseMove={handleMouse}
             onMouseLeave={handleMouseleave}
         >
-            <h2 className="capitalize text-xl font-semibold hover:underline ">
+            <h2 className="capitalize text-xl font-semibold hover:underline ml-1">
                 {title}
             </h2>
 
@@ -49,7 +52,7 @@ const MovingImg = ({ title, img, link }) => {
                 ref={imgRef}
                 src={img}
                 alt={title}
-                className=" z-10 w-96 h-auto hidden absolute rounded-lg"
+                className=" z-10 w-40 h-auto hidden absolute rounded-lg "
             />
         </Link>
     )
@@ -61,7 +64,7 @@ const Article = ({ img, title, date, link }) => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
             // viewport={{ once: true }}
-            className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center
+            className="relative w-auto p-4 py-6 my-4 rounded-xl flex items-center
         justify-between bg-light text-dark first:mt-0 border border-solid border-dark
         border-r-4 border-b-4 dark:bg-dark dark:border-light  dark:text-light"
         >
@@ -70,7 +73,9 @@ const Article = ({ img, title, date, link }) => {
                 img={img}
                 link={link}
             />
-            <span className="text-primary font-semibold pl-4 ">{date}</span>
+            <span className="text-primary font-semibold pl-4 float-left w-auto">
+                {date}
+            </span>
         </motion.li>
     )
 }
@@ -100,12 +105,15 @@ const FeaturedArticles = ({ img, title, time, summary, link }) => {
                 href={link}
                 target="_blank"
             >
-                <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline  dark:text-light ">
+                <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline  dark:text-light  ">
                     {' '}
                     {title}{' '}
                 </h2>
             </Link>
-            <p className="text-sm mb-2 text-dark dark:text-light "> {summary} </p>
+            <p className="my-2 font-medium text-dark dark:text-light  ">
+                {' '}
+                {summary}{' '}
+            </p>
             <span className="text-primary font-bold "> {time} </span>
         </li>
     )
@@ -149,45 +157,45 @@ const articles = () => {
                             img={article2}
                         />
                     </ul>
-                    <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light">
-                        Todos los Articulos{' '}
+                    <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light ">
+                        Otros los Articulos{' '}
                     </h2>
-                    <ul className=''>
+                    <ul className=" ">
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="una fecha aleotoria"
-                            link="/"
+                            title={`Pase de principiante a experto aprendiendo los fundamentos de Next.js y creando un sitio web de demostración completamente funcional que utilice las últimas funciones.`}
+                            date={`📅`}
+                            link="https://nextjs.org/learn"
                             img={article3}
                         />
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="una fecha aleotoria"
-                            link="/"
+                            title={`Lenguaje de programación interpretado utilizado en el lado del cliente (front-end) para dotar de mejoras dinámicas e interactivas a las páginas web.`}
+                            date={`📅`}
+                            link="https://lenguajejs.com/javascript/"
                             img={article4}
                         />
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="una fecha aleotoria"
-                            link="/"
+                            title={`Esta documentación de Angular te ayuda a aprender y usar el framework y la plataforma de desarrollo, desde tu primera aplicación hasta la optimización de aplicaciones complejas de una sola página, para empresas. Los tutoriales y guías incluyen ejemplos descargables para acelerar tus proyectos`}
+                            date={`📅`}
+                            link="https://docs.angular.lat/docs"
                             img={article5}
                         />
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="una fecha aleotoria"
-                            link="/"
-                            img={article3}
+                            title={`Documentación de React! hechas a partir de componentes. Un componente es una pieza de UI (siglas en inglés de interfaz de usuario) que tiene su propia lógica y apariencia. Un componente puede ser tan pequeño como un botón, o tan grande como toda una página.`}
+                            date={`📅`}
+                            link="https://es.react.dev/"
+                            img={article6}
                         />
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="una fecha aleotoria"
-                            link="/"
-                            img={article3}
+                            title={`Variedad de recursos para aprender programacion con javascript y GRATIS!!`}
+                            date={`📅`}
+                            link="https://midu.dev/"
+                            img={article7}
                         />
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="una fecha aleotoria"
-                            link="/"
-                            img={article3}
+                            title={`Curso de LÓGICA DE PROGRAMACIÓN Desde Cero`}
+                            date={`📅`}
+                            link="https://www.youtube.com/watch?v=TdITcVD64zI"
+                            img={article8}
                         />
                     </ul>
                 </Layout>
