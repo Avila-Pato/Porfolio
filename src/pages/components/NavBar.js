@@ -10,7 +10,7 @@ import {
     PinterestIcon,
     SunIcon,
     MoonIcon,
-} from './Icons'
+} from '../../lib/Icons'
 import { motion } from 'framer-motion'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 

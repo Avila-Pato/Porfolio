@@ -31,7 +31,7 @@ export const TwiterIcon = ({ className, ...rest }) => (
     </g>
   </svg>
   );
-  
+
   
 // #0A66C2
 export const LinkedInIcon = ({ className, ...rest }) => (

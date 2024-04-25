@@ -4,7 +4,7 @@ import AnimatedText from './components/AnimatedText'
 import Layout from './components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
-import { GithubIcon } from './components/Icons'
+import { GithubIcon } from '../lib/Icons'
 import project1 from '../../public/images/projects/web-tesla.png'
 import project2 from '../../public/images/projects/spotyfi-clon.jpg'
 import project3 from '../../public/images/projects/Eltiempo.png'
@@ -196,7 +196,7 @@ const projects = () => {
                                 title="React-Ts-js"
                                 img={project4}
                                 summary="Este proyecto es una implementación básica de un React Router (Demo), añadiendo la capacidad de navegación multiples funcionamientos y enrutamientos a una aplicación React desarrollada con TypeScript."
-                                link=" https://github.com/Avila-Pato/Task-React-Typescript"
+                                link="https://github.com/Avila-Pato/Task-React-Typescript"
                                 github="https://github.com/Avila-Pato/Task-React-Typescript"
                                 type="Proyectos Destacados"
                             />

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import profilePic from '../../public/images/profile/developer-pic-1.png'
 import AnimatedText from './components/AnimatedText'
 import Link from 'next/link'
-import { LinkArrow } from './components/Icons'
+import { LinkArrow } from '../lib/Icons'
 import HireMe from './components/HireMe'
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 
@@ -24,9 +24,9 @@ export default function Home() {
                  animationDuration: '3s' }} />  
             </div>
             <div className='w-1/2 flex flex-col items-center self-center'>
-              <h1>  </h1>
+              <h1>   </h1>
               <AnimatedText text= "Convirtiendo visión   en realidad  con código y diseño." 
-                className='!text-4xl !text-left'
+                className='!text-4xl !text-left '
               />
               <p className='my-4 text-base font-medium'>
                Como desarrollador full-stack, me dedico a convertir ideas en aplicaciones web innovadoras. Explora mis últimos proyectos y artículos, donde podrás ver mi experiencia en desarrollo web.
