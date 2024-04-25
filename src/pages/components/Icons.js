@@ -1,4 +1,4 @@
-import * as React from "react";
+import  * as React from 'react';
 
 export const GithubIcon = ({ className, ...rest }) => (
   <svg
@@ -31,6 +31,7 @@ export const TwiterIcon = ({ className, ...rest }) => (
     </g>
   </svg>
   );
+  
   
 // #0A66C2
 export const LinkedInIcon = ({ className, ...rest }) => (
@@ -460,4 +461,5 @@ export const LinkArrow = ({ className, ...rest }) => (
     />
   </svg>
 );
+
 
