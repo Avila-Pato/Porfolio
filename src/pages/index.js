@@ -8,6 +8,7 @@ import { LinkArrow } from '../lib/Icons'
 import HireMe from './components/HireMe'
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 
+
 export default function Home() {
   return (
     <>
@@ -17,28 +18,34 @@ export default function Home() {
 
       </Head>
       <main className=' flex items-center text-dark w-full min-h-screen dark:text-light'>
-        <Layout classname='pt-0'>
-          <div className=' flex items-center justify-between w-full'>
-            <div className=' w-1/2'>
-              <Image src={profilePic} alt="CosdeBucks" className='w-full h-auto animate-pulse ' style={{ animationIterationCount: '1',
-                 animationDuration: '3s' }} />  
-            </div>
-            <div className='w-1/2 flex flex-col items-center self-center'>
-              <h1>   </h1>
-              <AnimatedText text= "Convirtiendo visión   en realidad  con código y diseño." 
-                className='!text-4xl !text-left '
+        <Layout classname='pt-0 md:pt-16 sm:pt-8'>
+          <div className=' flex items-center justify-between w-full lg:flex-col'>
+            <div className=' w-1/2 md:w-full'>
+              <Image src={profilePic} alt="CosdeBucks" className='w-full h-auto lg:hidden md:inline-block md:w-full' 
+              priority
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              50vw"
               />
-              <p className='my-4 text-base font-medium'>
+               
+            </div>
+            <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
+              <AnimatedText text= "Convirtiendo visión   en realidad  con código y diseño." 
+                className='!text-4xl !text-left 
+                xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
+              />
+              <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
                Como desarrollador full-stack, me dedico a convertir ideas en aplicaciones web innovadoras. Explora mis últimos proyectos y artículos, donde podrás ver mi experiencia en desarrollo web.
               </p>
-              <div className='flex items-center self-start mt-2'>
-                <Link href= "/Cv.pdf" target={"_blank"}
+              <div className='flex items-center self-start mt-2 lg:self-center'>
+                <Link href= "/Cv.pdf"
+                 target={"_blank"}
                 className="flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
 
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
-                hover:dark:border-light
+                hover:dark:border-light md:p-2 md:px-4 md:text-base
                 "
                 download={true}
                 >Curriculum <LinkArrow className={"w-6 ml-1"}></LinkArrow>
@@ -46,14 +53,14 @@ export default function Home() {
                 </Link>
                 
                 <a href="mailto:p.avilaf1998@gmail.com" 
-                className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
+                className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                 >Contacto</a>
               </div>
             </div>
           </div>
         </Layout>
         <HireMe/>
-        <div className='absolute right-8 bottom-8 inline-block w-24'>
+        <div className='absolute right-8 bottom-8 inline-block w-16 md:hidden'>
           <Image src={lightBulb} alt='Codebucks' className='w-full h-auto animate-spin-slow' 
            style={{ animationIterationCount: '1',
            animationTimingFunction: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
