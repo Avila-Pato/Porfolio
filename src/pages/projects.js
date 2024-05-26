@@ -160,8 +160,8 @@ const projects = () => {
                     content="any description"
                 />
             </Head>
-            <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light p-14 '>
-                <Layout classname="pt-2">
+            <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light  '>
+                <Layout classname="p-10">
                     <AnimatedText
                         text="Bienvenido a Mis Proyectos"
                         className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
