@@ -18,7 +18,7 @@ const FramerImage = motion(Image)
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
         <article
-            className="w-full flex items-center
+            className="w-full flex items-center 
         justify-between relative rounded-br-2xl rounded-3xl border border-solid
         border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
         lg:flex-col lg:p-8  xs:rounded-2xl xs:rounded-br-3xl xs:p-4
@@ -93,7 +93,7 @@ const Project = ({ type, title, img, link, github, summary }) => {
             className="w-full flex flex-col items-center justify-center
         rounded-2xl border border-solid border-dark
         bg-light p-6 relative dark:bg-dark dark:border-light
-        xs:p-4
+        xs:p-4 
         "
         >
             <div
@@ -121,7 +121,7 @@ const Project = ({ type, title, img, link, github, summary }) => {
             </Link>
 
             <div
-                className="w-1/2 flex flex-col items-start justify-between
+                className="flex flex-col items-start justify-between
             pl-6 lg:w-full lg:pl-0 lg:pt-6"
             >
                 <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
