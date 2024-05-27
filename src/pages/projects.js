@@ -212,9 +212,7 @@ const projects = () => {
                             <Project
                                 title="React-Router"
                                 img={project5}
-                                summary="a feautre-rich crypto Screamer app usiing react, tailwinf and css. content api, react router and it shows 
-                                 details regarding almost the cryptocurrency. you can exactly convert the price in yerar
-                                  local currency"
+                                summary="Esta demostración ilustra cómo utilizar React Router para crear una estructura de navegación efectiva en aplicaciones web React."
                                 link="https://github.com/Avila-Pato/React-Router-Demo"
                                 github="https://github.com/Avila-Pato/React-Router-Demo"
                                 type="Proyectos Destacados"
@@ -224,9 +222,7 @@ const projects = () => {
                             <Project
                                 title="Crud-Angular"
                                 img={project6}
-                                summary="a feautre-rich crypto Screamer app usiing react, tailwinf and css. content api, react router and it shows 
-                        details regarding almost the cryptocurrency. you can exactly convert the price in yerar
-                        local currency"
+                                summary="Este proyecto es un servidor backend desarrollado con Node.js y Sequelize, que proporciona una API RESTful para una aplicación frontend construida con Angular."
                                 link="https://github.com/Avila-Pato/Back-end-Server_angular-node-sequelize"
                                 github="https://github.com/Avila-Pato/Back-end-Server_angular-node-sequelize"
                                 type="Proyectos Destacados"

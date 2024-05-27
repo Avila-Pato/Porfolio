@@ -50,23 +50,27 @@ const About = () => {
             <div className='col-span-3 flex flex-col items-center justify-center xl:col-span-4 md:order-2 md:col-span-8'>
               <h2 className='mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75'>Biografia</h2>
               <p className='font-medium'>
-                Hola, soy Patricio, un desarrollador web autodidacta con pasión por crear experiencias digitales interactivas, funcionales y centradas en el usuario. Con 1 año de experiencia en el campo, siempre estoy buscando nuevas e innovadoras formas de dar vida a las Paginas webs.
+              ¡Hola, soy Patricio! con una carrera previa en turismo y hotelería. Durante años, me enfoqué en brindar experiencias unicas a los huéspedes, Con el tiempo, descubrí mi fascinación por el mundo digital y la creación de experiencias interactivas en línea. Aprovechando mi creatividad y habilidad para entender las necesidades del cliente, me embarqué en un viaje autodidacta en el campo del desarrollo web.
               </p>
               <p className='my-4 font-medium'>
-                Creo que el diseño es más que simplemente hacer que las cosas se vean bonitas; se trata de resolver problemas y crear experiencias intuitivas y agradables para los usuarios.
+              Durante este viaje, he completado varios cursos con enfoque en la programación, ampliando así mis habilidades y conocimientos en tecnologías clave como HTML, CSS, JavaScript, y frameworks como React y Angular.
+              Estos cursos me han brindado una base sólida en los principios fundamentales de la programación y el desarrollo web
+              
               </p>
               <p className='font-medium'>
-                Ya sea que esté trabajando en un sitio web, una aplicación móvil u otro producto digital, llevo mi compromiso con la excelencia en el diseño y el pensamiento centrado en el usuario a cada proyecto en el que trabajo. Espero con interés la oportunidad de llevar mis habilidades y pasión a tu próximo proyecto.
+              Mi enfoque metodológico y mi deseo de innovar constantemente me llevan a buscar nuevas formas de dar vida a las páginas web de manera interactiva y funcional. Creo firmemente que la combinación de mi experiencia en turismo y hotelería con mis habilidades en desarrollo web me proporciona una perspectiva única y valiosa en este campo en constante evolución.
               </p>
             </div>
-            <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-4'>
+            <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4
+             md:order-1 md:col-span-8'>
               <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
               <Image 
                 src={profilePic} 
                 alt="Patricio" 
-                className='w-full h-auto rounded-2xl'
+                className='w-full h-auto rounded-2xl  '
                 priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw 
+                " 
               />
             </div>
             <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
