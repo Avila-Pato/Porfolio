@@ -38,7 +38,7 @@ export default function Home() {
                Como desarrollador Frond-End, me dedico a convertir ideas en aplicaciones web innovadoras. Explora mis últimos proyectos y artículos, donde podrás ver mi experiencia autodicta en desarrollo web.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href= "/Cv.pdf"
+                <Link href= "/Cv2.pdf"
                  target={"_blank"}
                 className="flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
