@@ -41,15 +41,15 @@ const About = () => {
         <meta name='description' content='Any description' />
       </Head>
       <main className='flex w-full flex-col items-center justify-center dark:text-light'>
-        <Layout className='pt-16 bg'>
+        <Layout className='pt-16'>
           <AnimatedText 
             text='La pasión alimenta el propósito.' 
-            className='mb-10 text-2xl font-bold lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' 
+            className='mb-10 text-2xl font-bold lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 ' 
           />
-          <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 2xl:text-lg'>
-            <div className='col-span-3 flex flex-col items-center justify-center xl:col-span-4 md:order-2 md:col-span-8'>
+          <div className='grid w-full  grid-cols-8 gap-16 sm:gap-8 2xl:text-lg xs:p-1 sm:p-2 lg:p-2 2xl:p-5 '>
+            <div className='col-span-3  gap-4 flex flex-col items-center justify-center xl:col-span-4 md:order-2 md:col-span-8 '>
               <h2 className='mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75'>Biografia</h2>
-              <p className='font-medium'>
+              <p className='font-medium '>
               ¡Hola, soy Patricio! con una carrera previa en turismo y hotelería. Durante años, me enfoqué en brindar experiencias unicas a los huéspedes, Con el tiempo, descubrí mi fascinación por el mundo digital y la creación de experiencias interactivas en línea. Aprovechando mi creatividad y habilidad para entender las necesidades del cliente, me embarqué en un viaje autodidacta en el campo del desarrollo web.
               </p>
               <p className='my-4 font-medium'>
@@ -73,7 +73,7 @@ const About = () => {
                 " 
               />
             </div>
-            <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
+            <div className='col-span-2 flex flex-col 2xl:m-24 xs:m-0 items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                   <AnimatedNumber value={6}/>+

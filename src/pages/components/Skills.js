@@ -12,25 +12,27 @@ const Skills = () => {
             md:bg-circularLightMd md:dark:bg-circularDarkMd
             sm:bg-circularLightSm sm:dark:bg-circularDarkSm'>
 
-                <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer 
-                dark:text-dark dark:bg-light lg:p-6 md:p-4 sm:p-2 xs:p-1'
+                <motion.div className='flex items-center justify-center rounded-full font-semibold
+                 bg-dark text-light p-8 shadow-dark cursor-pointer 
+                 dark:text-dark dark:bg-light lg:p-6 md:p-4 sm:p-2 xs:p-1'
+                 
                     whileHover={{ scale: 1.05 }}
                 >
                     <span className="text-xl md:text-lg sm:text-base xs:text-sm">WEB</span> 
                 </motion.div>
 
                 <Skill name="HTML" x="13vw" y="2vw" nivel="Intermedio"/>    
-                <Skill name="CSS" x="20vw" y="-20vw" nivel="Avanzado"/>
+                <Skill name="CSS" x="20vw" y="-17vw" nivel="Avanzado"/>
                 <Skill name="Javascript" x="20vw" y="10vw" nivel="Avanzado"/>
                 <Skill name="ReactJS" x="0vw" y="13vw" nivel="Avanzado"/>
                 <Skill name="NextJS" x="-2vw" y="-15vw" nivel="Intermedio"/>
                 <Skill name="Figma" x="15vw" y="-11vw" nivel="Básico"/>
                 <Skill name="Angular" x="31vw" y="-5vw" nivel="Intermedio"/>
-                <Skill name="PHP" x="7vw" y="-28vw" nivel="Avanzado"/>
+                <Skill name="PHP" x="7vw" y="-20vw" nivel="Avanzado"/>
                 <Skill name="Java" x="-17vw" y="18vw" nivel="Avanzado"/>
-                <Skill name="Tailwind CSS" x="1vw" y="24vw" nivel="Intermedio"/>
-                <Skill name="Python" x="-9vw" y="-30vw" nivel="Básico"/>
-                <Skill name="NodeJS" x="-20vw" y="-20vw" nivel="Avanzado"/>
+                <Skill name="Tailwind CSS" x="1vw" y="20vw" nivel="Intermedio"/>
+                <Skill name="Python" x="-10vw" y="-20vw" nivel="Básico"/>
+                <Skill name="NodeJS" x="-25vw" y="-15vw" nivel="Avanzado"/>
                 <Skill name="Astro" x="-30vw" y="9vw" nivel="Intermedio"/>
                 <Skill name="SQL" x="-15vw" y="8vw" nivel="Intermedio"/>
                 <Skill name="MySql" x="-16vw" y="-9vw" nivel="Básico"/>

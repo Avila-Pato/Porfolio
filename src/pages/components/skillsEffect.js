@@ -14,10 +14,13 @@ const Skill = ({ name, x, y, nivel }) => {
 
     return (
         <motion.div
-           className='flex items-center justify-center rounded-full font-semibold bg-dark xs:bg-dark text-light 
-            py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:bg-light 
-            lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent
-            xs:text-light xs:dark:text-light lg:p-6 md:p-4 sm:p-2 xs:p-1 xs:font-bold xs:text-xs'
+           className=' flex items-center justify-center rounded-full font-semibold
+            xs:dark:bg-light  sm:dark:bg-light text-light 
+           py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark 
+           dark:bg-light lg:py-2 lg:px-4 lg:p-6 md:text-sm md:py-1.5 md:px-3 md:p-4 
+            sm:p-2  xs:text-light xs:dark:text-dark  xs:p-1 xs:font-bold xs:text-xs
+            bg-dark'
+
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
