@@ -287,3 +287,21 @@
     transform: translateY(-15px); /* Bajando después del salto */
   }
 }
+.skill-html {
+  position: absolute;
+  bottom: -2.5rem;
+  background-color: #005eff; /* Color gris oscuro */
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.skill-html:hover {
+  opacity: 10;
+  color: #005eff;
+  border-radius: 30px;
+}

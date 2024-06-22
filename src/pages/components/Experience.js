@@ -73,7 +73,7 @@ const ref  = useRef(null);
 
             position="Promotor turístico (Travél Rock)"
             companyLink="www.google.com"
-            time="2019-2020 "
+            time=" 2019-2020 "
             address=" Santiago | Providencia"
             work="Promotor enfocado en giras de viajes a Bariloche
             para residencias estudiantiles. Presentando
@@ -85,10 +85,10 @@ const ref  = useRef(null);
         
           <Details
 
-            position="Operador de turismo(Rutacruz)-Practica profesiona"
-            companyLink="www.google.com"
-            time="2020-2021"
-            address="Santiago | San Antonio 65"
+            position="Operador de turismo(Rutacruz)-Practica profesional"
+            companyLink="www.google.com,"
+            time=" 2020-2021 "
+            address=" Santiago | San Antonio 65"
             work="Venta y promoción del producto
             dentro del stand y exterior.
             Gestión de experiencia
@@ -100,7 +100,7 @@ const ref  = useRef(null);
 
             position="Staff (Turistik)"
             companyLink="www.google.com"
-            time="2022-2023-Present"
+            time=" 2022-2023 "
             address=" Santiago | Calle Pedro De Valdivia"
             work="Experiencia multifacética en diversos
             departamentos del parque, desde anfitrión y
@@ -113,7 +113,7 @@ const ref  = useRef(null);
 
             position="Recepcionista (Hostel Cienfuegos)"
             companyLink="www.google.com"
-            time="2023-2023"
+            time=" 2023-2023 "
             address=" Santiago | CienFuegos 151"
             work="Registro de llegadas y la gestión de
             la reserva y check-out.

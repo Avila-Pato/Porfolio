@@ -50,17 +50,17 @@ const Education = () => {
                 
 
                 <Details
-                        type="Campus virtual – IPLACEX"
-                        time="2019-2025"
-                        place="Santiago, Región Metropolitana"
+                        type="– Inacap"
+                        time="2024 - en curso "
+                        place=" Santiago, Región Metropolitana "
                         info=" Analista Programador 
                      "
                     />
                 <Details
                         
-                        type="Sede – Duoc UC"
-                        time="2019-2023"
-                        place="San Bernardo,Región Metropolitana"
+                        type=" – Duoc UC"
+                        time="2019-2023 "
+                        place=" San Bernardo, Región Metropolitana "
                         info="Turismo y Hoteleria "
                     />
                    
