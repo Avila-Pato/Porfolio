@@ -50,15 +50,15 @@ const About = () => {
             <div className='col-span-3  gap-4 flex flex-col items-center justify-center xl:col-span-4 md:order-2 md:col-span-8 '>
               <h2 className='mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75'>Biografia</h2>
               <p className='font-medium '>
-              ¡Hola, soy Patricio! con una carrera previa en turismo y hotelería. Durante años, me enfoqué en brindar experiencias unicas a los huéspedes, Con el tiempo, descubrí mi fascinación por el mundo digital y la creación de experiencias interactivas en línea. Aprovechando mi creatividad y habilidad para entender las necesidades del cliente, me embarqué en un viaje autodidacta en el campo del desarrollo web.
+              ¡Hola, soy Patricio! con una carrera previa en turismo y hotelería. Durante años, me enfoqué en brindar experiencias y atencion a los huéspedes, Con el tiempo, descubrí mi fascinación por el mundo digital y la creación de experiencias interactivas en línea. Aprovechando mi creatividad y habilidad para entender las necesidades del cliente, me embarqué en un viaje autodidacta en el campo del desarrollo web.
               </p>
               <p className='my-4 font-medium'>
-              Durante este viaje, he completado varios cursos con enfoque en la programación, ampliando así mis habilidades y conocimientos en tecnologías clave como HTML, CSS, JavaScript, y frameworks como React y Angular.
+              Durante este tiempo, he completado varios cursos con enfoque en la programación, ampliando así mis habilidades y conocimientos en tecnologías clave como HTML, CSS, JavaScript, y frameworks que me ayuden a complementarlo.
               Estos cursos me han brindado una base sólida en los principios fundamentales de la programación y el desarrollo web
               
               </p>
               <p className='font-medium'>
-              Mi enfoque metodológico y mi deseo de innovar constantemente me llevan a buscar nuevas formas de dar vida a las páginas web de manera interactiva y funcional. Creo firmemente que la combinación de mi experiencia en turismo y hotelería con mis habilidades en desarrollo web me proporciona una perspectiva única y valiosa en este campo en constante evolución.
+              Mi enfoque metodológico,autodidacta y mi deseo de innovar constantemente me llevan a buscar nuevas formas de dar vida a las páginas web de manera interactiva y funcional. Creo firmemente que la combinación de mi experiencia en turismo y hotelería con mis habilidades en desarrollo web me proporciona una perspectiva única y valiosa en este campo en constante evolución.
               </p>
             </div>
             <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4

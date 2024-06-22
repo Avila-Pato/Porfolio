@@ -35,7 +35,7 @@ export default function Home() {
                 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
               />
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-               Como desarrollador Frond-End, me dedico a convertir ideas en aplicaciones web innovadoras. Explora mis últimos proyectos y artículos, donde podrás ver mi experiencia autodicta en desarrollo web.
+              Soy un desarrollador web autodidacta con experiencia. Mi enfoque está en aprender de forma continua y aplicar esos conocimientos en proyectos de forma práctica. He trabajado en una variedad de proyectos para mejorar en mi rendimiento y habilidades técnicas.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link href= "/Cv2.pdf"

@@ -26,6 +26,7 @@ const Skill = ({ name, x, y, nivel }) => {
             whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            
         >
             {name}
             {showDetail && (
