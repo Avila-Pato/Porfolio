@@ -217,6 +217,7 @@ const projects = () => {
                 title="Chat Authentication"
                 img={project4}
                 summary="Este proyecto consta de dos componentes principales: un panel de administración desarrollado con la pila MERN para gestión de datos y un chat en tiempo real creado con React y TypeScript, proporcionando una interfaz moderna y funcionalidades avanzadas para la comunicación instantánea."
+                link="https://react-ts-firebase-auth-chat.vercel.app/"
                 github="https://github.com/Avila-Pato/React-Ts-Firebase-Auth-Chat"
                 type="Proyectos"
               />
