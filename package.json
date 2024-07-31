@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "build": "^0.1.4",
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.4",
     "framer-motion": "^10.18.0",
