@@ -188,7 +188,7 @@ const projects = () => {
               <Project
                 title="Dashboard Admin (en curso) MERN"
                 img={project3}
-                summary="Este un proyecto que replica la funcionalidad y la apariencia de una aplicación o sitio web de pronóstico del tiempo. Desarrollado con React y Vite, este clon ofrece una experiencia de usuario similar a la de las aplicaciones de pronóstico del tiempo."
+                summary="Este proyecto utiliza tecnologías como React para la UI, Material UI para componentes, Nivo Charts para visualización, y Redux Toolkit para la gestión de estado. En el backend, se emplean Node.js, Express.js, MongoDB y Mongoose. También se integran herramientas como Dotenv, JsonWebToken, y Nodemon. El modelado de datos incluye diagramas ERD y agregaciones en MongoDB para consultas avanzadas."
                 link="https://github.com/Avila-Pato/MERN-React-Admin-Dashboard--FullStack"
                 github="https://github.com/Avila-Pato/MERN-React-Admin-Dashboard--FullStack"
                 type="Proyectos Destacados"
@@ -198,8 +198,7 @@ const projects = () => {
               <FeaturedProject
                 title="Chat Authentication"
                 img={project4}
-                summary="Este proyecto es una implementación básica de un React Router (Demo), añadiendo la capacidad de navegación multiples funcionamientos y enrutamientos a una aplicación React desarrollada con TypeScript."
-                link="https://react-ts-firebase-auth-chat.vercel.app"
+                summary="Este proyecto consta de dos componentes principales: un panel de administración desarrollado con la pila MERN para gestión de datos y un chat en tiempo real creado con React y TypeScript, proporcionando una interfaz moderna y funcionalidades avanzadas para la comunicación instantánea."
                 github="https://github.com/Avila-Pato/React-Ts-Firebase-Auth-Chat"
                 type="Proyectos"
               />
@@ -208,7 +207,7 @@ const projects = () => {
               <Project
                 title="Super Marios World"
                 img={project5}
-                summary="Este proyecto es una implementación básica de un React Router (Demo), añadiendo la capacidad de navegación y enrutamiento a una aplicación React."
+                summary="Juego Mario Bros: Una versión simple del clásico Mario Bros desarrollada con HTML, CSS y JavaScript. El juego incluye elementos básicos como plataformas y enemigos,"
                 link="https://super-mario-bros-demo-js.vercel.app/"
                 github="https://github.com/Avila-Pato/Super-Mario-Bros-demo-js"
                 type="Proyectos"
