@@ -28,10 +28,10 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                  bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
       />
       <Link
-        href={link}
-        target="_blank"
-        className=" w-1/2 cursor-pointer overflow-hidden
-            rounded-lg lg:w-full"
+        href={link || "#"}
+        target={link ? "_blank" : "_self"}
+        className={`w-1/2 cursor-pointer overflow-hidden
+            rounded-lg lg:w-full ${!link && "cursor-not-allowed opacity-50"}`}
       >
         <FramerImage
           src={img}
@@ -51,9 +51,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           {type}
         </span>
         <Link
-          href={link}
-          target="_blank"
-          className="hover:underline underline-offset-2 md:text-base"
+          href={link || "#"}
+          target={link ? "_blank" : "_self"}
+          className={`hover:underline underline-offset-2 md:text-base ${
+            !link && "cursor-not-allowed opacity-50"
+          }`}
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
             {title}
@@ -61,16 +63,24 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center">
-          <Link href={github} target="_blank" className="w-10 md:w-6">
+          <Link
+            href={github || "#"}
+            target={github ? "_blank" : "_self"}
+            className={`w-10 md:w-6 ${
+              !github && "cursor-not-allowed opacity-50"
+            }`}
+          >
             <GithubIcon />
           </Link>
           <Link
-            href={link}
-            target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light
+            href={link || "#"}
+            target={link ? "_blank" : "_self"}
+            className={`ml-4 rounded-lg bg-dark text-light
                 p-2 px-6 text-lg font-semibold
                 dark:bg-light dark:text-dark 
-                sm:px-4 sm:text-base"
+                sm:px-4 sm:text-base ${
+                  !link && "cursor-not-allowed opacity-50"
+                }`}
           >
             Visítalo
           </Link>
@@ -94,10 +104,10 @@ const Project = ({ type, title, img, link, github, summary }) => {
       />
 
       <Link
-        href={link}
-        target="_blank"
-        className=" w-full cursor-pointer overflow-hidden
-            rounded-lg lg:w-full"
+        href={link || "#"}
+        target={link ? "_blank" : "_self"}
+        className={`w-full cursor-pointer overflow-hidden
+            rounded-lg lg:w-full ${!link && "cursor-not-allowed opacity-50"}`}
       >
         <FramerImage
           src={img}
@@ -121,9 +131,11 @@ const Project = ({ type, title, img, link, github, summary }) => {
           {type}
         </span>
         <Link
-          href={link}
-          target="_blank"
-          className="hover:underline underline-offset-2"
+          href={link || "#"}
+          target={link ? "_blank" : "_self"}
+          className={`hover:underline underline-offset-2 ${
+            !link && "cursor-not-allowed opacity-50"
+          }`}
         >
           <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
             {title}
@@ -133,13 +145,19 @@ const Project = ({ type, title, img, link, github, summary }) => {
           {summary}
         </p>
         <div className="w-full mt-2 flex items-center justify-between">
-          <Link href={github} target="_blank" className="w-8">
+          <Link
+            href={github || "#"}
+            target={github ? "_blank" : "_self"}
+            className={`w-8 ${!github && "cursor-not-allowed opacity-50"}`}
+          >
             <GithubIcon />
           </Link>
           <Link
-            href={link}
-            target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            href={link || "#"}
+            target={link ? "_blank" : "_self"}
+            className={`ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base ${
+              !link && "cursor-not-allowed opacity-50"
+            }`}
           >
             Visítalo
           </Link>
