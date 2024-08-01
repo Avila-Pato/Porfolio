@@ -10,7 +10,7 @@ import project2 from "../../public/images/projects/spotyfi-clon.jpg";
 import project3 from "../../public/images/projects/Dasboardadmin.jpg";
 import project4 from "../../public/images/projects/chat.jpeg";
 import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024_01514_super-mario-bros-demo-js.vercel.app.jpeg";
-import project6 from "../../public/images/projects/maxresdefault.jpg";
+import project6 from "../../public/images/projects/apiPokemon.jpeg";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -234,11 +234,11 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Formulario "
+                title="Api Pokemon"
                 img={project6}
-                summary="Este es un formulario simple creado con React y Bootstrap. Permite a los usuarios enviar información a través de una interfaz de usuario moderna y receptiva."
-                link="https://github.com/Avila-Pato/Formulario-react"
-                github="https://github.com/Avila-Pato/Formulario-react"
+                summary="Este proyecto es una API de Pokémon que proporciona información detallada sobre los Pokémon, incluyendo sus habilidades, tipos y estadísticas. Utiliza la API de PokéAPI para obtener datos y ofrece una experiencia interactiva para los aficionados de Pokémon."
+                link="https://poke-api-two-lilac.vercel.app/"
+                github="https://github.com/Avila-Pato/PokeApi"
                 type="Proyectos"
               />
             </div>
