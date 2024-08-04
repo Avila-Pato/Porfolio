@@ -196,7 +196,7 @@ const projects = () => {
               <Project
                 title="Spotify Clon MERN Full Stack"
                 img={project2}
-                summary="Este repositorio contiene una versión del popular servicio de música Spotify, creado utilizando Astro. Presenta una interfaz web que asegura un rendimiento destacado. Es una herramienta educativa diseñada para explorar el desarrollo de aplicaciones web modernas utilizando Astro."
+                summary="Este repositorio contiene una versión del popular servicio de música Spotify, creado utilizando el stack MERN (MongoDB, Express, React, Node.js). Este proyecto ofrece una experiencia de usuario rica y funcional, que incluye características como la carga y gestión de canciones y álbumes, visualización de listas de reproducción, y un panel de administración para el control total del contenido multimedia."
                 link="https://github.com/Avila-Pato/Spotify-Clon.-M.E.R.N-Full-Stack"
                 github="https://github.com/Avila-Pato/Spotify-Clon.--ONLY-Front"
                 type="Proyectos Destacados"
@@ -204,7 +204,7 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Dashboard Admin (en curso) MERN"
+                title="Dashboard Admin MERN (en curso)"
                 img={project3}
                 summary="Este proyecto utiliza tecnologías como React para la UI, Material UI para componentes, Nivo Charts para visualización, y Redux Toolkit para la gestión de estado. En el backend, se emplean Node.js, Express.js, MongoDB y Mongoose. También se integran herramientas como Dotenv, JsonWebToken, y Nodemon. El modelado de datos incluye diagramas ERD y agregaciones en MongoDB para consultas avanzadas."
                 link="https://github.com/Avila-Pato/MERN-React-Admin-Dashboard--FullStack"
@@ -214,9 +214,10 @@ const projects = () => {
             </div>
             <div className="col-span-12 sm:col-span-12">
               <FeaturedProject
-                title="Chat Authentication"
+                title="Chat Authentication (En curso)"
                 img={project4}
-                summary="Este proyecto consta de dos componentes principales: un panel de administración desarrollado con la pila MERN para gestión de datos y un chat en tiempo real creado con React y TypeScript, proporcionando una interfaz moderna y funcionalidades avanzadas para la comunicación instantánea."
+                summary="Este proyecto consta  con una autenticación de usuarios con Firebase, y 
+                para gestión de datos en firebase store, un chat en tiempo real creado React y TypeScript, proporcionando una interfaz  y funcionalidades avanzadas para la comunicación instantánea."
                 link="https://react-ts-firebase-auth-chat.vercel.app/"
                 github="https://github.com/Avila-Pato/React-Ts-Firebase-Auth-Chat"
                 type="Proyectos"
