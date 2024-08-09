@@ -41,7 +41,7 @@ const MovingImg = ({ title, img, link }) => {
             onMouseMove={handleMouse}
             onMouseLeave={handleMouseleave}
         >
-            <h2 className="capitalize text-xl font-semibold hover:underline ml-1">
+            <h2 className="capitalize text-xl font-semibold hover:underline ml-1 sm:text-2xl">
                 {title}
             </h2>
 
@@ -67,7 +67,7 @@ const Article = ({ img, title, date, link }) => {
             className="relative w-auto p-4 py-6 my-4 rounded-xl flex items-center
         justify-between bg-light text-dark first:mt-0 border border-solid border-dark
         border-r-4 border-b-4 dark:bg-dark dark:border-light  dark:text-light
-        sm:flex-col"
+        sm:flex-col   "
         >
             <MovingImg
                 title={title}
@@ -86,7 +86,7 @@ const FeaturedArticles = ({ img, title, time, summary, link }) => {
         <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
             <div
                 className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
-          rounded-br-3xl dark:bg-light"
+          rounded-br-3xl dark:bg-light "
             />
             <Link
                 href={link}
@@ -103,7 +103,7 @@ const FeaturedArticles = ({ img, title, time, summary, link }) => {
                     priotity
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
-              33vw" 
+              33vw " 
                 />
             </Link>
             <Link
@@ -144,7 +144,14 @@ const articles = () => {
                         className="mb-10 text-xl font-bold dark:text-light
                         lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
                     />
-                    <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16 ">
+                    <ul className="grid grid-cols-2 gap-10 
+            2xl:grid-cols-2 2xl:gap-10 2xl:px-16
+            xl:grid-cols-2 xl:gap-10 xl:px-12
+            lg:grid-cols-2 lg:gap-8 lg:px-8
+            md:grid-cols-2 md:gap-6 md:px-6
+            sm:grid-cols-1 sm:gap-6 sm:px-4
+            xs:grid-cols-1 xs:gap-6 xs:px-4
+            min-2xl:grid-cols-2 min-2xl:gap-10 min-2xl:px-16">
                         <FeaturedArticles
                             title="Potenciando el desarrollo web"
                             summary=" Ya seas un principiante que está aprendiendo los conceptos básicos o un desarrollador experimentado que busca desafíos más avanzados, la pagina web
@@ -163,10 +170,17 @@ const articles = () => {
                             img={article2}
                         />
                     </ul>
-                    <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light ">
+                    <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light 
+                    ">
                         Otros los Articulos{' '}
                     </h2>
-                    <ul className=" ">
+                    <ul className=" 2xl:grid-cols-2 2xl:gap-10 2xl:px-16
+            xl:grid-cols-2 xl:gap-10 xl:px-12
+            lg:grid-cols-2 lg:gap-8 lg:px-8
+            md:grid-cols-2 md:gap-6 md:px-6
+            sm:grid-cols-1 sm:gap-6 sm:px-4
+            xs:grid-cols-1 xs:gap-6 xs:px-4
+            min-2xl:grid-cols-2 min-2xl:gap-10 min-2xl:px-16 ">
                         <Article
                             title={`Pase de principiante a experto aprendiendo los fundamentos de Next.js y creando un sitio web de demostración completamente funcional que utilice las últimas funciones.`}
                             date={`📅`}

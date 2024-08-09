@@ -56,9 +56,9 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Convirtiendo visión en realidad con código y diseño."
-                className="!text-4xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+                className="!text-4xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl my-4 font-medium "
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+              <p className="my-4 text-base font-medium md:text-sm xs:text-sm">
                 Soy un desarrollador web autodidacta con experiencia. Mi enfoque
                 está en aprender de forma continua y aplicar esos conocimientos
                 en proyectos de forma práctica para ello He trabajado en una

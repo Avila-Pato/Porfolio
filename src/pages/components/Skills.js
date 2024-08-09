@@ -23,20 +23,28 @@ const Skills = () => {
 
                 <Skill name="HTML" x="13vw" y="2vw" nivel="Intermedio"/>    
                 <Skill name="CSS" x="20vw" y="-17vw" nivel="Avanzado"/>
-                <Skill name="Javascript" x="20vw" y="10vw" nivel="Avanzado"/>
-                <Skill name="ReactJS" x="0vw" y="13vw" nivel="Avanzado"/>
+                <Skill name="Javascript" x="20vw" y="10vw" nivel="Intermedio"/>
+                <Skill name="ReactJS" x="0vw" y="13vw" nivel="Intermedio"/>
                 <Skill name="NextJS" x="-2vw" y="-15vw" nivel="Intermedio"/>
                 <Skill name="Figma" x="15vw" y="-11vw" nivel="Básico"/>
-                <Skill name="Angular" x="31vw" y="-5vw" nivel="Intermedio"/>
-                <Skill name="PHP" x="7vw" y="-20vw" nivel="Avanzado"/>
-                <Skill name="Java" x="-17vw" y="18vw" nivel="Avanzado"/>
-                <Skill name="Tailwind CSS" x="1vw" y="20vw" nivel="Intermedio"/>
+                <Skill name="Angular" x="31vw" y="-5vw" nivel="Básico"/>
+                <Skill name="PHP" x="7vw" y="-20vw" nivel="Básico"/>
+                <Skill name="Java" x="-17vw" y="18vw" nivel="Básico"/>
+                <Skill name="Tailwind" x="1vw" y="20vw" nivel="Intermedio"/>
                 <Skill name="Python" x="-10vw" y="-20vw" nivel="Básico"/>
-                <Skill name="NodeJS" x="-25vw" y="-15vw" nivel="Avanzado"/>
+                <Skill name="NodeJS" x="-25vw" y="-15vw" nivel="Intermedio"/>
                 <Skill name="Astro" x="-30vw" y="9vw" nivel="Intermedio"/>
                 <Skill name="SQL" x="-15vw" y="8vw" nivel="Intermedio"/>
-                <Skill name="MySql" x="-16vw" y="-9vw" nivel="Básico"/>
-                <Skill name="Typescript" x="-32vw" y="-4vw" nivel="Avanzado"/>
+                <Skill name="MySql" x="-16vw" y="-9vw" nivel="Intermedio"/>
+                <Skill name="Typescript" x="-32vw" y="-4vw" nivel="Intermedio"/>
+
+                <Skill name="C#" x="-11vw" y="-1vw" nivel="Básico"/>
+                <Skill name=".NET" x="8vw" y="-7vw" nivel="Básico"/>
+                <Skill name="Firebase" x="18vw" y="20vw" nivel="Básico"/>
+                <Skill name="Mongoose" x="29vw" y="2vw" nivel="Básico"/>
+                <Skill name="React" x="-23vw" y="2vw" nivel="Intermedio"/>
+
+
             </div>
         </>
     );

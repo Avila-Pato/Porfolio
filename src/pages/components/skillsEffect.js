@@ -34,9 +34,9 @@ const Skill = ({ name, x, y, nivel }) => {
                     xs:py-1 xs:px-2 sm:py-1.5 sm:px-3 md:py-2 md:px-4 lg:py-2 lg:px-4
                     xs:bg-transparent xs:dark:bg-transparent
                     xs:text-dark xs:dark:text-light xs:font-bold">
-                    {nivel === 'Avanzado' && <p className=" font-bold text-xs sm:text-sm md:text-base lg:text-base text-gray-800 dark:text-gray-200">Nivel: Avanzado</p>}
-                    {nivel === 'Intermedio' && <p className=" font-bold  text-xs sm:text-sm md:text-base lg:text-base text-gray-800 dark:text-gray-200">Nivel: Intermedio</p>}
-                    {nivel === 'Básico' && <p className=" font-bold  text-xs sm:text-sm md:text-base lg:text-base text-gray-800 dark:text-gray-200">Nivel: Básico</p>}
+                    {nivel === 'Avanzado' && <p className=" font-bold text-xs sm:text-sm md:text-base lg:text-base text-gray-800 dark:text-gray-200">Avanzado</p>}
+                    {nivel === 'Intermedio' && <p className=" font-bold  text-xs sm:text-sm md:text-base lg:text-base text-gray-800 dark:text-gray-200">Intermedio</p>}
+                    {nivel === 'Básico' && <p className=" font-bold  text-xs sm:text-sm md:text-base lg:text-base text-gray-800 dark:text-gray-200">Básico</p>}
                 </div>
             )}
         </motion.div>
