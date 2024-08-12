@@ -1,39 +1,40 @@
-import Head from "next/head";
-import Layout from "./components/Layout";
-import Image from "next/image";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
-import AnimatedText from "./components/AnimatedText";
-import Link from "next/link";
-import { LinkArrow } from "../lib/Icons";
-import HireMe from "./components/HireMe";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
-import { useState, useEffect } from "react";
+import React, { useState } from 'react';
+import Head from 'next/head';
+import Layout from './components/Layout';
+import Image from 'next/image';
+import profilePic from '../../public/images/profile/developer-pic-1.png';
+import AnimatedText from './components/AnimatedText';
+import Link from 'next/link';
+import { LinkArrow } from '../lib/Icons';
+import HireMe from './components/HireMe';
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
+import Particles from '../pages/animation/Particles'; // Importa el componente Particles
 
 export default function Home() {
-  const [isEasterEggVisible, setEasterEggVisible] = useState(false);
+  const [particles, setParticles] = useState([]);
 
-  const handleLightBulbClick = () => {
-    setEasterEggVisible(true);
+  const handleLightBulbClick = (e) => {
+    // Detiene la propagación del clic para evitar efectos secundarios no deseados
+    e.stopPropagation();
 
-    // Ocultar el Easter egg después de 10 segundos
+    // Obtiene la posición del clic para crear partículas en esa posición
+    const rect = e.target.getBoundingClientRect();
+    const newParticle = {
+      x: rect.left + rect.width / 15,
+      y: rect.top + rect.height / 55,
+      id: Date.now(), // ID único para cada conjunto de partículas
+    };
+
+    // Añade las nuevas partículas al estado
+    setParticles((prevParticles) => [...prevParticles, newParticle]);
+
+    // Elimina las partículas después de un tiempo para que no interfieran
     setTimeout(() => {
-      setEasterEggVisible(false);
-    }, 5000);
+      setParticles((prevParticles) =>
+        prevParticles.filter((particle) => particle.id !== newParticle.id)
+      );
+    }, 2000); // Duración de la animación
   };
-
-  useEffect(() => {
-    if (isEasterEggVisible) {
-      const handleClickOutside = () => {
-        setEasterEggVisible(true);
-      };
-
-      document.addEventListener("click", handleClickOutside);
-
-      return () => {
-        document.removeEventListener("click", handleClickOutside);
-      };
-    }
-  }, [isEasterEggVisible]);
 
   return (
     <>
@@ -56,7 +57,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Convirtiendo visión en realidad con código y diseño."
-                className="!text-4xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl my-4 font-medium "
+                className="!text-4xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl my-4 font-medium"
               />
               <p className="my-4 text-base font-medium md:text-sm xs:text-sm">
                 Soy un desarrollador web autodidacta con experiencia. Mi enfoque
@@ -92,7 +93,6 @@ export default function Home() {
           <Image
             src={lightBulb}
             alt="Codebucks"
-            //Cobertura de animacion
             className="w-full h-auto animate-spin-slow pt-0 md:pt-16 sm:pt-8"
             style={{
               animationIterationCount: "1",
@@ -100,17 +100,11 @@ export default function Home() {
             }}
           />
         </div>
-        {isEasterEggVisible && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center">
-            <video
-              src="/videos/easter-egg.mp4"
-              className="max-w-full max-h-full"
-              autoPlay
-              controls
-              onEnded={() => setEasterEggVisible(false)}
-            />
-          </div>
-        )}
+
+        {/* Renderizar las partículas en la posición del clic */}
+        {particles.map((particle) => (
+          <Particles key={particle.id} position={{ x: particle.x, y: particle.y }} />
+        ))}
       </main>
     </>
   );
