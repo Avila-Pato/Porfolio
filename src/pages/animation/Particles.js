@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '/src/styles/Particles.module.css';
 
-
 const Particles = ({ position, particleKey }) => {
   if (!position || typeof position.x === 'undefined' || typeof position.y === 'undefined')  {
     return null; 
@@ -11,19 +10,18 @@ const Particles = ({ position, particleKey }) => {
     <div
       className={styles.particlesContainer}
       style={{
-        left: position.x,
-        top: position.y,
-         
+        left: `${position.x - 60}px`,
+        top: `${position.y- 90}px`,
       }}
     >
       {[...Array(20)].map((_, index) => {
-        const moveX = `${Math.random() * 200 - 400}px`;
-        const moveY = `${Math.random() * 500 - 200}px`;
-
+        const moveX = `${Math.random() * 400 - 200}px`; // Ajustado para un mejor centrado
+        const moveY = `${Math.random() * 400 - 200}px`; // Ajustado para un mejor centrado
+  
         return (
           <div
             key={`${particleKey}-${index}`}
-            className={styles.particle}
+            className={`${styles.particle} ${styles.particleAnimation}`}
             style={{
               backgroundColor: `hsl(${Math.random() * 360}, 100%, 50%)`,
               width: `${Math.random() * 15 + 5}px`,
@@ -40,4 +38,4 @@ const Particles = ({ position, particleKey }) => {
   );
 };
 
-export default Particles; // Exportación por defecto
+export default Particles;

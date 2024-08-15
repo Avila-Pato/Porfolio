@@ -1,32 +1,24 @@
 /* Contenedor de partículas */
 
-
-
 .particlesContainer {
-    position: absolute;
-    pointer-events: none;
-   
+  position: absolute;
+  pointer-events: none; /* Evita que las partículas interfieran con otros clics */
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  animation: moveAndFade 3s forwards;
+}
+
+@keyframes moveAndFade {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
   }
-  
-  /* Estilo para cada partícula */
-  .particle {
-    width: 12px; /* Tamaño de las partículas */
-    height: 12px; /* Tamaño de las partículas */
-    border-radius: 50%; /* Hace que las partículas sean redondas */
-    position: absolute;
-    background-color: red; /* Color de la partícula (puede cambiarse) */
-    animation: explode 1s forwards; /* Aplica la animación de explosión */
+  100% {
+    transform: translate(var(--move-x), var(--move-y));
+    opacity: 0;
   }
-  
-  /* Animación de explosión */
-  @keyframes explode {
-    0% {
-        transform: translate(30, 0) scale(1);/* Parte inicial de la animación: tamaño completo y sin desplazamiento */
-      opacity: 1; /* Opacidad completa al inicio */
-    }
-    100% {
-      transform: scale(0) translateY(-100px); /* Parte final de la animación: desaparece y se mueve hacia arriba */
-      opacity: 0; /* Opacidad al final de la animación */
-    }
-  }
-  
+}
