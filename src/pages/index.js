@@ -8,15 +8,23 @@ import Link from 'next/link';
 import { LinkArrow } from '../lib/Icons';
 import HireMe from './components/HireMe';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
-import ScatterText from './animation/CrazyWords/ScatterText'; // Importa el componente ScatterText
+
+
 
 export default function Home() {
   // Define el estado para manejar el estado de la luz y la animación
-  const [isLightOn, setIsLightOn] = useState(false);
   const [animateLightBulb, setAnimateLightBulb] = useState(false);
+  const [isLightOn, setIsLightOn] = useState(false);
 
+  
   // Define la función handleLightBulbClick
   const handleLightBulbClick = () => {
+    // Reproduce el sonido correspondiente
+    const sound = new Audio('/audio/breaker-switch-45684.mp3');
+    sound.volume = 0.6;
+    sound.play();
+
+    // Cambia el estado de la luz
     setIsLightOn(!isLightOn);
     setAnimateLightBulb(true);
 
@@ -82,7 +90,7 @@ export default function Home() {
           className={`absolute right-8 bottom-8 inline-block w-16 md:hidden ${animateLightBulb ? 'animate-lightbulb' : ''}`}
           onClick={handleLightBulbClick}
         >
-
+	
           
           <Image
             src={lightBulb}
@@ -99,3 +107,7 @@ export default function Home() {
     </>
   );
 }
+
+
+	
+		

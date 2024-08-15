@@ -11,16 +11,22 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@react-three/drei": "^9.109.5",
+    "@react-three/fiber": "^8.17.5",
+    "@react-three/rapier": "^1.4.0",
     "build": "^0.1.4",
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.4",
     "framer-motion": "^10.18.0",
+    "leva": "^0.9.35",
+    "meshline": "^3.3.1",
     "next": "^14.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-konami-code": "^2.3.0",
     "react-lottie": "^1.2.4",
     "sharp": "^0.33.3",
+    "three": "^0.167.1",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
