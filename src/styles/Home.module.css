@@ -306,3 +306,31 @@
   color: #005eff;
   border-radius: 30px;
 }
+
+@keyframes moveParticle {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(var(--move-x), var(--move-y));
+  }
+}
+
+.Particles {
+  animation: moveParticle 10s infinite alternate;
+}
+
+.Particles {
+  background: linear-gradient(to bottom, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5));
+}
+
+
+.Particles {
+  --particle-size: 10px;
+  width: var(--particle-size);
+  height: var(--particle-size);
+}
+
+.Particles {
+  background-color: hsl(var(--hue), 100%, 50%);
+}

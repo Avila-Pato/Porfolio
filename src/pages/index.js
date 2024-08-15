@@ -68,7 +68,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/Cv2.pdf"
+                  href="/Cv.profesional.pdf"
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                   download={true}
@@ -93,7 +93,7 @@ export default function Home() {
           <Image
             src={lightBulb}
             alt="Codebucks"
-            className="w-full h-auto animate-spin-slow pt-0 md:pt-16 sm:pt-8"
+            className="w-full h-auto animate-spin-slow pt-0 md:pt-16 sm:pt-8 cursor-pointer"
             style={{
               animationIterationCount: "1",
               animationTimingFunction: "cubic-bezier(0.68, -0.55, 0.265, 1.55)",

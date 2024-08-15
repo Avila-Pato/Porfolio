@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '/src/styles/Particles.module.css';
 
+
 const Particles = ({ position, particleKey }) => {
-  if (!position || typeof position.x === 'undefined' || typeof position.y === 'undefined') {
+  if (!position || typeof position.x === 'undefined' || typeof position.y === 'undefined')  {
     return null; 
   }
 
@@ -12,6 +13,7 @@ const Particles = ({ position, particleKey }) => {
       style={{
         left: position.x,
         top: position.y,
+         
       }}
     >
       {[...Array(20)].map((_, index) => {
