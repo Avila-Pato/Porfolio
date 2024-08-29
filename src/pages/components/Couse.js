@@ -48,35 +48,41 @@ const Course = () => {
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details
                         type="Curso de Ingles – Koe Fast & Easy"
-                        time=" 2023-2025 "
+                        time=" 2024 "
                         place=" Santiago"
-                        info="Carrera en analista programador "
+                        info="Adherente con Turismo y Hoteleria "
                     />
                     <Details
                         type="Curso de Diseño UX: experiencia de
                               usuario UX/UI + Figma – Udemy"
-                        time="2023-2025 "
+                        time="2024"
                         place=" Santiago"
-                        info="Carrera en analista programador "
+                        info="Adherente con analista programador "
                     />
                     <Details
                         type="Web Development Bootcamp – Udemy"
-                        time="2023-2025 "
+                        time="2024"
                         place=" Santiago"
-                        info="Carrera en analista programador "
+                        info="Adherente con analista programador  "
                     />
                     <Details
                         type="Universidad JavaScript -
                             De Cero a Experto JavaScript – Udemy"
-                        time="2023-2025 "
+                        time="2024 "
                         place=" Santiago"
-                        info="Carrera en analista programador "
+                        info="Adherente con analista programador "
                     />
                     <Details
                         type="Desarrollo Web - Udemy"
-                        time="2023-2025 "
+                        time="2024 "
                         place=" Santiago"
-                        info="Carrera en analista programador "
+                        info="Adherente con analista programador  "
+                    />
+                    <Details
+                        type="C# .Net - Udemy"
+                        time="2024 "
+                        place=" Santiago"
+                        info="Adherente con analista programador "
                     />
                    
                 </ul>

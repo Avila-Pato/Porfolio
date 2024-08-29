@@ -21,28 +21,42 @@ const Skills = () => {
                     <span className="text-xl md:text-lg sm:text-base xs:text-sm">WEB</span> 
                 </motion.div>
 
-                <Skill name="HTML" x="13vw" y="2vw" nivel="Intermedio"/>    
-                <Skill name="CSS" x="20vw" y="-17vw" nivel="Avanzado"/>
-                <Skill name="Javascript" x="20vw" y="10vw" nivel="Intermedio"/>
-                <Skill name="ReactJS" x="0vw" y="13vw" nivel="Intermedio"/>
-                <Skill name="NextJS" x="-2vw" y="-15vw" nivel="Intermedio"/>
-                <Skill name="Figma" x="15vw" y="-11vw" nivel="Básico"/>
-                <Skill name="Angular" x="31vw" y="-5vw" nivel="Básico"/>
-                <Skill name="PHP" x="7vw" y="-20vw" nivel="Básico"/>
-                <Skill name="Java" x="-17vw" y="18vw" nivel="Básico"/>
-                <Skill name="Tailwind" x="1vw" y="20vw" nivel="Intermedio"/>
-                <Skill name="Python" x="-10vw" y="-20vw" nivel="Básico"/>
-                <Skill name="NodeJS" x="-25vw" y="-15vw" nivel="Intermedio"/>
-                <Skill name="Astro" x="-30vw" y="9vw" nivel="Intermedio"/>
-                <Skill name="SQL" x="-15vw" y="8vw" nivel="Intermedio"/>
-                <Skill name="MySql" x="-16vw" y="-9vw" nivel="Intermedio"/>
-                <Skill name="Typescript" x="-32vw" y="-4vw" nivel="Intermedio"/>
+                <Skill name="HTML" x="8vw" y="0vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="CSS" x="15vw" y="-10vw" nivel="Avanzado" style="font-size: 0.6em;"/>
+<Skill name="Javascript" x="15vw" y="4vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="ReactJS" x="5vw" y="6vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="NextJS" x="-7vw" y="-10vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Figma" x="10vw" y="-6vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name="Angular" x="22vw" y="-7vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name="PHP" x="2vw" y="-12vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name="Java" x="-10vw" y="8vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name="Tailwind" x="-2vw" y="12vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Python" x="-5vw" y="-16vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name="NodeJS" x="-15vw" y="-8vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Astro" x="-20vw" y="4vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="SQL" x="-8vw" y="4vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="MySql" x="-10vw" y="-5vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Typescript" x="-27vw" y="-1vw" nivel="Intermedio" style="font-size: 0.6em;"/>
 
-                <Skill name="C#" x="-11vw" y="-1vw" nivel="Básico"/>
-                <Skill name=".NET" x="8vw" y="-7vw" nivel="Básico"/>
-                <Skill name="Firebase" x="18vw" y="20vw" nivel="Básico"/>
-                <Skill name="Mongoose" x="29vw" y="2vw" nivel="Básico"/>
-                <Skill name="React" x="-23vw" y="2vw" nivel="Intermedio"/>
+<Skill name="C#" x="-7vw" y="-1vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name=".NET" x="2vw" y="-7vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name="Firebase" x="10vw" y="12vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name="Mongoose" x="20vw" y="-1vw" nivel="Básico" style="font-size: 0.6em;"/>
+<Skill name="React" x="-14vw" y="-15vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+
+<Skill name="Git" x="-22vw" y="-12vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="GitHub" x="-29vw" y="-7vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+
+<Skill name="Vercel" x="18vw" y="10vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="AWS" x="8vw" y="-16vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Docker" x="-18vw" y="0vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Express" x="-15vw" y="12vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Bootstrap" x="24vw" y="6vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="MaterialUI" x="17vw" y="-15vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Cloudflare" x="-30vw" y="6vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+
+
+
 
 
             </div>

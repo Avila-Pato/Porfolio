@@ -8,7 +8,7 @@ import { GithubIcon } from "../lib/Icons";
 import project1 from "../../public/images/projects/landing-tourism.jpg";
 import project2 from "../../public/images/projects/spotyfi-clon.jpg";
 import project3 from "../../public/images/projects/Dasboardadmin.jpg";
-import project4 from "../../public/images/projects/chat.jpeg";
+import project4 from "../../public/images/projects/texting.png";
 import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024_01514_super-mario-bros-demo-js.vercel.app.jpeg";
 import project6 from "../../public/images/projects/apiPokemon.jpeg";
 import { motion } from "framer-motion";
@@ -204,7 +204,7 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Dashboard Admin MERN (en curso)"
+                title="Dashboard Admin MERN "
                 img={project3}
                 summary="Este proyecto utiliza tecnologías como React para la UI, Material UI para componentes, Nivo Charts para visualización, y Redux Toolkit para la gestión de estado. En el backend, se emplean Node.js, Express.js, MongoDB y Mongoose. También se integran herramientas como Dotenv, JsonWebToken, y Nodemon. El modelado de datos incluye diagramas ERD y agregaciones en MongoDB para consultas avanzadas."
                 link="https://github.com/Avila-Pato/MERN-React-Admin-Dashboard--FullStack"
@@ -214,7 +214,7 @@ const projects = () => {
             </div>
             <div className="col-span-12 sm:col-span-12">
               <FeaturedProject
-                title="Chat Authentication (En curso)"
+                title="Chat Authentication Firebase"
                 img={project4}
                 summary="Este proyecto consta  con una autenticación de usuarios con Firebase, y 
                 para gestión de datos en firebase store, un chat en tiempo real creado React y TypeScript, proporcionando una interfaz  y funcionalidades avanzadas para la comunicación instantánea."
@@ -227,7 +227,7 @@ const projects = () => {
               <Project
                 title="Super Marios World"
                 img={project5}
-                summary="Juego Mario Bros: Una versión simple del clásico Mario Bros desarrollada con HTML, CSS y JavaScript. El juego incluye elementos básicos como plataformas y enemigos,"
+                summary="Juego Mario Bros: Una versión simple del clásico Mario Bros desarrollada con HTML, CSS y JavaScript. El juego incluye elementos básicos como plataformas y enemigos,  Aun me falta terminarlo pero ya esta en funcionamiento"
                 link="https://super-mario-bros-demo-js.vercel.app/"
                 github="https://github.com/Avila-Pato/Super-Mario-Bros-demo-js"
                 type="Proyectos"
