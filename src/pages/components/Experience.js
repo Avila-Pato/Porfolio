@@ -60,7 +60,7 @@ const ref  = useRef(null);
 
             position="Agente de viajes"
             companyLink="Multiviajes"
-            time="2018-2019 "   
+            // time="2018-2019 "   
             address=" Santiago | Calle Ahumada "
             work="Experiencia de ventas de paquetes turísticos,
             centrada en abordar las necesidades integrales
@@ -73,7 +73,7 @@ const ref  = useRef(null);
 
             position="Promotor turístico (Travél Rock)"
             companyLink="www.google.com"
-            time=" 2019-2020 "
+            // time=" 2019-2020 "
             address=" Santiago | Providencia"
             work="Promotor enfocado en giras de viajes a Bariloche
             para residencias estudiantiles. Presentando
@@ -87,7 +87,7 @@ const ref  = useRef(null);
 
             position="Operador de turismo(Rutacruz)-Practica profesional"
             companyLink="www.google.com,"
-            time=" 2020-2021 "
+            // time=" 2020-2021 "
             address=" Santiago | San Antonio 65"
             work="Venta y promoción del producto
             dentro del stand y exterior.
@@ -100,7 +100,7 @@ const ref  = useRef(null);
 
             position="Staff (Turistik)"
             companyLink="www.google.com"
-            time=" 2022-2023 "
+            // time=" 2022-2023 "
             address=" Santiago | Calle Pedro De Valdivia"
             work="Experiencia multifacética en diversos
             departamentos del parque, desde anfitrión y
@@ -109,7 +109,7 @@ const ref  = useRef(null);
             teleférico, funicular .
             "
             />
-                      <Details
+                      {/* <Details
 
             position="Recepcionista (Hostel Cienfuegos)"
             companyLink="www.google.com"
@@ -119,9 +119,8 @@ const ref  = useRef(null);
             la reserva y check-out.
             Registro de transacciones financiaras
             incluyendo facturación y procesamiento
-            de pagos.
-"
-          />
+            de pagos."
+          />   */}
         </ul>
       </div>
     </div>

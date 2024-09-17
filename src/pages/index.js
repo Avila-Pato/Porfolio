@@ -45,7 +45,8 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="CosdeBucks"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full pt-0 md:pt-16 sm:pt-8"
+                className="w-full h-auto pt-2 xl:pt-16 lg:pt-14 md:pt-12 sm:pt-10 xs:pt-8 xxs:pt-4"
+
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
@@ -69,7 +70,7 @@ export default function Home() {
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                   download={true}
                 >
-                  Curriculum <LinkArrow className={"w-6 ml-1"} />
+                  CV<LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <a
                   href="mailto:p.avilaf1998@gmail.com"
@@ -95,7 +96,9 @@ export default function Home() {
           <Image
             src={lightBulb}
             alt="Codebucks"
-            className="w-full h-auto pt-0 md:pt-16 sm:pt-8 cursor-pointer"
+            className="w-full h-auto absolute -top-20 sm:-top-16 md:-top-12 lg:-top-8 xl:-top-6 left-0 cursor-pointer"
+
+
             style={{
               filter: isLightOn ? "drop-shadow(0 0 30px rgba(255, 255, 0, 1))" : "none", // Intensifica el filtro cuando la luz está encendida
             }}

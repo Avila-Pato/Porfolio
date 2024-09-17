@@ -43,26 +43,21 @@ module.exports = {
       
       
     },
-    screens: {
-      "2xl": { max: "1535px" },
-      // => @media (max-width: 1535px) { ... }
-  
-      xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
-  
-      lg: { max: "1023px" },
-      // => @media (max-width: 1023px) { ... }
-  
-      md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
-  
-      sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
-  
-      xs: { max: "479px" },
-      // => @media (max-width: 479px) { ... }
-      'min-2xl': { 'min': '1536px' },
-  },
-  },
+   screens: {
+        // Pantallas grandes
+        'min-2xl': { 'min': '1536px' }, // Para pantallas superiores a 1536px
+        
+        // Pantallas estándar
+        '2xl': { 'max': '1535px' }, // => @media (max-width: 1535px)
+        xl: { 'max': '1279px' },    // => @media (max-width: 1279px)
+        lg: { 'max': '1023px' },    // => @media (max-width: 1023px)
+        md: { 'max': '767px' },     // => @media (max-width: 767px)
+        sm: { 'max': '639px' },     // => @media (max-width: 639px)
+        xs: { 'max': '479px' },     // => @media (max-width: 479px)
+
+        // Pantallas extremadamente pequeñas (añadir si es necesario)
+        'xxs': { 'max': '359px' },  // => @media (max-width: 359px)
+      },
+    },
   plugins: [],
 }

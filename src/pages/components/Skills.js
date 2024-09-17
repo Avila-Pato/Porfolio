@@ -54,6 +54,7 @@ const Skills = () => {
 <Skill name="Bootstrap" x="24vw" y="6vw" nivel="Intermedio" style="font-size: 0.6em;"/>
 <Skill name="MaterialUI" x="17vw" y="-15vw" nivel="Intermedio" style="font-size: 0.6em;"/>
 <Skill name="Cloudflare" x="-30vw" y="6vw" nivel="Intermedio" style="font-size: 0.6em;"/>
+<Skill name="Nestjs" x="34vw" y="-2vw" nivel="Intermedio" style="font-size: 0.6em;"/>
 
 
 

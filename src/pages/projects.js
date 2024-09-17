@@ -204,7 +204,7 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Dashboard Admin MERN "
+                title="Dashboard Admin MERN (En curso)"
                 img={project3}
                 summary="Este proyecto utiliza tecnologías como React para la UI, Material UI para componentes, Nivo Charts para visualización, y Redux Toolkit para la gestión de estado. En el backend, se emplean Node.js, Express.js, MongoDB y Mongoose. También se integran herramientas como Dotenv, JsonWebToken, y Nodemon. El modelado de datos incluye diagramas ERD y agregaciones en MongoDB para consultas avanzadas."
                 link="https://github.com/Avila-Pato/MERN-React-Admin-Dashboard--FullStack"
