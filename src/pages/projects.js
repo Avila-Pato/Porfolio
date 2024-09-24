@@ -7,7 +7,7 @@ import Image from "next/image";
 import { GithubIcon } from "../lib/Icons";
 import project1 from "../../public/images/projects/landing-tourism.jpg";
 import project2 from "../../public/images/projects/spotyfi-clon.jpg";
-import project3 from "../../public/images/projects/Dasboardadmin.jpg";
+import project3 from "../../public/images/projects/Pruebas.png";
 import project4 from "../../public/images/projects/texting.png";
 import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024_01514_super-mario-bros-demo-js.vercel.app.jpeg";
 import project6 from "../../public/images/projects/apiPokemon.jpeg";
@@ -40,6 +40,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           style={{ width: "100%", height: "50%" }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.5 }}
+          
         />
       </Link>
 
@@ -204,11 +205,11 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Dashboard Admin MERN (En curso)"
+                title="NestNext-FullStack"
                 img={project3}
-                summary="Este proyecto utiliza tecnologías como React para la UI, Material UI para componentes, Nivo Charts para visualización, y Redux Toolkit para la gestión de estado. En el backend, se emplean Node.js, Express.js, MongoDB y Mongoose. También se integran herramientas como Dotenv, JsonWebToken, y Nodemon. El modelado de datos incluye diagramas ERD y agregaciones en MongoDB para consultas avanzadas."
-                link="https://github.com/Avila-Pato/MERN-React-Admin-Dashboard--FullStack"
-                github="https://github.com/Avila-Pato/MERN-React-Admin-Dashboard--FullStack"
+                summary="Este proyecto es una aplicación full-stack CRUD, construida con Next.js para el frontend y NestJS para el backend. La aplicación permite crear, leer, actualizar y eliminar (CRUD) datos, utilizando una arquitectura separada para el frontend y backend. El propósito de este proyecto es demostrar la implementación de un CRUD utilizando tecnologías modernas y escalables como React, Next.js, NestJS y Prisma."
+                link="https://github.com/Avila-Pato/NextJS-NestJS-Projects"
+                github="https://github.com/Avila-Pato/NextJS-NestJS-Projects"
                 type="Proyectos Destacados"
               />
             </div>
