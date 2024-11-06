@@ -11,6 +11,7 @@ import project3 from "../../public/images/projects/Pruebas.png";
 import project4 from "../../public/images/projects/texting.png";
 import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024_01514_super-mario-bros-demo-js.vercel.app.jpeg";
 import project6 from "../../public/images/projects/apiPokemon.jpeg";
+import project7 from "../../public/images/projects/angular.jpg";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -209,7 +210,7 @@ const projects = () => {
                 img={project3}
                 summary="Este proyecto es una aplicación full-stack CRUD, construida con Next.js para el frontend y NestJS para el backend. La aplicación permite crear, leer, actualizar y eliminar (CRUD) datos, utilizando una arquitectura separada para el frontend y backend. El propósito de este proyecto es demostrar la implementación de un CRUD utilizando tecnologías modernas y escalables como React, Next.js, NestJS y Prisma."
                 link="https://github.com/Avila-Pato/NextJS-NestJS-Projects"
-                github="https://github.com/Avila-Pato/NextJS-NestJS-Projects"
+                github="https://github.com/Avila-Pato/NextJS-NestJS-Projects"o
                 type="Proyectos Destacados"
               />
             </div>
@@ -241,6 +242,16 @@ const projects = () => {
                 summary="Este proyecto es una API de Pokémon que proporciona información detallada sobre los Pokémon, incluyendo sus habilidades, tipos y estadísticas. Utiliza la API de PokéAPI para obtener datos y ofrece una experiencia interactiva para los aficionados de Pokémon."
                 link="https://poke-api-two-lilac.vercel.app/"
                 github="https://github.com/Avila-Pato/PokeApi"
+                type="Proyectos"
+              />
+            </div>
+            <div className="col-span-12 ">
+              <FeaturedProject
+                title="Angular Auth + Crud"
+                img={project7}
+                summary="AngularAuthCrud es una aplicación web que ofrece un sistema completo de autenticación y gestión de usuarios utilizando Angular y Firebase. Permite a los usuarios registrarse, iniciar sesión. Además, implementa un sistema completo de CRUD (Crear, Leer, Actualizar y Eliminar) para la gestión de tareas."
+                link="https://angular-firebase-auth-flax.vercel.app/auth/sign-in"
+                github="https://github.com/Avila-Pato/Angular-Firebase-Auth"
                 type="Proyectos"
               />
             </div>

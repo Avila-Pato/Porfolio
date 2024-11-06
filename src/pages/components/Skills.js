@@ -9,7 +9,7 @@ const Skills = () => {
         Conocimientos
       </h2>
       <div
-        className="w-full h-screen relative flex items-center justify-center bg-circularLight dark:bg-circularDark 
+        className="w-full h-screen relative flex items-center  justify-center bg-circularLight dark:bg-circularDark 
             lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]
             lg:bg-circularLightLg lg:dark:bg-circularDarkLg
             md:bg-circularLightMd md:dark:bg-circularDarkMd
@@ -31,7 +31,7 @@ const Skills = () => {
           x="8vw"
           y="0vw"
           nivel="Intermedio"
-          style="font-size: 0.6em;"
+          style="font-size: 0.6em; "
         />
         <Skill
           name="CSS"
@@ -129,7 +129,7 @@ const Skills = () => {
           x="-10vw"
           y="-5vw"
           nivel="Intermedio"
-          style="font-size: 0.6em;"
+          style="font-size: 0.6em; "
         />
         <Skill
           name="Typescript"
