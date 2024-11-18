@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "../lib/Icons";
-import project1 from "../../public/images/projects/landing-tourism.jpg";
+import project1 from "../../public/images/projects/capturaPantalla.jpeg";
 import project2 from "../../public/images/projects/spotyfi-clon.jpg";
 import project3 from "../../public/images/projects/Pruebas.png";
 import project4 from "../../public/images/projects/texting.png";
@@ -186,9 +186,9 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Tourism Web"
+                title="Hotel Web"
                 img={project1}
-                summary="Este proyecto recrea un sitio web turístico utilizando tecnologías front-end como JavaScript, CSS y HTML. La intención es proporcionar una experiencia de usuario atractiva y funcional, que sirva como punto de partida para la promoción de destinos turísticos."
+                summary="Este proyecto recrea un sitio Hotel utilizando Construido con NustJs. La intención es proporcionar una experiencia de usuario atractiva y funcional, que sirva como punto de partida para la promoción de Habitaciones."
                 link="https://landig-page-tourism.vercel.app/"
                 github="https://github.com/Avila-Pato/Landig-Page-Tourism"
                 type="Proyectos Destacados"
