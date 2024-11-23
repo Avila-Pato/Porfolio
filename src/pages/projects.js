@@ -7,7 +7,7 @@ import Image from "next/image";
 import { GithubIcon } from "../lib/Icons";
 import project1 from "../../public/images/projects/capturaPantalla.jpeg";
 import project2 from "../../public/images/projects/spotyfi-clon.jpg";
-import project3 from "../../public/images/projects/Pruebas.png";
+import project3 from "../../public/images/projects/netfliz.jpeg";
 import project4 from "../../public/images/projects/texting.png";
 import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024_01514_super-mario-bros-demo-js.vercel.app.jpeg";
 import project6 from "../../public/images/projects/apiPokemon.jpeg";
@@ -206,11 +206,11 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="NestNext-FullStack"
+                title="NetFlix Clon"
                 img={project3}
-                summary="Este proyecto es una aplicación full-stack CRUD, construida con Next.js para el frontend y NestJS para el backend. La aplicación permite crear, leer, actualizar y eliminar (CRUD) datos, utilizando una arquitectura separada para el frontend y backend. El propósito de este proyecto es demostrar la implementación de un CRUD utilizando tecnologías modernas y escalables como React, Next.js, NestJS y Prisma."
-                link="https://github.com/Avila-Pato/NextJS-NestJS-Projects"
-                github="https://github.com/Avila-Pato/NextJS-NestJS-Projects"o
+                summary="Este proyecto es una aplicación FrontEnd, construida con react y Firebase para gestionar la autenticación de usuarios de forma segura. Para la reproducción de videos, se emplea React Player. La interfaz moderna se construye solo con CSS, asegurando un diseño atractivo y responsivo. Con esta combinación, el proyecto ofrece seguridad, funcionalidad de videos y una experiencia de usuario fluida."
+                link="https://spotify-clon-en-curso.vercel.app/"
+                github="https://github.com/Avila-Pato/Netflix-clon"o
                 type="Proyectos Destacados"
               />
             </div>
