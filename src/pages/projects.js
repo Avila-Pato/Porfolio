@@ -12,6 +12,7 @@ import project4 from "../../public/images/projects/texting.png";
 import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024_01514_super-mario-bros-demo-js.vercel.app.jpeg";
 import project6 from "../../public/images/projects/apiPokemon.jpeg";
 import project7 from "../../public/images/projects/angular.jpg";
+import project8 from "../../public/images/projects/Blog.jpeg";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -252,6 +253,17 @@ const projects = () => {
                 summary="AngularAuthCrud es una aplicación web que ofrece un sistema completo de autenticación y gestión de usuarios utilizando Angular y Firebase. Permite a los usuarios registrarse, iniciar sesión. Además, implementa un sistema completo de CRUD (Crear, Leer, Actualizar y Eliminar) para la gestión de tareas."
                 link="https://angular-firebase-auth-flax.vercel.app/auth/sign-in"
                 github="https://github.com/Avila-Pato/Angular-Firebase-Auth"
+                type="Proyectos"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="BlogReact-OnlyFrontend"
+                img={project8}
+                summary="El frontend de esta Web está construido utilizando React y Tailwind CSS. Proporciona una experiencia de usuario interactiva con una interfaz limpia y moderna. Se utilizan varias bibliotecas para facilitar la gestión del estado, la interaccion, entre otros."
+                link="https://react-block-only-front-9juxjkzok-avila-patos-projects.vercel.app/"
+                github="https://github.com/Avila-Pato/ReactBlock-Only-Front-"
                 type="Proyectos"
               />
             </div>
