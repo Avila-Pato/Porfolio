@@ -13,6 +13,7 @@ import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024
 import project6 from "../../public/images/projects/apiPokemon.jpeg";
 import project7 from "../../public/images/projects/angular.jpg";
 import project8 from "../../public/images/projects/Blog.jpeg";
+import project9 from "../../public/images/projects/website.agency.jpeg";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -264,6 +265,17 @@ const projects = () => {
                 summary="El frontend de esta Web está construido utilizando React y Tailwind CSS. Proporciona una experiencia de usuario interactiva con una interfaz limpia y moderna. Se utilizan varias bibliotecas para facilitar la gestión del estado, la interaccion, entre otros."
                 link="https://react-block-only-front-9juxjkzok-avila-patos-projects.vercel.app/"
                 github="https://github.com/Avila-Pato/ReactBlock-Only-Front-"
+                type="Proyectos"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Web-Travel-Agency"
+                img={project9}
+                summary="Este proyecto es una plataforma de viajes que permite a los usuarios explorar destinos recomendados, obtener información detallada sobre categorías de viajes, y comunicarse a través de un sitio web intuitivo y visualmente atractivo. La aplicación está desarrollada en Next.js, aprovechando sus capacidades de renderizado en el lado del servidor y su eficiente manejo de rutas."
+                link="https://travel-agency-website-mu.vercel.app/"
+                github="https://github.com/Avila-Pato/Next_Travel_Agency_Website"
                 type="Proyectos"
               />
             </div>
