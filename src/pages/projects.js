@@ -14,6 +14,9 @@ import project6 from "../../public/images/projects/apiPokemon.jpeg";
 import project7 from "../../public/images/projects/angular.jpg";
 import project8 from "../../public/images/projects/Blog.jpeg";
 import project9 from "../../public/images/projects/website.agency.jpeg";
+import project10 from "../../public/images/projects/Chat-Full-mern.jpg";
+
+
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -188,7 +191,7 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Hotel Web"
+                title=" Hotel Web"
                 img={project1}
                 summary="Este proyecto recrea un sitio Hotel utilizando Construido con NustJs. La intención es proporcionar una experiencia de usuario atractiva y funcional, que sirva como punto de partida para la promoción de Habitaciones."
                 link="https://plataforma-hotel-nust-rn7y6ouyl-avila-patos-projects.vercel.app/"
@@ -279,7 +282,18 @@ const projects = () => {
                 type="Proyectos"
               />
             </div>
-          </div>
+            <div className="col-span-12 ">
+              <FeaturedProject
+                title="Chat2.0 Full/Stack/Mern"
+                img={project10}
+                summary="MERN + Socket.io + TailwindCSS + Daisy UI 🎃 Autenticación y Autorización con JWT 👾 Mensajería en tiempo real con Socket.io 🚀 Estado en línea de usuarios 👌 Gestión de estado global con Zustand 🐞 Manejo de errores en cliente y servidor ⭐!"
+                link="https://github.com/Avila-Pato/Realtime-Chat_MERN--React.js-Socket.io"
+                github="https://github.com/Avila-Pato/Realtime-Chat_MERN--React.js-Socket.io"
+                type="Proyectos"
+              />
+            </div>
+
+      </div>
         </Layout>
       </main>
     </>
