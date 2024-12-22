@@ -15,6 +15,7 @@ import project7 from "../../public/images/projects/angular.jpg";
 import project8 from "../../public/images/projects/Blog.jpeg";
 import project9 from "../../public/images/projects/website.agency.jpeg";
 import project10 from "../../public/images/projects/Chat-Full-mern.jpg";
+import project11 from "../../public/images/projects/awwwars.jpeg";
 
 
 import { motion } from "framer-motion";
@@ -293,6 +294,16 @@ const projects = () => {
               />
             </div>
 
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Awwwards Anime Website GSAP"
+                img={project11}
+                summary="El propósito de este proyecto es aprender a usar GSAP en React para crear animaciones fluidas. GSAP permite controlar movimientos y transiciones con precisión. Se exploran referencias (refs) para manejar el DOM directamente. Esto optimiza el rendimiento y facilita efectos avanzados. El objetivo es mejorar la experiencia del usuario en aplicaciones modernas."
+                link="https://wward-winnigs-wwebsite-8ypkt4m2h-avila-patos-projects.vercel.app/"
+                github="https://github.com/Avila-Pato/Awwards-Website-Winning-ReactJs-Tailwind-CSS-GSAP"
+                type="Proyectos"
+              />
+            </div>
       </div>
         </Layout>
       </main>
