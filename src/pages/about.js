@@ -53,15 +53,13 @@ const About = () => {
             <div className='col-span-3  gap-4 flex flex-col items-center justify-center xl:col-span-4 md:order-2 md:col-span-8 '>
               <h2 className='mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75'>Biografia</h2>
               <p className='font-medium '>
-              ¡Hola, soy Patricio! con una carrera previa en turismo y hotelería. Durante años, me enfoqué en brindar experiencias y atencion a los huéspedes, A medida que avanzaba en mi carrera, descubrí mi gusto por el mundo digital y decidí comenzar a estudiar desarrollo web.
+              ¡Hola, soy Patricio! Con una carrera previa en turismo y hotelería, durante años me dediqué a ofrecer experiencias  y atención personalizada a los huéspedes. Sin embargo, mi interés por el mundo digital me llevó a dar un giro en mi trayectoria profesional y adentrarme en el desarrollo web.
               </p>
               <p className='my-4 font-medium'>
-              Durante este tiempo, he completado cursos  con enfoque en la programación, ampliando así mis habilidades y conocimientos en tecnologías claves tanto el el Front-End como en el Back-End y herramientas que me ayuden a complementarlo.
-              Estos cursos y mi aprensidaje autodidacta me han brindado  principios fundamentales de la programación y el desarrollo web
-              
+              Desde entonces, he acumulado más de un año de experiencia programando, trabajando tanto en proyectos personales como para clientes, lo que me ha permitido desarrollar soluciones funcionales y creativas adaptadas a distintas necesidades. He completado cursos especializados y combinado este aprendizaje con un enfoque autodidacta para dominar tecnologías clave en el Front-End y el Back-End, además de herramientas complementarias.
               </p>
               <p className='font-medium'>
-              Mi enfoque metodológico y mi deseo de innovar constantemente me llevan a buscar nuevas formas de dar vida a las páginas web de manera interactiva y funcional. Creo firmemente que la combinación de mi experiencia en turismo y hotelería con mis habilidades en desarrollo web me proporciona una perspectiva única y valiosa en este campo en constante evolución.
+              Mi enfoque metodológico por la innovación, y experiencia previa en turismo me otorgan una perspectiva donde puedo crear experiencias digitales interactivas y funcionales que conectan con los usuarios de manera efectiva. Estoy comprometido con el aprendizaje continuo y con el desarrollo de proyectos que reflejen calidad, creatividad, y funcionalidad.
               </p>
             </div>
             <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4
@@ -95,10 +93,10 @@ const About = () => {
               </div>
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                  <AnimatedNumber value={1}/>+
+                  <AnimatedNumber value={1.5}/>+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>
-                  Programando
+                  Años Programando
                 </h2>
               </div>
             </div>
