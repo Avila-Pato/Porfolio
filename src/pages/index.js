@@ -57,11 +57,12 @@ export default function Home() {
                 className="!text-4xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl my-4 font-medium"
               />
               <p className="my-4 text-base font-medium md:text-sm xs:text-sm">
-                Soy un desarrollador web autodidacta con experiencia. Mi enfoque
+                Soy un desarrollador web autodidacta con experiencia en la creacion de paginas webs FullStack. Mi enfoque
                 está en aprender de forma continua y aplicar esos conocimientos
                 en proyectos de forma práctica para ello He trabajado en una
                 variedad de proyectos para mejorar en mi rendimiento y
-                habilidades técnicas.
+                habilidades técnicas. Ademas ya he cosntrudio proyectos para clientes y para mi portafolio personal.
+                lo cual me ha permitodo entender las necesidades de los clientes y como llevar a cabo un proyecto de forma exitosa.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
