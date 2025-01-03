@@ -16,7 +16,7 @@ import project8 from "../../public/images/projects/Blog.jpeg";
 import project9 from "../../public/images/projects/website.agency.jpeg";
 import project10 from "../../public/images/projects/Chat-Full-mern.jpg";
 import project11 from "../../public/images/projects/awwwars.jpeg";
-
+import project12 from "../../public/images/projects/Rlc.jpeg";
 
 import { motion } from "framer-motion";
 
@@ -47,7 +47,6 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           style={{ width: "100%", height: "50%" }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.5 }}
-          
         />
       </Link>
 
@@ -104,7 +103,7 @@ const Project = ({ type, title, img, link, github, summary }) => {
       className="w-full flex flex-col items-center justify-center
         rounded-2xl border border-solid border-dark
         bg-light p-3 relative dark:bg-dark dark:border-light
-        xs:p-4"
+        xs:p-4 min-h-[400px]" // altura de la card 
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
@@ -216,7 +215,8 @@ const projects = () => {
                 img={project3}
                 summary="Este proyecto es una aplicación FrontEnd, construida con react y Firebase para gestionar la autenticación de usuarios de forma segura. Para la reproducción de videos, se emplea React Player. La interfaz moderna se construye solo con CSS, asegurando un diseño atractivo y responsivo. Con esta combinación, el proyecto ofrece seguridad, funcionalidad de videos y una experiencia de usuario fluida."
                 link="https://spotify-clon-en-curso.vercel.app/"
-                github="https://github.com/Avila-Pato/Netflix-clon"o
+                github="https://github.com/Avila-Pato/Netflix-clon"
+                o
                 type="Proyectos Destacados"
               />
             </div>
@@ -304,7 +304,19 @@ const projects = () => {
                 type="Proyectos"
               />
             </div>
-      </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="RLC Engineering"
+                img={project12}
+                summary="Este proyecto consiste en el desarrollo de una página web diseñada para ofrecer interfaces intuitivas y atractivas, adaptadas a las necesidades específicas del cliente. La optimización del rendimiento es clave, garantizando tiempos de carga rápidos y un funcionamiento eficiente en todos los dispositivos. Utilizando Next.js como base tecnológica, cada sección de la web ha sido diseñada para ser funcional, visualmente impactante y alineada con los objetivos establecidos.
+
+Nota: Por motivos de seguridad y privacidad, el código fuente no será compartido, ya que la web está publicada y su contenido podría verse comprometido si se expone públicamente."
+// github="https://github.com/Avila-Pato/Awwards-Website-Winning-ReactJs-Tailwind-CSS-GSAP"
+                link="https://rlcchile.com/"
+                type="Proyectos"
+              />
+            </div>
+          </div>
         </Layout>
       </main>
     </>
