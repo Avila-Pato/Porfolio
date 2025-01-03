@@ -9,16 +9,17 @@ const Skills = () => {
         Conocimientos
       </h2>
       <div
-        className="w-full h-screen relative flex items-center  justify-center bg-circularLight dark:bg-circularDark 
+        className="w-full h-screen relative flex items-center justify-center bg-circularLight dark:bg-circularDark 
             lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]
             lg:bg-circularLightLg lg:dark:bg-circularDarkLg
             md:bg-circularLightMd md:dark:bg-circularDarkMd
-            sm:bg-circularLightSm sm:dark:bg-circularDarkSm"
+            sm:bg-circularLightSm sm:dark:bg-circularDarkSm "
       >
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold
                  bg-dark text-light p-8 shadow-dark cursor-pointer 
-                 dark:text-dark dark:bg-light lg:p-6 md:p-4 sm:p-2 xs:p-1"
+                 dark:text-dark dark:bg-light lg:p-6 md:p-4 sm:p-2 xs:p-1 "
+          style={{ position: "relative" }} // Aseguramos el contexto
           whileHover={{ scale: 1.05 }}
         >
           <span className="text-xl md:text-lg sm:text-base xs:text-sm">
@@ -30,7 +31,7 @@ const Skills = () => {
           name="HTML"
           x="8vw"
           y="0vw"
-          nivel="Intermedio"
+          nivel="Avanzado"
           style="font-size: 0.6em; "
         />
         <Skill
@@ -51,28 +52,28 @@ const Skills = () => {
           name="ReactJS"
           x="5vw"
           y="6vw"
-          nivel="Intermedio"
+          nivel="Avanzado"
           style="font-size: 0.6em;"
         />
         <Skill
           name="NextJS"
           x="-7vw"
           y="-10vw"
-          nivel="Intermedio"
+          nivel="Avanzado"
           style="font-size: 0.6em;"
         />
         <Skill
           name="Figma"
           x="10vw"
           y="-6vw"
-          nivel="Básico"
+          nivel="Intermedio"
           style="font-size: 0.6em;"
         />
         <Skill
           name="Angular"
           x="22vw"
           y="-7vw"
-          nivel="Básico"
+          nivel="Intermedio"
           style="font-size: 0.6em;"
         />
         <Skill
@@ -93,19 +94,19 @@ const Skills = () => {
           name="Tailwind"
           x="-2vw"
           y="12vw"
-          nivel="Intermedio"
+          nivel="Avanzado"
           style="font-size: 0.6em;"
         />
         <Skill
           name="Python"
           x="-5vw"
           y="-16vw"
-          nivel="Básico"
+          nivel="Intermedio"
           style="font-size: 0.6em;"
         />
         <Skill
           name="NodeJS"
-          x="-15vw"
+          x="-17vw"
           y="-8vw"
           nivel="Intermedio"
           style="font-size: 0.6em;"
@@ -157,18 +158,18 @@ const Skills = () => {
           name="Firebase"
           x="10vw"
           y="12vw"
-          nivel="Básico"
+          nivel="Intermedio"
           style="font-size: 0.6em;"
         />
         <Skill
           name="Mongoose"
           x="20vw"
           y="-1vw"
-          nivel="Básico"
+          nivel="Intermedio"
           style="font-size: 0.6em;"
         />
         <Skill
-          name="React"
+          name="Django"
           x="-14vw"
           y="-15vw"
           nivel="Intermedio"
@@ -184,9 +185,9 @@ const Skills = () => {
         />
         <Skill
           name="GitHub"
-          x="-vw"
+          x="-32vw"
           y="-7vw"
-          nivel="Intermedio"
+          nivel="Avanzado"
           style="font-size: 0.6em;"
         />
 
@@ -201,14 +202,14 @@ const Skills = () => {
           name="AWS"
           x="8vw"
           y="-16vw"
-          nivel="Intermedio"
+          nivel="Básico"
           style="font-size: 0.6em;"
         />
         <Skill
           name="Docker"
           x="-18vw"
-          y="0vw"
-          nivel="Intermedio"
+          y="-2vw"
+          nivel="Básico"
           style="font-size: 0.6em;"
         />
         <Skill
@@ -247,6 +248,21 @@ const Skills = () => {
           style="font-size: 0.6em;"
         />
       </div>
+      <Skill
+          name="Vue"
+          x="22vw"
+          y="-13vw"
+          nivel="Intermedio"
+          style="font-size: 0.6em;"
+        />
+         <Skill
+          name="Nuxt"
+          x="74vw"
+          y="-38vw"
+          nivel="Intermedio"
+          style="font-size: 0.6em;"
+        />
+      
     </>
   );
 };
