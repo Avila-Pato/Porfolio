@@ -34,7 +34,8 @@ const skills = [
   { name: "C#", nivel: "Básico" },
   { name: ".NET", nivel: "Básico" },
   { name: "AWS", nivel: "Básico" },
-  { name: "Docker", nivel: "Básico" }
+  { name: "Docker", nivel: "Básico" },
+  { name: "Laravel", nivel: "Básico" }
 ];
 
 const Skills = () => {
