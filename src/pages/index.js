@@ -79,10 +79,7 @@ export default function Home() {
                 >
                   Contacto
                 </a>
-                 
-                 {/* Renderiza el componente ScatterText */}
-                    
-                     
+                         
               </div>
             </div>
           </div>
