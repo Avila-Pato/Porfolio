@@ -26,9 +26,10 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
       className="w-full flex items-center 
-        justify-between relative rounded-br-2xl rounded-3xl border border-solid
-        border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
-        lg:flex-col lg:p-8  xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+        justify-between relative rounded-br-3xl rounded-3xl border border-solid
+        border-dark bg-light shadow-2xl p-8 dark:bg-dark dark:border-light
+        lg:flex-col lg:p-8   xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+        // tama;o de la card por fuera
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem]
@@ -102,7 +103,7 @@ const Project = ({ type, title, img, link, github, summary }) => {
     <article
       className="w-full flex flex-col items-center justify-center
         rounded-2xl border border-solid border-dark
-        bg-light p-3 relative dark:bg-dark dark:border-light
+        bg-light p-2 relative dark:bg-dark dark:border-light
         xs:p-4 min-h-[400px]" // altura de la card 
     >
       <div
@@ -181,11 +182,11 @@ const projects = () => {
         <title>Portfolio</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
-        <Layout classname="p-10">
+      <main className="w-full mb-16  flex flex-col items-center justify-center dark:text-light">
+        <Layout classname="px-10">
           <AnimatedText
             text="Bienvenido a Mis Proyectos"
-            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+            className=""
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">

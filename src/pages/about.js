@@ -44,7 +44,6 @@ const About = () => {
         <Layout className='pt-16'>
           <AnimatedText 
             text='La pasión alimenta el propósito.' 
-            className='mb-10 text-2xl font-bold lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 ' 
           />
           <div className='grid w-full  grid-cols-8 gap-16 sm:gap-8 
 

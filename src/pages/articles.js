@@ -83,7 +83,7 @@ const Article = ({ img, title, date, link }) => {
 
 const FeaturedArticles = ({ img, title, time, summary, link }) => {
     return (
-        <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
+        <li className="relative col-span-1 w-full p-3 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
             <div
                 className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
           rounded-br-3xl dark:bg-light "
@@ -141,12 +141,11 @@ const articles = () => {
                 <Layout classname="pt-16 ">
                     <AnimatedText
                         text="Articulos De Interes"
-                        className="mb-10 text-xl font-bold dark:text-light
-                        lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
+                        className=" "
                     />
-                    <ul className="grid grid-cols-2 gap-10 
+                    <ul className="grid grid-cols-2 gap-2 
+            xl:grid-cols-2 xl:gap-3 xl:px-2
             2xl:grid-cols-2 2xl:gap-10 2xl:px-16
-            xl:grid-cols-2 xl:gap-10 xl:px-12
             lg:grid-cols-2 lg:gap-8 lg:px-8
             md:grid-cols-2 md:gap-6 md:px-6
             sm:grid-cols-1 sm:gap-6 sm:px-4
