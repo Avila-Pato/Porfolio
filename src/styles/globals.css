@@ -2,3 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+.blob {
+    position: absolute;
+    width: min(450px, 80vw);  /* Responsive width */
+    height: min(450px, 80vw); /* Responsive height */
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(149, 0, 240,1) 100%);
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px #000000c0;
+    filter: blur(20px); 
+    opacity: 0.5;
+    mix-blend-mode: color-dodge;
+    animation: blobAnimation 14s linear infinite alternate forwards,
+               blobMove 4s linear infinite alternate forwards,
+               colorChange 5s linear infinite alternate forwards;
+}
+
+@keyframes blobAnimation {
+    0% { 
+        border-radius: 65% 35% 49% 51% / 57% 43% 57% 43%;
+    }
+    15% {
+        border-radius: 70% 30% 50% 50% / 60% 40% 60% 40%;
+    }
+    25% {
+        border-radius: 60% 40% 55% 45% / 50% 50% 50% 50%;
+    }
+    50% {
+        border-radius: 75% 25% 60% 40% / 65% 35% 65% 35%;
+    }
+    75% {
+        border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%;
+    }
+    80% {
+        border-radius: 68% 32% 52% 48% / 58% 42% 58% 42%;
+    }
+    100% {
+        border-radius: 65% 35% 49% 51% / 57% 43% 57% 43%;
+    }
+}
+
+@keyframes blobMove {
+    from {
+
+        transform: translate(10%, 20%) rotate(0deg);
+    }
+    to {
+        transform: translate(-10%, 10%) rotate(-9deg);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(149, 0, 240,1) 100%);
+    }
+    50% {
+        background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 0, 0,1) 100%);
+    }
+    100% {
+        background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(149, 0, 240,1) 100%);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blob {
+        width: min(300px, 70vw);
+        height: min(300px, 70vw);
+    }
+}
+
+@media (max-width: 480px) {
+    .blob {
+        width: min(200px, 60vw);
+        height: min(200px, 60vw);
+    }
+}

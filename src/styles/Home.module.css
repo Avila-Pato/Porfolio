@@ -251,6 +251,7 @@
   
 }
 
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
@@ -292,7 +293,7 @@
 .skill-html {
   position: absolute;
   bottom: -2.5rem;
-  background-color: #005eff; /* Color gris oscuro */
+  background-color: #005eff; 
   color: white;
   text-align: center;
   padding: 0.5rem;
