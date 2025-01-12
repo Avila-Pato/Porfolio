@@ -1,41 +1,39 @@
-import { motion } from 'framer-motion';
-import { Code2, Lightbulb, Rocket } from 'lucide-react';
+import { mix, motion } from 'framer-motion';
+import Image from 'next/image';
 
 const skills = [
-  { name: "HTML", nivel: "Avanzado" },
-  { name: "CSS", nivel: "Avanzado" },
-  { name: "ReactJS", nivel: "Avanzado" },
-  { name: "NextJS", nivel: "Avanzado" },
-  { name: "Tailwind", nivel: "Avanzado" },
-  { name: "GitHub", nivel: "Avanzado" },
-  { name: "Javascript", nivel: "Intermedio" },
-  { name: "Figma", nivel: "Intermedio" },
-  { name: "Angular", nivel: "Intermedio" },
-  { name: "Python", nivel: "Intermedio" },
-  { name: "NodeJS", nivel: "Intermedio" },
-  { name: "Astro", nivel: "Intermedio" },
-  { name: "SQL", nivel: "Intermedio" },
-  { name: "MySql", nivel: "Intermedio" },
-  { name: "Typescript", nivel: "Intermedio" },
-  { name: "Firebase", nivel: "Intermedio" },
-  { name: "Mongoose", nivel: "Intermedio" },
-  { name: "Django", nivel: "Intermedio" },
-  { name: "Git", nivel: "Intermedio" },
-  { name: "Vercel", nivel: "Intermedio" },
-  { name: "Express", nivel: "Intermedio" },
-  { name: "Bootstrap", nivel: "Intermedio" },
-  { name: "MaterialUI", nivel: "Intermedio" },
-  { name: "Cloudflare", nivel: "Intermedio" },
-  { name: "Nestjs", nivel: "Intermedio" },
-  { name: "Vue", nivel: "Intermedio" },
-  { name: "Nuxt", nivel: "Intermedio" },
-  { name: "PHP", nivel: "Básico" },
-  { name: "Java", nivel: "Básico" },
-  { name: "C#", nivel: "Básico" },
-  { name: ".NET", nivel: "Básico" },
-  { name: "AWS", nivel: "Básico" },
-  { name: "Docker", nivel: "Básico" },
-  { name: "Laravel", nivel: "Básico" }
+  { name: "HTML", nivel: "Avanzado", icon: "/svg/HTML.svg" },
+  { name: "CSS", nivel: "Avanzado", icon: "/svg/CSS.svg" },
+  { name: "VSCode", nivel: "Avanzado", icon: "/svg/VSCode-Dark.svg" },
+  { name: "ReactJS", nivel: "Avanzado", icon: "/svg/React-Dark.svg" },
+  { name: "NextJS", nivel: "Avanzado", icon: "/svg/NextJS-Dark.svg" },
+  { name: "Tailwind", nivel: "Avanzado", icon: "/svg/TailwindCSS-Dark.svg" },
+  { name: "GitHub", nivel: "Avanzado", icon: "/svg/GitHub-Dark.svg" },
+  { name: "Javascript", nivel: "Avanzado", icon: "/svg/Javascript.svg" },
+  { name: "Figma", nivel: "Intermedio", icon: "/svg/Figma-Dark.svg" },
+  { name: "Angular", nivel: "Intermedio", icon: "/svg/iconoAngular.svg" },
+  { name: "AngularJS", nivel: "Intermedio", icon: "/svg/Angular-JS.svg" },
+  { name: "Python", nivel: "Intermedio", icon: "/svg/Python-Dark.svg" },
+  { name: "NodeJS", nivel: "Intermedio", icon: "/svg/NodeJS-Dark.svg" },
+  { name: "Astro", nivel: "Intermedio", icon: "/svg/Astro.svg" },
+  { name: "SQL", nivel: "Intermedio", icon: "/svg/SQL.svg" },
+  { name: "MySql", nivel: "Intermedio", icon: "/svg/MySql-Dark.svg" },
+  { name: "Typescript", nivel: "Avanzado", icon: "/svg/TypeScript.svg" },
+  { name: "Firebase", nivel: "Intermedio", icon: "/svg/Firebase-Dark.svg" },
+  { name: "Mongoose", nivel: "Intermedio", icon: "/svg/MongoDB.svg" },
+  { name: "Django", nivel: "Intermedio", icon: "/svg/Django.svg" },
+  { name: "Git", nivel: "Avanzado", icon: "/svg/Git.svg" },
+  { name: "Express", nivel: "Intermedio", icon: "/svg/ExpressJS-Dark.svg" },
+  { name: "Bootstrap", nivel: "Intermedio", icon: "/svg/iconoBootstrap.svg" },
+  { name: "MaterialUI", nivel: "Intermedio", icon: "/svg/MaterialUI-Dark.svg" },
+  { name: "Vue", nivel: "Intermedio", icon: "/svg/VueJS-Dark.svg" },
+  { name: "Nuxt", nivel: "Intermedio", icon: "/svg/NuxtJS-Dark.svg" },
+  { name: "PHP", nivel: "Básico", icon: "/svg/PHP-Dark.svg" },
+  { name: "Java", nivel: "Básico", icon: "/svg/Java-Dark.svg" },
+  { name: "C#", nivel: "Básico", icon: "/svg/Csharp.svg" },
+  { name: ".NET", nivel: "Básico", icon: "/svg/DotNet.svg" },
+  { name: "Docker", nivel: "Básico", icon: "/svg/Docker.svg" },
+  { name: "Laravel", nivel: "Básico", icon: "/svg/Laravel-Dark.svg" }
 ];
 
 const Skills = () => {
@@ -50,8 +48,9 @@ const Skills = () => {
   const skillColors = {
     Avanzado: {
       bg: "from-blue-500 to-indigo-600",
-      hover: "hover:from-blue-600 hover:to-indigo-700",
-      shadow: "shadow-blue-500/50"
+      hover: "hover:from-blue-600  hover:to-indigo-700",
+      shadow: "shadow-blue-500/50",
+      mix: "mix-blend-color-dodge ",
     },
     Intermedio: {
       bg: "from-purple-500 to-pink-500",
@@ -66,13 +65,13 @@ const Skills = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br   py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br py-12 px-4">
       <motion.h2 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
+        className="text-dark/75 dark:text-light/75 text-4xl font-bold text-center mb-12 bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
       >
-        Conocimientos
+        Técnologias
       </motion.h2>
       
       <div className="max-w-7xl mx-auto space-y-12">
@@ -82,71 +81,40 @@ const Skills = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.2 }}
-            className="bg-gray-800/100 backdrop-blur-lg rounded-2xl p-8 shadow-xl"
+            className="bg-gray-800/100 backdrop-blur-lg  dark:bg-gray-800/75  dark:bg-opacity-10 rounded-2xl p-6 shadow-xl"
           >
-            <h3 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+            <h3 className="text-3xl font-bold mb-6 text-transparent 
+            bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
               {nivel}
             </h3>
             <div className="flex flex-wrap gap-4">
-              {skills.map((skill) => (
+              {skills.map(skill => (
                 <motion.div
                   key={skill.name}
-                  whileHover={{ 
-                    scale: 1.1,
-                    rotate: [0, -5, 5, 0],
-                    transition: { duration: 0.3 }
-                  }}
+                  whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                >
-                  <div className={`
-                    relative px-6 py-3 rounded-xl font-semibold text-white
+                  className={`relative px-6 py-3 rounded-xl font-semibold text-white
                     bg-gradient-to-r ${skillColors[nivel].bg} ${skillColors[nivel].hover}
                     transform transition-all duration-300
                     shadow-lg hover:shadow-xl ${skillColors[nivel].shadow}
-                    cursor-pointer
-                    before:absolute before:inset-0 before:bg-white/20 before:rounded-xl
-                    before:opacity-0 hover:before:opacity-100 before:transition-opacity
-                  `}>
-                    {skill.name}
-                  </div>
+                    cursor-pointer`}
+                >
+                  {skill.icon ? (
+                    <Image 
+                      src={skill.icon} 
+                      alt={`${skill.name} icon`} 
+                      width={20}
+                      height={20}
+                      className="w-12 h-12 mb-2 mx-auto"
+                     
+                    />
+                  ) : null}
+                  <span className='flex justify-center relative   '>{skill.name}</span>
+                  <br />
+                  <span className='flex  relative  backdrop-brightness-125 rounded-full p-1 px-3 '>{skill.nivel}</span>
                 </motion.div>
               ))}
             </div>
-          </motion.div>
-        ))}
-      </div>
-
-      <div className="mt-16  -my-48 max-w-7xl mx-auto grid grid-cols-3 lg:grid-cols-2  sm:grid-cols-1 gap-8 px-4">
-        {[
-          {
-            icon: Rocket,
-            title: "Experiencia Avanzada",
-            description: "Dominio profundo en tecnologías front-end modernas"
-          },
-          {
-            icon: Code2,
-            title: "Stack Diverso",
-            description: "Amplio conocimiento en múltiples lenguajes y frameworks"
-          },
-          {
-            icon: Lightbulb,
-            title: "Aprendizaje Continuo",
-            description: "Constantemente expandiendo conocimientos técnicos"
-          }
-        ].map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 + index * 0.2 }}
-            whileHover={{ y: -10 }}
-            className="bg-gray-800/50 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-gray-700"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <item.icon className="w-8 h-8 text-blue-400" />
-              <h3 className="text-xl font-bold text-white">{item.title}</h3>
-            </div>
-            <p className="text-gray-300">{item.description}</p>
           </motion.div>
         ))}
       </div>

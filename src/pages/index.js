@@ -99,8 +99,8 @@ export default function Home() {
             className="w-full h-auto left-0  cursor-pointer"
             style={{
               filter: isLightOn
-                ? "drop-shadow(0 0 30px rgba(255, 255, 0, 1))"
-                : "none", // Intensifica el filtro cuando la luz está encendida
+                ? "drop-shadow(0 0 30px rgba(255, 255, 0, 1))" // Intensifica el filtro cuando la luz está encendida
+                : "none", 
             }}
           />
         </div>
