@@ -1,4 +1,4 @@
-import { mix, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const skills = [
@@ -47,71 +47,75 @@ const Skills = () => {
 
   const skillColors = {
     Avanzado: {
-      bg: "from-blue-500 to-indigo-600",
-      hover: "hover:from-blue-600  hover:to-indigo-700",
-      shadow: "shadow-blue-500/50",
-      mix: "mix-blend-color-dodge ",
+      bg: "from-emerald-400 to-teal-500 dark:from-emerald-700 dark:to-teal-800",
+      hover: "hover:from-emerald-500 hover:to-teal-600 dark:hover:from-emerald-600 dark:hover:to-teal-700",
+      shadow: "shadow-emerald-500/20 dark:shadow-emerald-700/30",
+      text: "text-emerald-900 dark:text-emerald-100",
     },
     Intermedio: {
-      bg: "from-purple-500 to-pink-500",
-      hover: "hover:from-purple-600 hover:to-pink-600",
-      shadow: "shadow-purple-500/50"
+      bg: "from-sky-400 to-blue-500 dark:from-sky-700 dark:to-blue-800",
+      hover: "hover:from-sky-500 hover:to-blue-600 dark:hover:from-sky-600 dark:hover:to-blue-700",
+      shadow: "shadow-sky-500/20 dark:shadow-sky-700/30",
+      text: "text-sky-900 dark:text-sky-100",
     },
     Básico: {
-      bg: "from-orange-500 to-red-500",
-      hover: "hover:from-orange-600 hover:to-red-600",
-      shadow: "shadow-orange-500/50"
+      bg: "from-amber-400 to-orange-500 dark:from-amber-700 dark:to-orange-800",
+      hover: "hover:from-amber-500 hover:to-orange-600 dark:hover:from-amber-600 dark:hover:to-orange-700",
+      shadow: "shadow-amber-500/20 dark:shadow-amber-700/30",
+      text: "text-amber-900 dark:text-amber-100",
     }
   };
-
   return (
-    <div className="min-h-screen bg-gradient-to-br py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 py-16 px-4 transition-colors duration-300">
       <motion.h2 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-dark/75 dark:text-light/75 text-4xl font-bold text-center mb-12 bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
+        className=" text-4xl font-bold text-center mb-12 bg-clip-text  bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400"
       >
-        Técnologias
+        Tecnologías
       </motion.h2>
       
       <div className="max-w-7xl mx-auto space-y-12">
         {Object.entries(groupedSkills).map(([nivel, skills], index) => (
           <motion.div
             key={nivel}
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
-            className="bg-gray-800/100 backdrop-blur-lg  dark:bg-gray-800/75  dark:bg-opacity-10 rounded-2xl p-6 shadow-xl"
+            className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl dark:shadow-2xl transition-all duration-300 hover:shadow-2xl dark:hover:shadow-3xl"
           >
-            <h3 className="text-3xl font-bold mb-6 text-transparent 
-            bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+            <h3 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">
               {nivel}
             </h3>
-            <div className="flex flex-wrap gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {skills.map(skill => (
                 <motion.div
                   key={skill.name}
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`relative px-6 py-3 rounded-xl font-semibold text-white
-                    bg-gradient-to-r ${skillColors[nivel].bg} ${skillColors[nivel].hover}
-                    transform transition-all duration-300
+                  className={`flex flex-col items-center p-4 rounded-2xl
+                    bg-gradient-to-br ${skillColors[nivel].bg} ${skillColors[nivel].hover}
+                    transform transition-all duration-300 ease-in-out
                     shadow-lg hover:shadow-xl ${skillColors[nivel].shadow}
-                    cursor-pointer`}
+                    cursor-pointer group`}
                 >
-                  {skill.icon ? (
-                    <Image 
-                      src={skill.icon} 
-                      alt={`${skill.name} icon`} 
-                      width={20}
-                      height={20}
-                      className="w-12 h-12 mb-2 mx-auto"
-                     
-                    />
-                  ) : null}
-                  <span className='flex justify-center relative   '>{skill.name}</span>
-                  <br />
-                  <span className='flex  relative  backdrop-brightness-125 rounded-full p-1 px-3 '>{skill.nivel}</span>
+                  {skill.icon && (
+                    <div className="relative w-16 h-16 mb-4 transition-transform duration-300 group-hover:scale-110">
+                      <Image 
+                        src={skill.icon} 
+                        alt={`${skill.name} icon`} 
+                        layout="fill"
+                        objectFit="contain"
+                        className="filter drop-shadow-md"
+                      />
+                    </div>
+                  )}
+                  <span className={`font-semibold text-center ${skillColors[nivel].text}`}>
+                    {skill.name}
+                  </span>
+                  <span className={`text-sm mt-2 px-3 py-1 rounded-full font-bold bg-white/20 dark:bg-black/20 ${skillColors[nivel].text}`}>
+                    {skill.nivel}
+                  </span>
                 </motion.div>
               ))}
             </div>
