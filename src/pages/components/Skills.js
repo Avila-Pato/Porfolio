@@ -9,7 +9,7 @@ const skills = [
   { name: "NextJS", nivel: "Avanzado", icon: "/svg/NextJS-Dark.svg" },
   { name: "Tailwind", nivel: "Avanzado", icon: "/svg/TailwindCSS-Dark.svg" },
   { name: "GitHub", nivel: "Avanzado", icon: "/svg/GitHub.svg" },
-  { name: "Javascript", nivel: "Avanzado", icon: "/svg/Javascript.svg" },
+  { name: "Javascript", nivel: "Avanzado", icon: "/svg/Javascript.png" },
   { name: "Figma", nivel: "Intermedio", icon: "/svg/Figma-Dark.svg" },
   { name: "Angular", nivel: "Intermedio", icon: "/svg/iconoAngular.svg" },
   { name: "AngularJS", nivel: "Intermedio", icon: "/svg/Angular-JS.svg" },
