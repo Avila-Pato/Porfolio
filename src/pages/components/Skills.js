@@ -27,6 +27,7 @@ const skills = [
   { name: "Bootstrap", nivel: "Intermedio", icon: "/svg/iconoBootstrap.svg" },
   { name: "MaterialUI", nivel: "Intermedio", icon: "/svg/MaterialUI-Dark.svg" },
   { name: "Vue", nivel: "Intermedio", icon: "/svg/VueJS-Dark.svg" },
+  { name: "Nest", nivel: "Intermedio", icon: "/svg/NestJS-Dark.svg" },
   { name: "Nuxt", nivel: "Intermedio", icon: "/svg/NuxtJS-Dark.svg" },
   { name: "PHP", nivel: "Básico", icon: "/svg/PHP-Dark.svg" },
   { name: "Java", nivel: "Básico", icon: "/svg/Java-Dark.svg" },
