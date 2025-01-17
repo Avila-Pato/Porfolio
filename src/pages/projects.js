@@ -236,7 +236,7 @@ const projects = () => {
               <Project
                 title="Super Marios World"
                 img={project5}
-                summary="Juego Mario Bros: Una versión simple del clásico Mario Bros desarrollada con HTML, CSS y JavaScript. El juego incluye elementos básicos como plataformas y enemigos,  Aun me falta terminarlo pero ya esta en funcionamiento"
+                summary="Juego Mario Bros: Una versión simple del clásico Mario Bros desarrollada con HTML, CSS y JavaScript. El juego incluye elementos básicos como plataformas y enemigos, el juego aun puede desarrollarse aun más pero con lo que tiene. integra logica y funcionamiento correctamente para su jugabilidad"
                 link="https://super-mario-bros-demo-js.vercel.app/"
                 github="https://github.com/Avila-Pato/Super-Mario-Bros-demo-js"
                 type="Proyectos"
