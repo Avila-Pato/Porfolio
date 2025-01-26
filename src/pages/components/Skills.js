@@ -76,19 +76,19 @@ const Skills = () => {
         Tecnologías
       </motion.h2>
       
-      <div className="max-w-7xl mx-auto space-y-12">
+      <div className="max-w-7xl mx-auto space-y-12 ">
         {Object.entries(groupedSkills).map(([nivel, skills], index) => (
           <motion.div
             key={nivel}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
-            className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl dark:shadow-2xl transition-all duration-300 hover:shadow-2xl dark:hover:shadow-3xl"
+            className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl dark:shadow-2xl transition-all duration-300 hover:shadow-2xl dark:hover:shadow-3xl "
           >
             <h3 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">
               {nivel}
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 ">
               {skills.map(skill => (
                 <motion.div
                   key={skill.name}
@@ -101,20 +101,20 @@ const Skills = () => {
                     cursor-pointer group`}
                 >
                   {skill.icon && (
-                    <div className="relative w-16 h-16 mb-4 transition-transform duration-300 group-hover:scale-110">
+                    <div className="relative w-16 h-16 mb-4 xs:w-8 xs:h-8 transition-transform duration-300 group-hover:scale-110 ">
                       <Image 
                         src={skill.icon} 
                         alt={`${skill.name} icon`} 
                         layout="fill"
                         objectFit="contain"
-                        className="filter drop-shadow-md"
+                        className="filter drop-shadow-md  "
                       />
                     </div>
                   )}
                   <span className={`font-semibold text-center ${skillColors[nivel].text}`}>
                     {skill.name}
                   </span>
-                  <span className={`text-sm mt-2 px-3 py-1 rounded-full font-bold bg-white/20 dark:bg-black/20 ${skillColors[nivel].text}`}>
+                  <span className={`text-sm mt-2 px-3 py-1   rounded-full font-bold bg-white/20 dark:bg-black/20 ${skillColors[nivel].text}`}>
                     {skill.nivel}
                   </span>
                 </motion.div>
