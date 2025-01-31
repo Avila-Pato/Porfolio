@@ -59,6 +59,13 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
+            position="Promotor de ventas"
+            companyLink="Travel Rock"
+            // time="2018-2019 "
+            address=" Santiago | La Concepcion "
+            work="Asesoré a clientes sobre paquetes turísticos, brindando información detallada y resolviendo sus dudas. Gestioné reservas, asegurando un proceso eficiente y sin inconvenientes. Participé en la ejecución de campañas promocionales para atraer nuevos clientes y aumentar las ventas. Además, realicé seguimiento post-venta para garantizar la satisfacción del cliente y fomentar la fidelización."
+          />
+          <Details
             position="Agente de viajes"
             companyLink="Multiviajes"
             // time="2018-2019 "
