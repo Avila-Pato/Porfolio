@@ -98,7 +98,7 @@ const Experience = () => {
             position="Desarrollador Frontend"
             companyLink="www.google.com"
             // time=" 2019-2020 "
-            // address=" Santiago | Providencia"
+            address=" Santiago | Pasaje Republica"
             work="Diseñé y desarrollé formularios dinámicos para la creación y edición de entidades. Implementé autenticación segura utilizando Google, Azure y JWT. Configuré roles y permisos para garantizar un acceso controlado. Implementé diseño responsivo utilizando Flexbox y Grid. Optimicé aplicaciones para mejorar el rendimiento y la velocidad de carga, utilizando técnicas como la carga perezosa (lazy loading) y la minimización de recursos. Integré APIs RESTful para la gestión de datos dinámicos en la aplicación web.
             "
           />
