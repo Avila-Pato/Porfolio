@@ -95,11 +95,11 @@ const Experience = () => {
             "
           />
           <Details
-            position="Desarrollador Freelance"
+            position="Desarrollador Frontend"
             companyLink="www.google.com"
             // time=" 2019-2020 "
             // address=" Santiago | Providencia"
-            work="Soy un desarrollador freelance autodidacta con experiencia en la creación de sitios web completos. Me especializo en diseñar interfaces intuitivas y optimizadas, garantizando tiempos de carga rápidos y un alto rendimiento. Utilizo diversas tecnologías para desarrollar proyectos personalizados que sean funcionales, atractivos y fáciles de navegar, siempre adaptándome a las necesidades específicas de cada cliente.
+            work="Diseñé y desarrollé formularios dinámicos para la creación y edición de entidades. Implementé autenticación segura utilizando Google, Azure y JWT. Configuré roles y permisos para garantizar un acceso controlado. Implementé diseño responsivo utilizando Flexbox y Grid. Optimicé aplicaciones para mejorar el rendimiento y la velocidad de carga, utilizando técnicas como la carga perezosa (lazy loading) y la minimización de recursos. Integré APIs RESTful para la gestión de datos dinámicos en la aplicación web.
             "
           />
         </ul>
