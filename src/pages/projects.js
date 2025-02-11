@@ -17,6 +17,7 @@ import project9 from "../../public/images/projects/website.agency.jpeg";
 import project10 from "../../public/images/projects/Chat-Full-mern.jpg";
 import project11 from "../../public/images/projects/awwwars.jpeg";
 import project12 from "../../public/images/projects/Rlc.jpeg";
+import project13 from "../../public/images/projects/youtube-clon.png";
 
 import { motion } from "framer-motion";
 
@@ -29,7 +30,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         justify-between relative rounded-br-3xl rounded-3xl border border-solid
         border-dark bg-light shadow-2xl p-8 dark:bg-dark dark:border-light
         lg:flex-col lg:p-8   xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
-        // tama;o de la card por fuera
+      // tama;o de la card por fuera
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem]
@@ -104,7 +105,7 @@ const Project = ({ type, title, img, link, github, summary }) => {
       className="w-full flex flex-col items-center justify-center
         rounded-2xl border border-solid border-dark
         bg-light p-2 relative dark:bg-dark dark:border-light
-        xs:p-4 min-h-[400px]" // altura de la card 
+        xs:p-4 min-h-[400px]" // altura de la card
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
@@ -184,10 +185,7 @@ const projects = () => {
       </Head>
       <main className="w-full mb-16  flex flex-col items-center justify-center dark:text-light">
         <Layout classname="px-10">
-          <AnimatedText
-            text="Bienvenido a Mis Proyectos"
-            className=""
-          />
+          <AnimatedText text="Bienvenido a Mis Proyectos" className="" />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
@@ -200,6 +198,7 @@ const projects = () => {
                 type="Proyectos Destacados"
               />
             </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Spotify Clon MERN Full Stack"
@@ -284,6 +283,7 @@ const projects = () => {
                 type="Proyectos"
               />
             </div>
+
             <div className="col-span-12 ">
               <FeaturedProject
                 title="Chat2.0 Full/Stack/Mern"
@@ -312,8 +312,19 @@ const projects = () => {
                 summary="Este proyecto consiste en el desarrollo de una página web diseñada para ofrecer interfaces intuitivas y atractivas, adaptadas a las necesidades específicas del cliente. La optimización del rendimiento es clave, garantizando tiempos de carga rápidos y un funcionamiento eficiente en todos los dispositivos. Utilizando Next.js como base tecnológica, cada sección de la web ha sido diseñada para ser funcional, visualmente impactante y alineada con los objetivos establecidos.
 
 Nota: Por motivos de seguridad y privacidad, el código fuente no será compartido, ya que la web está publicada y su contenido podría verse comprometido si se expone públicamente."
-// github="https://github.com/Avila-Pato/Awwards-Website-Winning-ReactJs-Tailwind-CSS-GSAP"
+                // github="https://github.com/Avila-Pato/Awwards-Website-Winning-ReactJs-Tailwind-CSS-GSAP"
                 link="https://rlcchile.com/"
+                type="Proyectos"
+              />
+            </div>
+
+            <div className="col-span-12 ">
+              <FeaturedProject
+                title="Youtube-clon"
+                img={project13}
+                summary=" Este clon de YouTube ha sido desarrollado con Next.js, TypeScript y Bun, priorizando rendimiento, seguridad y escalabilidad. Usa PostgreSQL con Drizzle ORM para gestionar base de datos  y webhooks para sincronización en tiempo real.Cuenta con autenticación segura, roles protegidos y rutas seguras, asegurando que solo usuarios autorizados accedan a ciertas funciones. Se han implementado características clave como, un estudio para creadores y carga infinita. La comunicación entre el frontend y backend se maneja con TRPC. Aún no está completamente terminado, pero la imagen representada muestra la visión ideal del proyecto final."
+                // link="https://github.com/Avila-Pato/Realtime-Chat_MERN--React.js-Socket.io"
+                github="https://github.com/Avila-Pato/Youtube-clon"
                 type="Proyectos"
               />
             </div>
