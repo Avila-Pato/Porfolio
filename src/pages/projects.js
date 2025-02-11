@@ -323,7 +323,7 @@ Nota: Por motivos de seguridad y privacidad, el código fuente no será comparti
                 title="Youtube-clon"
                 img={project13}
                 summary=" Este clon de YouTube ha sido desarrollado con Next.js, TypeScript y Bun, priorizando rendimiento, seguridad y escalabilidad. Usa PostgreSQL con Drizzle ORM para gestionar base de datos  y webhooks para sincronización en tiempo real.Cuenta con autenticación segura, roles protegidos y rutas seguras, asegurando que solo usuarios autorizados accedan a ciertas funciones. Se han implementado características clave como, un estudio para creadores y carga infinita. La comunicación entre el frontend y backend se maneja con TRPC. Aún no está completamente terminado, pero la imagen representada muestra la visión ideal del proyecto final."
-                // link="https://github.com/Avila-Pato/Realtime-Chat_MERN--React.js-Socket.io"
+                link={null}
                 github="https://github.com/Avila-Pato/Youtube-clon"
                 type="Proyectos"
               />
