@@ -77,7 +77,7 @@ const Skills = () => {
     },
   };
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 py-16 px-4 transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 dark:from-dark dark:to-dark py-16 px-4 transition-colors duration-300">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ const Skills = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
-            className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl dark:shadow-2xl transition-all duration-300 hover:shadow-2xl dark:hover:shadow-3xl "
+            className="bg-white dark:bg-gray-800 dark:bg-opacity-50  rounded-3xl p-8 shadow-xl dark:shadow-2xl transition-all duration-300 hover:shadow-2xl dark:hover:shadow-3xl "
           >
             <h3 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">
               {nivel}
