@@ -83,7 +83,7 @@ const Skills = () => {
         animate={{ opacity: 1, y: 0 }}
         className=" text-4xl font-bold text-center mb-12 bg-clip-text  bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400"
       >
-        Tecnologías
+        Tecnologías y Frameworks
       </motion.h2>
 
       <div className="max-w-7xl mx-auto space-y-12 ">

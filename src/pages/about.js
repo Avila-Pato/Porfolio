@@ -43,7 +43,7 @@ const About = () => {
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="La pasión alimenta el propósito." />
-          <div className="grid w-full pb-40  grid-cols-8 gap-16 sm:gap-8v 2xl:text-lg xs:p-1 sm:p-2 lg:p-2 2xl:p-11 ">
+          <div className="grid w-full  pb-40  grid-cols-8 gap-16 sm:gap-8v 2xl:text-lg xs:p-1 sm:p-2 lg:p-2 2xl:p-11 ">
             <div className="col-span-3  gap-4 mx-12 flex flex-col items-center justify-center xl:col-span-4 md:order-2 md:col-span-8 ">
               <h2 className="mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
                 Biografia
@@ -83,8 +83,7 @@ const About = () => {
                 alt="Patricio"
                 className="w-full h-auto rounded-2xl  "
                 priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw 
-                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw "
               />
             </div>
             <div className="col-span-2 flex flex-col 2xl:m-24  mx-52 xs:m-0 justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">

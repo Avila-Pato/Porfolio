@@ -105,7 +105,7 @@ export default function Home() {
           <Image
             src={lightBulb}
             alt="Codebucks"
-            className="w-full h-auto left-0 pb-10 -scale-x-125 md:hidden inline-block relative cursor-pointer"
+            className="w-full h-auto left-0 pb-10  md:hidden inline-block relative cursor-pointer"
             style={{
               filter: isLightOn
                 ? "drop-shadow(0 0 30px rgba(255, 255, 0, 1))" // Efecto de luz encendida
