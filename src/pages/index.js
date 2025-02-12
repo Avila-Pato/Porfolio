@@ -8,11 +8,15 @@ import Link from "next/link";
 import { LinkArrow } from "../lib/Icons";
 import HireMe from "./components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import useThemeSwitcher from "../pages/components/hooks/useThemeSwitcher";
 
 export default function Home() {
   // Define el estado para manejar el estado de la luz y la animación
   const [animateLightBulb, setAnimateLightBulb] = useState(false);
   const [isLightOn, setIsLightOn] = useState(false);
+
+  // estado de la luz
+  const [mode, setMode] = useThemeSwitcher();
 
   // Define la función handleLightBulbClick
   const handleLightBulbClick = () => {
@@ -21,9 +25,10 @@ export default function Home() {
     sound.volume = 0.6;
     sound.play();
 
-    // Cambia el estado de la luz
-    setIsLightOn(!isLightOn);
-    setAnimateLightBulb(true);
+    // Cambia el estado de la luz y el modo de la página
+    const newIsLightOn = !isLightOn;
+    setIsLightOn(newIsLightOn);
+    setMode(newIsLightOn ? "dark" : "light");
 
     // Restablecer el estado de la animación después de un breve retraso
     setTimeout(() => setAnimateLightBulb(false), 1000); // Ajusta el tiempo según la duración de la animación
@@ -90,7 +95,7 @@ export default function Home() {
 
         <HireMe />
         <div
-          className={`absolute right-8 bottom-8 inline-block w-16 md:hidden ${
+          className={`fixed right-8 bottom-0 inline-block w-16 md:hidden ${
             animateLightBulb ? "animate-lightbulb" : ""
           }`}
           onClick={handleLightBulbClick}
@@ -98,10 +103,10 @@ export default function Home() {
           <Image
             src={lightBulb}
             alt="Codebucks"
-            className="w-full h-auto left-0 pb-36 -scale-x-125 md:hidden inline-block relative  cursor-pointer"
+            className="w-full h-auto left-0 pb-10 -scale-x-125 md:hidden inline-block relative cursor-pointer"
             style={{
               filter: isLightOn
-                ? "drop-shadow(0 0 30px rgba(255, 255, 0, 1))" // Intensifica el filtro cuando la luz está encendida
+                ? "drop-shadow(0 0 30px rgba(255, 255, 0, 1))" // Efecto de luz encendida
                 : "none",
             }}
           />
