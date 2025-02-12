@@ -43,7 +43,7 @@ const About = () => {
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="La pasión alimenta el propósito." />
-          <div className="grid w-full  pb-40  grid-cols-8 gap-16 sm:gap-8v 2xl:text-lg xs:p-1 sm:p-2 lg:p-2 2xl:p-11 ">
+          <div className="grid w-full  grid-cols-8  sm:gap-8v 2xl:text-lg xs:p-1 sm:p-2 lg:p-2 2xl:p-11 ">
             <div className="col-span-3  gap-4 mx-12 flex flex-col items-center justify-center xl:col-span-4 md:order-2 md:col-span-8 ">
               <h2 className="mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
                 Biografia
@@ -55,7 +55,7 @@ const About = () => {
                 por el mundo digital me llevó a dar un giro en mi trayectoria
                 profesional y adentrarme en el desarrollo web.
               </p>
-              <p className="my-4 font-medium">
+              <p className=" font-medium">
                 Desde entonces, he acumulado más de un año de experiencia
                 programando, trabajando tanto en proyectos personales como para
                 clientes, lo que me ha permitido desarrollar soluciones
@@ -74,7 +74,7 @@ const About = () => {
               </p>
             </div>
             <div
-              className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4
+              className="col-span-3 top-12 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light xl:col-span-4
              md:order-1 md:col-span-8  "
             >
               <div className="absolute top-0 -right-3  -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
