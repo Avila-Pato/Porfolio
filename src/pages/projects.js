@@ -11,7 +11,7 @@ import project3 from "../../public/images/projects/netfliz.jpeg";
 import project4 from "../../public/images/projects/texting.png";
 import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024_01514_super-mario-bros-demo-js.vercel.app.jpeg";
 import project6 from "../../public/images/projects/apiPokemon.jpeg";
-import project7 from "../../public/images/projects/angular.jpg";
+import project7 from "../../public/images/projects/webtravel2.jpeg";
 import project8 from "../../public/images/projects/Blog.jpeg";
 import project9 from "../../public/images/projects/website.agency.jpeg";
 import project10 from "../../public/images/projects/Chat-Full-mern.jpg";
@@ -253,11 +253,11 @@ const projects = () => {
             </div>
             <div className="col-span-12 ">
               <FeaturedProject
-                title="Angular Auth + Crud"
+                title="Travel Agency2.0"
                 img={project7}
-                summary="AngularAuthCrud es una aplicación web que ofrece un sistema completo de autenticación y gestión de usuarios utilizando Angular y Firebase. Permite a los usuarios registrarse, iniciar sesión. Además, implementa un sistema completo de CRUD (Crear, Leer, Actualizar y Eliminar) para la gestión de tareas."
-                link="https://angular-firebase-auth-flax.vercel.app/auth/sign-in"
-                github="https://github.com/Avila-Pato/Angular-Firebase-Auth"
+                summary="El diseño de Agencia Travel está construido con una combinación de Flexbox y CSS Grid, logrando una estructura adaptable y equilibrada. Grid organiza los elementos principales de la interfaz, asegurando una distribución armoniosa del contenido, mientras que Flexbox se usa para ajustar detalles más específicos dentro de cada sección. Esta combinación permite una experiencia fluida en diferentes tamaños de pantalla, optimizando la disposición de imágenes y textos sin comprometer la estética ni la funcionalidad."
+                link="https://travelweb-s2c4xx5qp-avila-patos-projects.vercel.app/"
+                github="https://github.com/Avila-Pato/TravelAgency2.0"
                 type="Proyectos"
               />
             </div>
