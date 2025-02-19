@@ -255,7 +255,7 @@ const projects = () => {
               <FeaturedProject
                 title="Travel Agency2.0"
                 img={project7}
-                summary="El diseño de Agencia Travel está construido con una combinación de Flexbox y CSS Grid, logrando una estructura adaptable y equilibrada. Grid organiza los elementos principales de la interfaz, asegurando una distribución armoniosa del contenido, mientras que Flexbox se usa para ajustar detalles más específicos dentro de cada sección. Esta combinación permite una experiencia fluida en diferentes tamaños de pantalla, optimizando la disposición de imágenes y textos sin comprometer la estética ni la funcionalidad."
+                summary="El diseño de Agencia Travel está construido con una combinación y enfocado en Flexbox y CSS Grid, logrando una estructura adaptable y equilibrada. Grid organiza los elementos principales de la interfaz, asegurando una distribución armoniosa del contenido, mientras que Flexbox se usa para ajustar detalles más específicos dentro de cada sección. no hay lazy loading en esta web para manejar la carga de contenido de manera eficiente." 
                 link="https://travelweb-s2c4xx5qp-avila-patos-projects.vercel.app/"
                 github="https://github.com/Avila-Pato/TravelAgency2.0"
                 type="Proyectos"
