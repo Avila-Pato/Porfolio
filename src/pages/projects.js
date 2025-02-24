@@ -256,7 +256,7 @@ const projects = () => {
                 title="Travel Agency2.0"
                 img={project7}
                 summary="El diseño de Agencia Travel está construido con una combinación y enfocado en Flexbox y CSS Grid, logrando una estructura adaptable y equilibrada. Grid organiza los elementos principales de la interfaz, asegurando una distribución armoniosa del contenido, mientras que Flexbox se usa para ajustar detalles más específicos dentro de cada sección. no hay lazy loading en esta web para manejar la carga de contenido de manera eficiente." 
-                link="https://travelweb-7ax3pbcz5-avila-patos-projects.vercel.app/"
+                link="https://travelweb-three.vercel.app/"
                 github="https://github.com/Avila-Pato/TravelAgency2.0"
                 type="Proyectos"
               />
@@ -300,7 +300,7 @@ const projects = () => {
                 title="Awwwards Anime Website GSAP"
                 img={project11}
                 summary="El propósito de este proyecto es aprender a usar GSAP en React para crear animaciones fluidas. GSAP permite controlar movimientos y transiciones con precisión. Se exploran referencias (refs) para manejar el DOM directamente. Esto optimiza el rendimiento y facilita efectos avanzados. El objetivo es mejorar la experiencia del usuario en aplicaciones modernas."
-                link="https://wward-winnigs-wwebsite-8ypkt4m2h-avila-patos-projects.vercel.app/"
+                link="https://wward-winnigs-wwebsite.vercel.app/"
                 github="https://github.com/Avila-Pato/Awwards-Website-Winning-ReactJs-Tailwind-CSS-GSAP"
                 type="Proyectos"
               />
