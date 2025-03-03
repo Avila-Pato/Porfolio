@@ -18,6 +18,7 @@ import project10 from "../../public/images/projects/Chat-Full-mern.jpg";
 import project11 from "../../public/images/projects/awwwars.jpeg";
 import project12 from "../../public/images/projects/Rlc.jpeg";
 import project13 from "../../public/images/projects/youtube-clon.png";
+import project14 from "../../public/images/projects/church.jpeg";
 
 import { motion } from "framer-motion";
 
@@ -327,7 +328,19 @@ Nota: Por motivos de seguridad y privacidad, el código fuente no será comparti
                 github="https://github.com/Avila-Pato/Youtube-clon"
                 type="Proyectos"
               />
-            </div>
+  </div>
+                <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Comunidad para las Iglesias"
+                img={project14}
+                summary="
+                Este proyecto combina varias tecnologías y enfoques avanzados de Next.js para mejorar la eficiencia tanto en el frontend como en la carga dinámica de datos y medios. Usando SSR, ISR, y técnicas como Infinite Scroll, Intersection Observer, Lazy Loading y Cloudinary para guardar las imagenes, el proyecto optimiza la carga de imágenes y otros recursos, mejorando la experiencia del usuario al reducir los tiempos de espera y hacer que la aplicación sea más fluida y rápida"
+                link="https://church-lac.vercel.app/"
+                github="https://github.com/Avila-Pato/church"
+                type="Proyectos"
+              />
+              </div>
+
           </div>
         </Layout>
       </main>
