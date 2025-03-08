@@ -268,7 +268,7 @@ const projects = () => {
                 title="BlogReact-OnlyFrontend"
                 img={project8}
                 summary="El frontend de esta Web está construido utilizando React y Tailwind CSS. Proporciona una experiencia de usuario interactiva con una interfaz limpia y moderna. Se utilizan varias bibliotecas para facilitar la gestión del estado, la interaccion, entre otros."
-                link="https://react-block-only-front-9juxjkzok-avila-patos-projects.vercel.app/"
+                link="https://react-block-only-front.vercel.app/"
                 github="https://github.com/Avila-Pato/ReactBlock-Only-Front-"
                 type="Proyectos"
               />
