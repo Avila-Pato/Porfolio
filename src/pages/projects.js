@@ -334,7 +334,7 @@ Nota: Por motivos de seguridad y privacidad, el código fuente no será comparti
                 title="Website Iglesias Firestore & Cloudinary & Auth[Adm]"
                 img={project14}
                 summary="
-                Este proyecto combina varias tecnologías y enfoques avanzados de Next.js para mejorar la eficiencia tanto en el frontend como en la carga dinámica de datos y medios. Usando SSR, ISR, y técnicas como Infinite Scroll, Intersection Observer, Lazy Loading Cloudinary y Firestore para guardar las imagenes en la base de datos y un Auth que tiene acceso solo el administrador el cual es privado por temas de acceso a la subida de imagenes no aptas,el proyecto optimiza la carga de imágenes y otros recursos, mejorando la experiencia del usuario al reducir los tiempos de espera y hacer que la aplicación sea más fluida y rápida"
+                Este proyecto combina varias tecnologías y enfoques avanzados de Next.js para mejorar la eficiencia tanto en el frontend como en la carga dinámica de datos y medios. Usando SSR, ISR, y técnicas como Infinite Scroll, Intersection Observer, Lazy Loading Cloudinary, Filtro por categoria y Firestore para guardar las imagenes en la base de datos y un Auth que tiene acceso solo el administrador el cual es privado por temas de acceso a la subida de imagenes no aptas,el proyecto optimiza la carga de imágenes y otros recursos, mejorando la experiencia del usuario al reducir los tiempos de espera y hacer que la aplicación sea más fluida y rápida"
                 link="https://church-lac.vercel.app/"
                 github="https://github.com/Avila-Pato/church"
                 type="Proyectos"
