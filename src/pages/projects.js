@@ -194,7 +194,7 @@ const projects = () => {
                 title=" Hotel Web"
                 img={project1}
                 summary="Este proyecto recrea un sitio Hotel utilizando Construido con NustJs. La intención es proporcionar una experiencia de usuario atractiva y funcional, que sirva como punto de partida para la promoción de Habitaciones."
-                link="https://plataforma-hotel-nust-rn7y6ouyl-avila-patos-projects.vercel.app/"
+                link="https://front-end-omega-gray.vercel.app/"
                 github="https://github.com/Avila-Pato/Plataforma-Hotel-NustJ"
                 type="Proyectos Destacados"
               />
