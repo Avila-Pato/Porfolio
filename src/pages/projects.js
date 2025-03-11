@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "../lib/Icons";
-import project1 from "../../public/images/projects/capturaPantalla.jpeg";
+import project1 from "../../public/images/projects/hotelWewb.jpeg";
 import project2 from "../../public/images/projects/spotyfi-clon.jpg";
 import project3 from "../../public/images/projects/netfliz.jpeg";
 import project4 from "../../public/images/projects/texting.png";
