@@ -64,11 +64,11 @@ export default function Home() {
                 className="!text-4xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl my-4 font-medium"
               />
               <p className="my-4 mr-2 text-base font-medium md:text-sm xs:text-sm">
-                Soy un desarrollador web autodidacta con experiencia en la
-                creacion de paginas webs FullStack. Mi enfoque está en aprender
-                de forma continua y aplicar esos conocimientos en proyectos de
-                forma práctica para ello He trabajado en variedad de proyectos
-                personales y para clientes para mejorar en mi rendimiento y
+                Soy un desarrollador con experiencia en el FrontEnd me considero autodidacta en la
+                programación. Mi enfoque está en aprender de forma continua y aplicar esos conocimientos en
+                proyectos. A lo largo de mi carrera he trabajado en diversos proyectos de
+                forma práctica para ello He trabajado con variedad de tecnologías, Ademas he   
+                desarrollado proyectos para clientes para mejorar en mi rendimiento y
                 habilidades técnicas lo cual me ha permitodo entender las
                 necesidades de los clientes y como llevar a cabo un proyecto de
                 forma exitosa.
