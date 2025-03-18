@@ -77,3 +77,12 @@
         height: min(200px, 60vw);
     }
 }
+
+body * {
+    background-image: url('/svg/background.svg');
+    background-repeat: no-repeat;
+    background-size: auto; /* Deja el tamaño original y repite el patrón */
+    z-index: auto;
+}
+
+

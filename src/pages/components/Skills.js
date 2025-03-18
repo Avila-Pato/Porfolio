@@ -77,7 +77,7 @@ const Skills = () => {
     },
   };
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 dark:from-dark dark:to-dark py-16 px-4 transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 dark:from-dark/30 py-16 px-4 transition-colors duration-300">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
