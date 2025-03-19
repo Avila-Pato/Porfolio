@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import AnimatedText from "./components/AnimatedText";
+import AnimatedText, { AnimatedTextSub } from "./components/AnimatedText";
 import Layout from "./components/Layout";
 import Link from "next/link";
 import Image from "next/image";
@@ -186,7 +186,14 @@ const projects = () => {
       </Head>
       <main className="w-full mb-16  flex flex-col items-center justify-center dark:text-light">
         <Layout classname="px-10">
+
           <AnimatedText text="Bienvenido a Mis Proyectos" className="" />
+          <AnimatedTextSub 
+  text="En la siguiente sección, te mostraré los proyectos que considero más destacados por su robustez, fluidez, complejidad, y el aprendizaje que he adquirido al desarrollarlos. Cada uno refleja mi enfoque en la calidad del código y mi crecimiento como desarrollador." 
+  className="text-highlight font-semibold text-lg" 
+/>
+
+
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">

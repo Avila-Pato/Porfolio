@@ -54,4 +54,37 @@ const AnimatedText = ({ text = "", className = "" }) => {
     );
 };
 
+
+export const AnimatedTextSub = ({ text = "", className = "" }) => {
+    // Verificar si el texto está vacío o indefinido
+    if (!text || text.trim() === "") {
+        return null; // Devolver null si el texto está vacío
+    }
+
+    return (
+        <div className={`w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0`}>
+            <motion.h1
+                className={`inline-block w-full text-dark font-extrabold capitalize dark:text-light my-5 md:text-sm xs:text-xl min-2xl:text-5xl lg:text-sm sm:text-3xl`}
+                variants={quote}
+                initial="initial"
+                animate="animate"
+                transition={{ duration: 1 }}  // Reducir la duración global de la animación
+            >
+                {/* Dividir el texto en letras individuales y animarlas */}
+                {text.split("").map((word, index) => (
+                    <motion.span
+                        key={word + '-' + index}
+                        className='inline-block'
+                        variants={singelWord}
+                        transition={{ duration: 0.02 }}  // Acelerar cada palabra individual
+                    >
+                        {word}&nbsp;
+                    </motion.span>
+                ))}
+            </motion.h1>
+        </div>
+    );
+};
+
+// eslint-disable-next-line import/no-anonymous-default-export
 export default AnimatedText;
