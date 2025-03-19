@@ -77,7 +77,7 @@ export const AnimatedTextSub = ({ text = "", className = "" }) => {
     return (
         <div className={`w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0`}>
             <motion.h1
-                className={`inline-block w-full text-dark font-extrabold capitalize dark:text-light my-5 md:text-sm xs:text-xl min-2xl:text-5xl lg:text-sm sm:text-3xl`}
+                className={`inline-block w-full text-dark font-extrabold capitalize dark:text-light my-5 md:text-sm xs:text-sm min-2xl:text-5xl lg:text-sm sm:text-3xl`}
                 variants={quote2}
                 initial="initial"
                 animate="animate"
