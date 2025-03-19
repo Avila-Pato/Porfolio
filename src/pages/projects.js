@@ -234,7 +234,7 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Super Marios World"
+                title="Super Mario World"
                 img={project5}
                 summary="Juego Mario Bros: Una versión simple del clásico Mario Bros desarrollada con HTML, CSS y JavaScript. El juego incluye elementos básicos como plataformas y enemigos, el juego aun puede desarrollarse aun más pero con lo que tiene. integra logica y funcionamiento correctamente para su jugabilidad"
                 link="https://super-mario-bros-demo-js.vercel.app/"
@@ -252,6 +252,16 @@ const projects = () => {
                 type="Proyectos"
               />
             </div> */}
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Awwwards Anime Website GSAP"
+                img={project11}
+                summary="El propósito de este proyecto es aprender a usar GSAP en React para crear animaciones fluidas. GSAP permite controlar movimientos y transiciones con precisión. Se exploran referencias (refs) para manejar el DOM directamente. Esto optimiza el rendimiento y facilita efectos avanzados. El objetivo es mejorar la experiencia del usuario en aplicaciones modernas."
+                link="https://wward-winnigs-wwebsite.vercel.app/"
+                github="https://github.com/Avila-Pato/Awwards-Website-Winning-ReactJs-Tailwind-CSS-GSAP"
+                type="Proyectos"
+              />
+            </div>
             <div className="col-span-12 ">
               <FeaturedProject
                 title="Travel Agency2.0"
@@ -296,16 +306,18 @@ const projects = () => {
               />
             </div>
 
+            
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Awwwards Anime Website GSAP"
-                img={project11}
-                summary="El propósito de este proyecto es aprender a usar GSAP en React para crear animaciones fluidas. GSAP permite controlar movimientos y transiciones con precisión. Se exploran referencias (refs) para manejar el DOM directamente. Esto optimiza el rendimiento y facilita efectos avanzados. El objetivo es mejorar la experiencia del usuario en aplicaciones modernas."
-                link="https://wward-winnigs-wwebsite.vercel.app/"
-                github="https://github.com/Avila-Pato/Awwards-Website-Winning-ReactJs-Tailwind-CSS-GSAP"
+                title="Website Iglesias Firestore & Cloudinary & Auth[Adm]"
+                img={project14}
+                summary="
+                Este proyecto combina varias tecnologías y enfoques avanzados de Next.js para mejorar la eficiencia tanto en el frontend como en la carga dinámica de datos y medios  uso una arquitectura app router para manejar las rutas tambien  SSR, ISR, y técnicas como Infinite Scroll, Intersection Observer, Lazy Loading,  Cloudinary, Filtro por categoria y Firestore para guardar las imagenes en la base de datos y un Auth que tiene acceso solo el administrador el cual es privado por temas de acceso a la subida de imagenes no aptas,el proyecto optimiza la carga de imágenes y otros recursos, mejorando la experiencia del usuario al reducir los tiempos de espera y hacer que la aplicación sea más fluida y rápida"
+                link="https://church-lac.vercel.app/"
+                github="https://github.com/Avila-Pato/church"
                 type="Proyectos"
               />
-            </div>
+              </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="RLC Engineering"
@@ -329,17 +341,7 @@ Nota: Por motivos de seguridad y privacidad, el código fuente no será comparti
                 type="Proyectos"
               />
   </div>
-                <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Website Iglesias Firestore & Cloudinary & Auth[Adm]"
-                img={project14}
-                summary="
-                Este proyecto combina varias tecnologías y enfoques avanzados de Next.js para mejorar la eficiencia tanto en el frontend como en la carga dinámica de datos y medios  uso una arquitectura app router para manejar las rutas tambien  SSR, ISR, y técnicas como Infinite Scroll, Intersection Observer, Lazy Loading,  Cloudinary, Filtro por categoria y Firestore para guardar las imagenes en la base de datos y un Auth que tiene acceso solo el administrador el cual es privado por temas de acceso a la subida de imagenes no aptas,el proyecto optimiza la carga de imágenes y otros recursos, mejorando la experiencia del usuario al reducir los tiempos de espera y hacer que la aplicación sea más fluida y rápida"
-                link="https://church-lac.vercel.app/"
-                github="https://github.com/Avila-Pato/church"
-                type="Proyectos"
-              />
-              </div>
+              
           </div>
         </Layout>
       </main>
