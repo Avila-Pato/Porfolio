@@ -14,6 +14,19 @@ const quote = {
     }
 }
 
+const quote2 = {
+    initial: {
+        opacity: 1,
+    },
+    animate: {
+        opacity: 1,
+        transition: {
+            delay: 0.5,
+            staggerChildren: 0.02,
+        }
+    }
+}
+
 const singelWord = {
     initial: {
         opacity: 0,
@@ -65,10 +78,10 @@ export const AnimatedTextSub = ({ text = "", className = "" }) => {
         <div className={`w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0`}>
             <motion.h1
                 className={`inline-block w-full text-dark font-extrabold capitalize dark:text-light my-5 md:text-sm xs:text-xl min-2xl:text-5xl lg:text-sm sm:text-3xl`}
-                variants={quote}
+                variants={quote2}
                 initial="initial"
                 animate="animate"
-                transition={{ duration: 1 }}  // Reducir la duración global de la animación
+                transition={{ duration: 0.02 }}  // Reducir la duración global de la animación
             >
                 {/* Dividir el texto en letras individuales y animarlas */}
                 {text.split("").map((word, index) => (
