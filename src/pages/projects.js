@@ -10,7 +10,7 @@ import project2 from "../../public/images/projects/spotyfi-clon.jpg";
 import project3 from "../../public/images/projects/netfliz.jpeg";
 import project4 from "../../public/images/projects/texting.png";
 import project5 from "../../public/images/projects/Captura de pantalla_31-7-2024_01514_super-mario-bros-demo-js.vercel.app.jpeg";
-import project6 from "../../public/images/projects/apiPokemon.jpeg";
+// import project6 from "../../public/images/projects/apiPokemon.jpeg";
 import project7 from "../../public/images/projects/webtravel2.jpeg";
 import project8 from "../../public/images/projects/Blog.jpeg";
 import project9 from "../../public/images/projects/website.agency.jpeg";
@@ -242,7 +242,7 @@ const projects = () => {
                 type="Proyectos"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Api Pokemon"
                 img={project6}
@@ -251,7 +251,7 @@ const projects = () => {
                 github="https://github.com/Avila-Pato/PokeApi"
                 type="Proyectos"
               />
-            </div>
+            </div> */}
             <div className="col-span-12 ">
               <FeaturedProject
                 title="Travel Agency2.0"
