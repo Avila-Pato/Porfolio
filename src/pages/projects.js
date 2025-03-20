@@ -186,14 +186,12 @@ const projects = () => {
       </Head>
       <main className="w-full mb-16  flex flex-col items-center justify-center dark:text-light">
         <Layout classname="px-10">
-
           <AnimatedText text="Bienvenido a Mis Proyectos" className="" />
-          <AnimatedTextSub 
-  text="En la siguiente sección, te mostraré los proyectos que considero más destacados por su robustez, fluidez, complejidad, y el aprendizaje que he adquirido al desarrollarlos. Cada uno refleja mi enfoque en la calidad del código y mi crecimiento como desarrollador." 
-  className="text-highlight font-semibold text-lg" 
-/>
-
-
+          <AnimatedTextSub
+            text="En la siguiente sección, te mostraré los proyectos que considero más destacados por su robustez, fluidez, complejidad, y el aprendizaje que he adquirido al desarrollarlos. Cada uno refleja mi enfoque en la calidad del código y mi crecimiento como desarrollador."
+            className="text-highlight font-semibold text-lg "
+            animateText={false}
+          />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
@@ -273,7 +271,7 @@ const projects = () => {
               <FeaturedProject
                 title="Travel Agency2.0"
                 img={project7}
-                summary="El diseño de Agencia Travel está construido con una combinación y enfocado en Flexbox y CSS Grid, logrando una estructura adaptable y equilibrada. Grid organiza los elementos principales de la interfaz, asegurando una distribución armoniosa del contenido, mientras que Flexbox se usa para ajustar detalles más específicos dentro de cada sección. no hay lazy loading en esta web para manejar la carga de contenido de manera eficiente." 
+                summary="El diseño de Agencia Travel está construido con una combinación y enfocado en Flexbox y CSS Grid, logrando una estructura adaptable y equilibrada. Grid organiza los elementos principales de la interfaz, asegurando una distribución armoniosa del contenido, mientras que Flexbox se usa para ajustar detalles más específicos dentro de cada sección. no hay lazy loading en esta web para manejar la carga de contenido de manera eficiente."
                 link="https://travelweb-three.vercel.app/"
                 github="https://github.com/Avila-Pato/TravelAgency2.0"
                 type="Proyectos"
@@ -313,7 +311,6 @@ const projects = () => {
               />
             </div>
 
-            
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Website Iglesias Firestore & Cloudinary & Auth[Adm]"
@@ -324,7 +321,7 @@ const projects = () => {
                 github="https://github.com/Avila-Pato/church"
                 type="Proyectos"
               />
-              </div>
+            </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="RLC Engineering"
@@ -347,8 +344,7 @@ Nota: Por motivos de seguridad y privacidad, el código fuente no será comparti
                 github="https://github.com/Avila-Pato/Youtube-clon"
                 type="Proyectos"
               />
-  </div>
-              
+            </div>
           </div>
         </Layout>
       </main>
