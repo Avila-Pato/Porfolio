@@ -19,6 +19,7 @@ import project11 from "../../public/images/projects/awwwars.jpeg";
 import project12 from "../../public/images/projects/Rlc.jpeg";
 import project13 from "../../public/images/projects/youtube-clon.png";
 import project14 from "../../public/images/projects/church.jpeg";
+import project15 from "../../public/images/projects/notioncraft.jpeg";
 
 import { motion } from "framer-motion";
 
@@ -342,6 +343,20 @@ Nota: Por motivos de seguridad y privacidad, el código fuente no será comparti
                 summary=" Este clon de YouTube ha sido desarrollado con Next.js, TypeScript y Bun, priorizando rendimiento, seguridad y escalabilidad. Usa PostgreSQL con Drizzle ORM para gestionar base de datos  y webhooks para sincronización en tiempo real.Cuenta con autenticación segura, roles protegidos y rutas seguras, asegurando que solo usuarios autorizados accedan a ciertas funciones. Se han implementado características clave como, un estudio para creadores y carga infinita. La comunicación entre el frontend y backend se maneja con TRPC. Aún no está completamente terminado, pero la imagen representada muestra la visión ideal del proyecto final."
                 link={null}
                 github="https://github.com/Avila-Pato/Youtube-clon"
+                type="Proyectos"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Arquitectura y Desarrollo de un  Proyecto"
+                img={project15}
+                summary="Este proyecto está diseñado para presentar y documentar la construcción de una aplicación web, destacando su arquitectura, tecnologías y metodología de desarrollo. Utiliza Next.js 15 con el sistema App Router, proporcionando una estructura optimizada y eficiente para el enrutamiento.
+                
+                Las tecnologías implementadas incluyen React 19, Tailwind CSS, Zustand para gestión de estado, Clerk para autenticación, y Radix UI para componentes accesibles.
+
+                El objetivo es ofrecer una visión clara y detallada de cómo se organiza y desarrolla un proyecto moderno, sirviendo como referencia para desarrolladores interesados en presentar sus ideas"
+                link="https://next-book-wild-io.vercel.app/"
+                github="https://github.com/Avila-Pato/NextNotionWild.io"
                 type="Proyectos"
               />
             </div>
