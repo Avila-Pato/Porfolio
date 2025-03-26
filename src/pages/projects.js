@@ -350,7 +350,7 @@ Nota: Por motivos de seguridad y privacidad, el código fuente no será comparti
               <Project
                 title="Arquitectura y Desarrollo de un  Proyecto"
                 img={project15}
-                summary="Este proyecto está diseñado para presentar y documentar la construcción de una aplicación web, destacando su arquitectura, tecnologías y metodología de desarrollo. Utiliza Next.js 15 con el sistema App Router, proporcionando una estructura optimizada y eficiente para el enrutamiento.
+                summary="Este proyecto está diseñado para presentar y documentar la construcción de una aplicación web, para ver su arquitectura, tecnologías y metodología de desarrollo. Utilizo Next.js 15 con el sistema App Router, para construir esta web ya que  proporcionando una estructura optimizada y eficiente para el enrutamiento.
                 
                 Las tecnologías implementadas incluyen React 19, Tailwind CSS, Zustand para gestión de estado, Clerk para autenticación, y Radix UI para componentes accesibles.
 
