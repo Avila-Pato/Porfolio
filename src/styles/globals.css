@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* transparencia que puede dar a las imagenes  */
+/* @utility mask-fade-bottom {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%)
+} */
+
 .blob {
     position: absolute;
     width: min(450px, 80vw);  /* Responsive width */
