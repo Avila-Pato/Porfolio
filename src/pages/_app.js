@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import Logo from './components/Logo';
 import Footer from './components/Footer';
 import { Suspense } from 'react';
-import { Spinner } from './components/loading';
+import { Spinner } from '../components/loading';
 
 // Configuración de las fuentes
 const montserrat = Montserrat({
