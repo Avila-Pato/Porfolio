@@ -1,0 +1,8 @@
+<svg
+  width="300"
+  height="90"
+  className="absolute"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M0 80 Q 150 0 300 80" stroke="gray" strokeWidth="0.05" fill="none" />
+</svg>

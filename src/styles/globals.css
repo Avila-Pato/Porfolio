@@ -8,6 +8,16 @@
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%)
 } */
 
+/* components/CurvedBackground.css */
+.curva {
+    width: 200px;
+    height: 100px;
+    border: 1px solid transparent;
+    border-top: 1px solid black;
+    border-radius: 50% / 100%;
+  }
+  
+
 .blob {
     position: absolute;
     width: min(450px, 80vw);  /* Responsive width */
@@ -92,3 +102,10 @@ body * {
 }
 
 
+@layer utilities {
+    .mask-fade-bottom {
+      mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    }
+  }
+  
