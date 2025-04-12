@@ -72,7 +72,7 @@ const Services = () => {
           </span>
         </button>
 
-        <button className="bg-transparent hover:bg-blue-500 text-black font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent rounded-lg bg-gray-500">
+        <button className="bg-transparent hover:bg-blue-500 text-black font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent rounded-lg bg-gray-500 dark:text-white">
           <Image
             alt=""
             width={10}
@@ -111,11 +111,11 @@ const Services = () => {
 
       {/* NUEVA SECCIÓN ABAJO */}
       <section className="w-full min-h-screen flex flex-col justify-center items-center  py-20 px-28">
-        <h2 className="text-4xl font-bold mb-6 text-gray-800">Mis Servicios</h2>
+        <h2 className="text-4xl font-bold mb-6 text-gray-800 dark:text-white">Mis Servicios</h2>
         <div className="mt-10 flex flex-row  gap-8">
           <div
             className="bg-[linear-gradient(250deg,_rgb(255,206,236,1)_50%,_rgb(152,150,240)_100%)] 
-p-6 rounded-xl shadow-lg text-center "
+p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white"
           >
             <Image
               alt=""
@@ -127,7 +127,7 @@ p-6 rounded-xl shadow-lg text-center "
 
             <h3 className="text-2xl font-semibold mb-2">Diseño UI/UX</h3>
 
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-white">
               Además como como desarrollador web, también ofrezco servicios de
               diseño UI/UX enfocados en ayudarte a destacar. Me especializo en
               crear interfaces intuitivas y atractivas que mejoran la
@@ -139,7 +139,7 @@ p-6 rounded-xl shadow-lg text-center "
             </p>
           </div>
 
-          <div className="bg-gradient-to-l from-[#c7abf3] to-[#e9e3e7] p-6 rounded-xl shadow-lg text-center">
+          <div className="bg-gradient-to-l from-[#c7abf3] to-[#e9e3e7] dark:bg-none  p-6 rounded-xl shadow-lg text-center  dark:text-white ">
             <Image
               alt=""
               width={10}
@@ -147,8 +147,8 @@ p-6 rounded-xl shadow-lg text-center "
               src="/service/web.svg"
               className="w-16 h-16  inline-block mr-2"
             />
-            <h3 className="text-2xl font-semibold mb-2">Desarrollo Web</h3>
-            <p className="text-gray-600">
+            <h3 className="text-2xl font-semibold mb-2 ">Desarrollo Web</h3>
+            <p className="text-gray-600 dark:text-white">
               Además de mi rol como desarrollador web, ofrezco servicios de
               desarrollo personalizados enfocados en crear sitios responsivos y
               visualmente atractivos que funcionan perfectamente en cualquier
