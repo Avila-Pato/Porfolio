@@ -114,7 +114,7 @@ const Services = () => {
         <h2 className="text-4xl font-bold mb-6 text-gray-800 dark:text-white">Mis Servicios</h2>
         <div className="mt-10 flex flex-row  gap-8">
           <div
-            className="bg-[linear-gradient(250deg,_rgb(255,206,236,1)_50%,_rgb(152,150,240)_100%)] 
+            className="bg-[linear-gradient(250deg,_rgb(255,243,231)_0%,_rgb(255,234,215)_100%)] 
 p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white"
           >
             <Image
@@ -138,8 +138,13 @@ p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white"
               envolvente.
             </p>
           </div>
+         
 
-          <div className="bg-gradient-to-l from-[#c7abf3] to-[#e9e3e7] dark:bg-none  p-6 rounded-xl shadow-lg text-center  dark:text-white ">
+          <div
+  className="bg-[linear-gradient(150deg,_rgb(255,243,231)_0%,_rgb(220,220,250)_100%)] 
+  dark:bg-transparent p-6 rounded-xl shadow-lg text-center dark:text-white"
+>
+
             <Image
               alt=""
               width={10}
