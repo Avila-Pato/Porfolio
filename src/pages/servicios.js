@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import React, { useRef } from "react";
+
 const Services = () => {
   const [hovered, setHovered] = useState(false);
 
@@ -111,7 +113,9 @@ const Services = () => {
 
       {/* NUEVA SECCIÓN ABAJO */}
       <section className="w-full min-h-screen flex flex-col justify-center items-center  py-20 px-28">
-        <h2 className="text-4xl font-bold mb-6 text-gray-800 dark:text-white">Mis Servicios</h2>
+        <h2 className="text-4xl font-bold mb-6 text-gray-600 dark:text-white">
+          Mis Servicios
+        </h2>
         <div className="mt-10 flex flex-row  gap-8">
           <div
             className="bg-[linear-gradient(250deg,_rgb(255,243,231)_0%,_rgb(255,234,215)_100%)] 
@@ -128,23 +132,20 @@ p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white"
             <h3 className="text-2xl font-semibold mb-2">Diseño UI/UX</h3>
 
             <p className="text-gray-600 dark:text-white">
-              Además como como desarrollador web, también ofrezco servicios de
-              diseño UI/UX enfocados en ayudarte a destacar. Me especializo en
-              crear interfaces intuitivas y atractivas que mejoran la
-              experiencia del usuario, participando en cada etapa del proceso:
-              desde esquemas iniciales hasta prototipos interactivos y diseños
-              finales. Trabajo de manera colaborativa para dar vida a tu visión
-              y brindar a tus usuarios una experiencia digital única y
-              envolvente.
+              Ofrezco servicios de diseño UI/UX enfocados en ayudarte a
+              destacar. Me especializo en crear interfaces intuitivas y
+              atractivas que mejoran la experiencia del usuario, participando en
+              cada etapa del proceso: desde esquemas iniciales hasta prototipos
+              interactivos y diseños finales. Trabajo de manera colaborativa
+              para dar vida a tu visión y brindar a tus usuarios una experiencia
+              digital única y envolvente.
             </p>
           </div>
-         
 
           <div
-  className="bg-[linear-gradient(150deg,_rgb(255,243,231)_0%,_rgb(220,220,250)_100%)] 
+            className="bg-[linear-gradient(150deg,_rgb(255,243,231)_0%,_rgb(220,220,250)_100%)] 
   dark:bg-transparent p-6 rounded-xl shadow-lg text-center dark:text-white"
->
-
+          >
             <Image
               alt=""
               width={10}
@@ -154,15 +155,65 @@ p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white"
             />
             <h3 className="text-2xl font-semibold mb-2 ">Desarrollo Web</h3>
             <p className="text-gray-600 dark:text-white">
-              Además de mi rol como desarrollador web, ofrezco servicios de
-              desarrollo personalizados enfocados en crear sitios responsivos y
-              visualmente atractivos que funcionan perfectamente en cualquier
-              dispositivo. Ya sea para desarrollar un sitio desde cero o
-              rediseñar uno existente, combino creatividad y tecnología moderna
-              —incluyendo herramientas como Webflow— para adaptarme a tus
-              necesidades y ayudarte a cumplir tus objetivos de forma eficiente
-              y profesional.
+              Ofrezco servicios de desarrollo personalizados enfocados en crear
+              sitios responsivos y visualmente atractivos que funcionan
+              perfectamente en cualquier dispositivo. Ya sea para desarrollar un
+              sitio desde cero o rediseñar uno existente, combino creatividad y
+              tecnología moderna —incluyendo herramientas como Webflow— para
+              adaptarme a tus necesidades y ayudarte a cumplir tus objetivos de
+              forma eficiente y profesional.
             </p>
+          </div>
+        </div>
+      </section>
+      <article className="mb-12 text-4xl  text-gray-600 font-medium">
+        Mis Procesos
+      </article>
+      <section className="w-full min-h-screen grid grid-cols-3 pb-12 px-20  justify-center">
+        <div
+          className=" items-center
+        flex flex-col mt-28 text-2xl  text-gray-600 font-medium"
+        >
+          Descubrimiento
+          <div className="mt-2 text-lg justify-center text-gray-600 font-normal pl-12">
+            Comienzo con un diagnóstico detallado, obteniendo una comprensión
+            profunda de sus objetivos, público objetivo y requisitos del
+            proyecto.
+          </div>
+          <div className="mt-48 items-center flex flex-col text-2xl text-gray-600 font-medium ">
+            Texting
+            <div className="mt-2 text-lg justify-center text-gray-600 font-normal pl-12">
+              Comienzo con un diagnóstico detallado, obteniendo una comprensión
+              profunda de sus objetivos, público objetivo y requisitos del
+              proyecto.
+            </div>
+          </div>
+        </div>
+
+        <div className="  justify-center flex ">
+          <Image
+            alt=""
+            width={900}
+            height={900}
+            src="/service/proceso.png"
+            className="w-16 h-900 "
+          />
+        </div>
+
+        <div className="mt-64 items-center flex flex-col text-2xl text-gray-600 font-medium ">
+          Diseño y Desarrollo
+          <div className="mt-2 text-lg justify-center text-gray-600 font-normal pl-12">
+            Comienzo con un diagnóstico detallado, obteniendo una comprensión
+            profunda de sus objetivos, público objetivo y requisitos del
+            proyecto.
+          </div>
+          <div className="mt-48 items-center flex flex-col text-2xl text-gray-600 font-medium ">
+            Launch
+            <div className="mt-2 text-lg justify-center text-gray-600 font-normal pl-12">
+              Comienzo con un diagnóstico detallado, obteniendo una comprensión
+              profunda de sus objetivos, público objetivo y requisitos del
+              proyecto.
+            </div>
           </div>
         </div>
       </section>
