@@ -110,30 +110,32 @@ const Services = () => {
         width={1800}
         height={900}
         alt="Decoración inferior"
-        className="w-full object-cover dark:hidden mask-fade-bottom absolute mt-12 md:mt-44" 
+        className="w-full object-cover dark:hidden mask-fade-bottom absolute
+         sm:mt-64  md:mt-44 lg:mt-36 2xl:mt-10 " 
       />
 
       {/* NUEVA SECCIÓN ABAJO */}
-      <section className="w-full min-h-screen flex flex-col justify-center items-center  py-20 px-28">
-        <h2 className="text-4xl font-bold mb-6 text-gray-600 dark:text-white">
+      <section className="w-full min-h-screen flex flex-col justify-center items-center  py-20 px-28 sm:px-2">
+        <h2 className="text-4xl font-bold mb-6  text-gray-600 dark:text-white">
           Mis Servicios
         </h2>
-        <div className="mt-10 flex flex-row  gap-8">
+        <div className="mt-10 flex flex-row sm:flex sm:flex-col gap-8">
           <div
-            className="bg-[linear-gradient(250deg,_rgb(255,243,231)_0%,_rgb(255,234,215)_100%)] 
-p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white"
+            className="bg-[linear-gradient(250deg,_rgb(255,243,231)_0%,_rgb(255,234,215)_100%)] p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white
+             sm:text-center "
+            
           >
             <Image
               alt=""
               width={30}
               height={30}
               src="/service/figma.svg"
-              className="w-16 h-16 inline-block mr-2"
+              className="w-16 h-16 inline-block mr-2 sm:w-10 sm:h-10"
             />
 
             <h3 className="text-2xl font-semibold mb-2">Diseño UI/UX</h3>
 
-            <p className="text-gray-600 dark:text-white">
+            <p className="text-gray-600 dark:text-white ">  
               Ofrezco servicios de diseño UI/UX enfocados en ayudarte a
               destacar. Me especializo en crear interfaces intuitivas y
               atractivas que mejoran la experiencia del usuario, participando en
@@ -153,7 +155,7 @@ p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white"
               width={10}
               height={10}
               src="/service/web.svg"
-              className="w-16 h-16  inline-block mr-2"
+              className="w-16 h-16  inline-block mr-2 sm:w-10 sm:h-10"
             />
             <h3 className="text-2xl font-semibold mb-2 ">Desarrollo Workflow</h3>
             <p className="text-gray-600 dark:text-white ">
