@@ -153,7 +153,7 @@ p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white"
               src="/service/web.svg"
               className="w-16 h-16  inline-block mr-2"
             />
-            <h3 className="text-2xl font-semibold mb-2 ">Desarrollo Web</h3>
+            <h3 className="text-2xl font-semibold mb-2 ">Desarrollo Workflow</h3>
             <p className="text-gray-600 dark:text-white ">
               Ofrezco servicios de desarrollo personalizados enfocados en crear
               sitios responsivos y visualmente atractivos que funcionan
