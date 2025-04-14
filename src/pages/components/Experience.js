@@ -89,18 +89,7 @@ const Experience = () => {
             Apoyo en gestión de Tours en Santiago
             "
           />
-          <Details
-            position="Staff (Turistik)"
-            companyLink="www.google.com"
-            // time=" 2022-2023 "
-            address=" Santiago | Calle Pedro De Valdivia"
-            work="Experiencia multifacética en diversos
-            departamentos del parque, desde anfitrión y
-            ventas, manejo de grupos y atención al público.
-            Especializado en operaciones específicas como
-            teleférico, funicular .
-            "
-          />
+          
           <Details
             position="Desarrollador Frontend"
             companyLink="www.google.com"
