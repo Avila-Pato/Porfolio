@@ -8,24 +8,24 @@ const Services = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <main className="flex flex-col items-center w-full relative overflow-hidden">
+    <main className="flex flex-col items-center w-full relative overflow-hidden pt-28 md:pt-32">
       {/* SVG decorativo superior */}
       <Image
         src="/service/linea.svg"
         width={1800}
         height={100}
         alt="Decoración superior"
-        className="absolute top-10 w-full h-[100px]  "
+        className="absolute top-10 w-full h-[100px] "
       />
 
       {/* Imagen central */}
-      <div className="mt-50 z-40">
+      <div className="2xl:-mt-24  md:-mt-20 z-40">
         <Image
           src="/service/me.png"
           alt="Imagen central"
           width={260}
           height={280}
-          className="rounded-full  "
+          className="rounded-full   "
         />
       </div>
 
@@ -59,7 +59,9 @@ const Services = () => {
         <button
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="bg-transparent hover:bg-blue-500 text-black font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent rounded-lg bg-gradient-to-r from-[#58E6D9] to-[#B63E96]"
+          className="bg-transparent hover:bg-blue-500 text-black font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent rounded-lg bg-gradient-to-r 
+          md:py-2 md:px-4 md:text-md
+          from-[#58E6D9] to-[#B63E96]"
         >
           <Image
             alt=""
@@ -74,7 +76,7 @@ const Services = () => {
           </span>
         </button>
 
-        <button className="bg-transparent hover:bg-blue-500 text-black font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent rounded-lg bg-gray-500 dark:text-white">
+        <button className="bg-transparent hover:bg-blue-500 text-black font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent rounded-lg bg-gray-500 dark:text-white md:py-2 md:px-4 md:text-md">
           <Image
             alt=""
             width={10}
@@ -87,7 +89,7 @@ const Services = () => {
       </div>
 
       {/* Texto de gradiente */}
-      <div className="text-center font-bold text-2xl mt-2 px-6 text-transparent bg-clip-text bg-[linear-gradient(135deg,_rgb(74,234,220)_0%,_rgb(151,120,209)_20%,_rgb(207,42,186)_40%,_rgb(238,44,130)_60%,_rgb(251,105,98)_80%,_rgb(151,120,209)_100%)] z-10">
+      <div className="text-center font-bold text-3xl mt-2 px-6 text-transparent bg-clip-text bg-[linear-gradient(135deg,_rgb(74,234,220)_0%,_rgb(151,120,209)_20%,_rgb(207,42,186)_40%,_rgb(238,44,130)_60%,_rgb(251,105,98)_80%,_rgb(151,120,209)_100%)] z-10 md:text-2xl ">
         Creación de interfaces Estéticas e interacciones Fluidas para el Mundo
         Digital
       </div>
@@ -96,7 +98,7 @@ const Services = () => {
       <div className="mt-10 z-10">
         <a
           href="mailto:p.avilaf1998@gmail.com"
-          className="bg-blue-700 hover:bg-blue-800 dark:text-white text-white font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent border-x-blue-900 rounded-2xl   "
+          className="bg-blue-700 hover:bg-blue-800 dark:text-white text-white font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent border-x-blue-900 rounded-2xl  md:py-2 md:px-4 md:text-md "
         >
           Contáctame
         </a>
@@ -108,7 +110,7 @@ const Services = () => {
         width={1800}
         height={900}
         alt="Decoración inferior"
-        className="w-full object-cover dark:hidden mask-fade-bottom absolute mt-32 "
+        className="w-full object-cover dark:hidden mask-fade-bottom absolute mt-12 md:mt-44" 
       />
 
       {/* NUEVA SECCIÓN ABAJO */}
