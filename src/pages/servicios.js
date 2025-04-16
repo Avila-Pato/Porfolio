@@ -170,7 +170,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <article className="mb-12 sm:pb-0  text-4xl  text-gray-600 font-medium">
+      <article className="mb-12 sm:pb-0  text-4xl dark:text-white  text-gray-600 font-medium">
         Mis Procesos
       </article>
       <section
@@ -178,13 +178,13 @@ const Services = () => {
        sm:flex sm:flex-col  sm:px-2 sm:pb-12  pb-12 px-20  justify-center"
       >
         <div
-          className=" items-center
+          className=" items-center dark:text-white  
         flex flex-col sm:mt-2 mt-28 text-2xl  text-gray-600 font-medium"
         >
           Descubrimiento
           <div
             className="mt-2 text-lg justify-center text-gray-600 font-normal 
-          sm:pl-4  pl-12 "
+          sm:pl-4  pl-12  dark:text-white  "
           >
             Comienzo con un diagnóstico detallado, obteniendo una comprensión
             profunda de sus objetivos, público objetivo y requisitos del
@@ -198,9 +198,9 @@ const Services = () => {
             alt="hola"
             className="block sm:block md:hidden lg:hidden xl:hidden 2xl:hidden"
           />
-          <div className="mt-48 sm:mt-2 items-center flex flex-col text-2xl text-gray-600 font-medium ">
+          <div className="mt-48 sm:mt-2 items-center flex flex-col text-2xl text-gray-600 font-medium dark:text-white  ">
             Texting
-            <div className="mt-2 text-lg justify-center text-gray-600 font-normal sm:pl-4  pl-12">
+            <div className="mt-2 text-lg justify-center text-gray-600 font-normal sm:pl-4  pl-12 dark:text-white  ">
               La calidad es el núcleo de nuestro proceso. Probamos rigurosamente
               el proyecto para identificar y resolver cualquier problema.
             </div>
@@ -225,11 +225,11 @@ const Services = () => {
         </div>
 
         <div
-          className="mt-64 sm:mt-6 items-center  flex flex-col text-2xl text-gray-600 font-medium 
+          className="mt-64 sm:mt-6 items-center  flex flex-col text-2xl text-gray-600 font-medium  dark:text-white  
           "
         >
           Diseño y Desarrollo
-          <div className="mt-2 sm:pl-2 text-lg  text-gray-600 font-normal ">
+          <div className="mt-2 sm:pl-2 text-lg dark:text-white   text-gray-600 font-normal ">
             Una vez aprobados los diseños, les damos vida. Nos aseguramos de que
             cada elemento funcione a la perfección y esté optimizado para el
             rendimiento.
@@ -241,9 +241,9 @@ const Services = () => {
             alt="hola"
             className="block sm:block md:hidden lg:hidden xl:hidden 2xl:hidden"
           />
-          <div className="mt-48 sm:mt-6 items-center flex flex-col text-2xl text-gray-600 font- medium">
+          <div className="mt-48 sm:mt-6 items-center flex flex-col text-2xl text-gray-600 font- medium dark:text-white  ">
             lanzamiento
-            <div className="mt-2 sm:pl-2  text-lg  text-gray-600 font-normal  ">
+            <div className="mt-2 sm:pl-2  text-lg dark:text-white   text-gray-600 font-normal  ">
               Finalmente, se realiza la entrega de tu proyecto. Te acompaño en
               cada paso del proceso de implementación para asegurar que el
               lanzamiento sea fluido y sin contratiempos
