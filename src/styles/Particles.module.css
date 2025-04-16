@@ -23,3 +23,58 @@
   }
 }
 
+
+/* Pixel Button */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #111;
+  overflow: hidden;
+}
+
+a:visited,
+a:link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-inline: 3rem;
+  padding-block: 1.25rem;
+  transition: all 0.5s linear;
+  border: 0.2rem solid #ec1840;
+  box-shadow: 0 0 5px 1px #ec1840,
+              0 0 10px 1px #ec1840;
+}
+
+a:hover,
+a:active {
+  background: url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+  transition-delay: 0.8s;
+  transition: 0.8s;
+  background-size: 18rem;
+  animation: rocket 0.8s steps(8) forwards;
+}
+
+@keyframes rocket {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -48rem;
+  }
+}

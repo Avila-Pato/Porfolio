@@ -93,11 +93,10 @@ const Services = () => {
         Creación de interfaces Estéticas e interacciones Fluidas para el Mundo
         Digital
       </div>
-
       {/* Botón de contacto */}
       <div className="mt-10 z-10">
         <a
-          href="mailto:p.avilaf1998@gmail.com"
+          href="mailto:patricio.avila@example.com"
           className="bg-blue-700 hover:bg-blue-800 dark:text-white text-white font-semibold hover:text-white py-4 px-6 border border-blue-500 hover:border-transparent border-x-blue-900 rounded-2xl  md:py-2 md:px-4 md:text-md "
         >
           Contáctame
@@ -111,7 +110,7 @@ const Services = () => {
         height={900}
         alt="Decoración inferior"
         className="w-full object-cover dark:hidden mask-fade-bottom absolute
-         sm:mt-64  md:mt-44 lg:mt-36 2xl:mt-10 " 
+         sm:mt-64  md:mt-44 lg:mt-36 2xl:mt-10 "
       />
 
       {/* NUEVA SECCIÓN ABAJO */}
@@ -123,7 +122,6 @@ const Services = () => {
           <div
             className="bg-[linear-gradient(250deg,_rgb(255,243,231)_0%,_rgb(255,234,215)_100%)] p-6 rounded-xl shadow-lg text-center dark:bg-none dark:text-white
              sm:text-center "
-            
           >
             <Image
               alt=""
@@ -135,7 +133,7 @@ const Services = () => {
 
             <h3 className="text-2xl font-semibold mb-2">Diseño UI/UX</h3>
 
-            <p className="text-gray-600 dark:text-white ">  
+            <p className="text-gray-600 dark:text-white ">
               Ofrezco servicios de diseño UI/UX enfocados en ayudarte a
               destacar. Me especializo en crear interfaces intuitivas y
               atractivas que mejoran la experiencia del usuario, participando en
@@ -157,7 +155,9 @@ const Services = () => {
               src="/service/web.svg"
               className="w-16 h-16  inline-block mr-2 sm:w-10 sm:h-10"
             />
-            <h3 className="text-2xl font-semibold mb-2 ">Desarrollo Workflow</h3>
+            <h3 className="text-2xl font-semibold mb-2 ">
+              Desarrollo Workflow
+            </h3>
             <p className="text-gray-600 dark:text-white ">
               Ofrezco servicios de desarrollo personalizados enfocados en crear
               sitios responsivos y visualmente atractivos que funcionan
@@ -170,26 +170,47 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <article className="mb-12 text-4xl  text-gray-600 font-medium">
+      <article className="mb-12 sm:pb-0  text-4xl  text-gray-600 font-medium">
         Mis Procesos
       </article>
-      <section className="w-full min-h-screen grid grid-cols-3 pb-12 px-20  justify-center">
+      <section
+        className="w-full min-h-screen grid grid-cols-3
+       sm:flex sm:flex-col  sm:px-2 sm:pb-12  pb-12 px-20  justify-center"
+      >
         <div
           className=" items-center
-        flex flex-col mt-28 text-2xl  text-gray-600 font-medium"
+        flex flex-col sm:mt-2 mt-28 text-2xl  text-gray-600 font-medium"
         >
           Descubrimiento
-          <div className="mt-2 text-lg justify-center text-gray-600 font-normal pl-12">
+          <div
+            className="mt-2 text-lg justify-center text-gray-600 font-normal 
+          sm:pl-4  pl-12 "
+          >
             Comienzo con un diagnóstico detallado, obteniendo una comprensión
             profunda de sus objetivos, público objetivo y requisitos del
             proyecto.
           </div>
-          <div className="mt-48 items-center flex flex-col text-2xl text-gray-600 font-medium ">
+ 
+          <Image
+            width={60}
+            height={60}
+            src="/iconsServicesMobile/desarrollo.png"
+            alt="hola"
+            className="block sm:block md:hidden lg:hidden xl:hidden 2xl:hidden"
+          />
+          <div className="mt-48 sm:mt-2 items-center flex flex-col text-2xl text-gray-600 font-medium ">
             Texting
-            <div className="mt-2 text-lg justify-center text-gray-600 font-normal pl-12">
+            <div className="mt-2 text-lg justify-center text-gray-600 font-normal sm:pl-4  pl-12">
               La calidad es el núcleo de nuestro proceso. Probamos rigurosamente
               el proyecto para identificar y resolver cualquier problema.
             </div>
+            <Image
+            width={60}
+            height={60}
+            src="/iconsServicesMobile/descubrimiento.png"
+            alt="hola"
+            className="block sm:mt-6 sm:block md:hidden lg:hidden xl:hidden 2xl:hidden"
+          />
           </div>
         </div>
 
@@ -199,22 +220,41 @@ const Services = () => {
             width={900}
             height={900}
             src="/service/proceso.png"
-            className="w-16 h-900 "
+            className="w-16 h-900 sm:hidden xs:hidden"
           />
         </div>
 
-        <div className="mt-64 items-center  flex flex-col text-2xl text-gray-600 font-medium ">
+        <div
+          className="mt-64 sm:mt-6 items-center  flex flex-col text-2xl text-gray-600 font-medium 
+          "
+        >
           Diseño y Desarrollo
-          <div className="mt-2 text-lg  text-gray-600 font-normal ">
+          <div className="mt-2 sm:pl-2 text-lg  text-gray-600 font-normal ">
             Una vez aprobados los diseños, les damos vida. Nos aseguramos de que
             cada elemento funcione a la perfección y esté optimizado para el
             rendimiento.
           </div>
-          <div className="mt-48 items-center flex flex-col text-2xl text-gray-600 font-medium ">
-          lanzamiento
-            <div className="mt-2 text-lg  text-gray-600 font-normal  ">
-            Finalmente, se  realiza la entrega de tu proyecto. Te acompaño en cada paso del proceso de implementación para asegurar que el lanzamiento sea fluido y sin contratiempos
+          <Image
+            width={60}
+            height={60}
+            src="/iconsServicesMobile/diseno.png"
+            alt="hola"
+            className="block sm:block md:hidden lg:hidden xl:hidden 2xl:hidden"
+          />
+          <div className="mt-48 sm:mt-6 items-center flex flex-col text-2xl text-gray-600 font- medium">
+            lanzamiento
+            <div className="mt-2 sm:pl-2  text-lg  text-gray-600 font-normal  ">
+              Finalmente, se realiza la entrega de tu proyecto. Te acompaño en
+              cada paso del proceso de implementación para asegurar que el
+              lanzamiento sea fluido y sin contratiempos
             </div>
+            <Image
+            width={60}
+            height={60}
+            src="/iconsServicesMobile/launch.png"
+            alt="hola"
+            className="block mt-12 sm:block md:hidden lg:hidden xl:hidden 2xl:hidden"
+          />
           </div>
         </div>
       </section>
