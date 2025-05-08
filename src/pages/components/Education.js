@@ -50,7 +50,7 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
           <Details
             type="– Duoc Uc"
-            time="2025 - en curso "
+            time="2024 - en curso "
             place=" Santiago, Región Metropolitana "
             info=" Ingieneria en Informatica - (Vespertino) " 
                      
