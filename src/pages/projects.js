@@ -268,7 +268,7 @@ const projects = () => {
                 type="Proyectos"
               />
             </div>
-            <div className="col-span-12 ">
+            {/* <div className="col-span-12 ">
               <FeaturedProject
                 title="Travel Agency2.0"
                 img={project7}
@@ -277,7 +277,7 @@ const projects = () => {
                 github="https://github.com/Avila-Pato/TravelAgency2.0"
                 type="Proyectos"
               />
-            </div>
+            </div> */}
 
             <div className="col-span-6 sm:col-span-12">
               <Project
@@ -290,7 +290,7 @@ const projects = () => {
               />
             </div>
 
-            {/* <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Web-Travel-Agency"
                 img={project9}
@@ -299,7 +299,7 @@ const projects = () => {
                 github="https://github.com/Avila-Pato/Next_Travel_Agency_Website"
                 type="Proyectos"
               />
-            </div> */}
+            </div>
 
             <div className="col-span-12 ">
               <FeaturedProject
