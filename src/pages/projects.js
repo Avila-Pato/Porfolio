@@ -327,9 +327,7 @@ const projects = () => {
               <Project
                 title="RLC Engineering"
                 img={project12}
-                summary="Este proyecto consiste en el desarrollo de una página web diseñada para ofrecer interfaces intuitivas y atractivas, adaptadas a las necesidades específicas del cliente. La optimización del rendimiento es clave, garantizando tiempos de carga rápidos y un funcionamiento eficiente en todos los dispositivos. Utilizando Next.js como base tecnológica, cada sección de la web ha sido diseñada para ser funcional, visualmente impactante y alineada con los objetivos establecidos.
-
-Nota: Por motivos de seguridad y privacidad, el código fuente no será compartido, ya que la web está publicada y su contenido podría verse comprometido si se expone públicamente."
+                summary="Este proyecto consiste en el desarrollo de una página web diseñada para ofrecer interfaces intuitivas y atractivas, adaptadas a las necesidades específicas del cliente. La optimización del rendimiento es clave, garantizando tiempos de carga rápidos y un funcionamiento eficiente en todos los dispositivos. Utilizando Next.js como base tecnológica, cada sección de la web ha sido diseñada para ser funcional, visualmente impactante y alineada con los objetivos establecidos."
                 // github="https://github.com/Avila-Pato/Awwards-Website-Winning-ReactJs-Tailwind-CSS-GSAP"
                 link="https://rlcchile.com/"
                 type="Proyectos"
