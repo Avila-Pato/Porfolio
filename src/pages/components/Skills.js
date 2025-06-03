@@ -86,7 +86,7 @@ const Skills = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-white dark:bg-gray-800 border-l-2 mx-42 border-r-2 border-orange-500 rounded-lg p-4 shadow-sm dark:shadow-md"
             >
-              <h3 className={`text-2xl font-semibold mb-3 text-center    ${categoryColors[category].text}`}>
+              <h3 className={`text-2xl font-bold mb-3 text-center    ${categoryColors[category].text}`}>
                 {category}
               </h3>
               <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
