@@ -2,141 +2,118 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const skills = [
-  { name: "HTML", nivel: "Avanzado", icon: "/svg/HTML.svg" },
-  { name: "CSS", nivel: "Avanzado", icon: "/svg/CSS.svg" },
-  { name: "VSCode", nivel: "Avanzado", icon: "/svg/VSCode-Dark.svg" },
-  { name: "ReactJS", nivel: "Avanzado", icon: "/svg/React-Dark.svg" },
-  { name: "NextJS", nivel: "Avanzado", icon: "/svg/NextJS-Dark.svg" },
-  { name: "Tailwind", nivel: "Avanzado", icon: "/svg/TailwindCSS-Dark.svg" },
-  { name: "GitHub", nivel: "Avanzado", icon: "/svg/GitHub.svg" },
-  {
-    name: "Javascript",
-    nivel: "Avanzado",
-    icon: "/svg/javascript.svg",
-    width: 250,
-    height: 250,
-  },
-  { name: "Figma", nivel: "Intermedio", icon: "/svg/Figma-Dark.svg" },
-  { name: "Angular", nivel: "Intermedio", icon: "/svg/iconoAngular.svg" },
-  { name: "AngularJS", nivel: "Intermedio", icon: "/svg/Angular-JS.svg" },
-  { name: "Python", nivel: "Intermedio", icon: "/svg/Python-Dark.svg" },
-  { name: "NodeJS", nivel: "Intermedio", icon: "/svg/NodeJS-Dark.svg" },
-  { name: "Astro", nivel: "Intermedio", icon: "/svg/Astro.svg" },
-  { name: "SQL", nivel: "Intermedio", icon: "/svg/SQL.svg" },
-  { name: "MySql", nivel: "Intermedio", icon: "/svg/MySQL.svg" },
-  { name: "Typescript", nivel: "Avanzado", icon: "/svg/TypeScript.svg" },
-  { name: "Firebase", nivel: "Intermedio", icon: "/svg/Firebase-Dark.svg" },
-  { name: "WordPress", nivel: "Intermedio", icon: "/svg/wordpress.svg" },
-  { name: "Mongoose", nivel: "Intermedio", icon: "/svg/MongoDB.svg" },
-  { name: "Django", nivel: "Intermedio", icon: "/svg/Django.svg" },
-  { name: "Git", nivel: "Avanzado", icon: "/svg/Git.svg" },
-  { name: "Express", nivel: "Intermedio", icon: "/svg/ExpressJS-Dark.svg" },
-  { name: "Bootstrap", nivel: "Intermedio", icon: "/svg/Bootstrap.svg" },
-  { name: "MaterialUI", nivel: "Intermedio", icon: "/svg/MaterialUI-Dark.svg" },
-  { name: "Vue", nivel: "Intermedio", icon: "/svg/VueJS-Dark.svg" },
-  { name: "Nest", nivel: "Intermedio", icon: "/svg/NestJS-Dark.svg" },
-  { name: "Nuxt", nivel: "Intermedio", icon: "/svg/NuxtJS-Dark.svg" },
-  { name: "PHP", nivel: "Intermedio", icon: "/svg/PHP-Dark.svg" },
-  { name: "Java", nivel: "Básico", icon: "/svg/Java-Dark.svg" },
-  { name: "C#", nivel: "Básico", icon: "/svg/Csharp.svg" },
-  { name: ".NET", nivel: "Básico", icon: "/svg/DotNet.svg" },
-  { name: "Docker", nivel: "Básico", icon: "/svg/Docker.svg" },
-  { name: "Laravel", nivel: "Básico", icon: "/svg/Laravel-Dark.svg" },
+  // Frontend
+  { name: "HTML", category: "Frontend", icon: "/svg/HTML.svg" },
+  { name: "CSS", category: "Frontend", icon: "/svg/CSS.svg" },
+  { name: "JavaScript", category: "Frontend", icon: "/svg/javascript.svg" },
+  { name: "TypeScript", category: "Frontend", icon: "/svg/TypeScript.svg" },
+  { name: "React", category: "Frontend", icon: "/svg/React-Dark.svg" },
+  { name: "Next.js", category: "Frontend", icon: "/svg/NextJS-Dark.svg" },
+  { name: "Angular", category: "Frontend", icon: "/svg/iconoAngular.svg" },
+  { name: "Vue", category: "Frontend", icon: "/svg/VueJS-Dark.svg" },
+  { name: "Tailwind", category: "Frontend", icon: "/svg/TailwindCSS-Dark.svg" },
+  { name: "Bootstrap", category: "Frontend", icon: "/svg/Bootstrap.svg" },
+
+  // Backend
+  { name: "Node.js", category: "Backend", icon: "/svg/NodeJS-Dark.svg" },
+  { name: "Express", category: "Backend", icon: "/svg/ExpressJS-Dark.svg" },
+  { name: "Python", category: "Backend", icon: "/svg/Python-Dark.svg" },
+  { name: "Django", category: "Backend", icon: "/svg/Django.svg" },
+  { name: "PHP", category: "Backend", icon: "/svg/PHP-Dark.svg" },
+  { name: "Java", category: "Backend", icon: "/svg/Java-Dark.svg" },
+
+  // Database
+  { name: "MongoDB", category: "Database", icon: "/svg/MongoDB.svg" },
+  { name: "MySQL", category: "Database", icon: "/svg/MySQL.svg" },
+  { name: "Firebase", category: "Database", icon: "/svg/Firebase-Dark.svg" },
+  { name: "SQL", category: "Database", icon: "/svg/SQL.svg" },
+
+  // Tools
+  { name: "Git", category: "Tools", icon: "/svg/Git.svg" },
+  { name: "VS Code", category: "Tools", icon: "/svg/VSCode-Dark.svg" },
+  { name: "Figma", category: "Tools", icon: "/svg/Figma-Dark.svg" },
+  { name: "Docker", category: "Tools", icon: "/svg/Docker.svg" },
 ];
+
+const categoryColors = {
+  Frontend: {
+    bg: "from-purple-100 to-purple-200 dark:from-purple-800 dark:to-purple-900",
+    text: "text-purple-800 dark:text-purple-200",
+    border: "border-purple-300 dark:border-purple-600"
+  },
+  Backend: {
+    bg: "from-emerald-100 to-emerald-200 dark:from-emerald-800 dark:to-emerald-900",
+    text: "text-emerald-800 dark:text-emerald-200",
+    border: "border-emerald-300 dark:border-emerald-600"
+  },
+  Database: {
+    bg: "from-amber-100 to-amber-200 dark:from-amber-800 dark:to-amber-900",
+    text: "text-amber-800 dark:text-amber-200",
+    border: "border-amber-300 dark:border-amber-600"
+  },
+  Tools: {
+    bg: "from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-900",
+    text: "text-blue-800 dark:text-blue-200",
+    border: "border-blue-300 dark:border-blue-600"
+  },
+};
 
 const Skills = () => {
   const groupedSkills = skills.reduce((acc, skill) => {
-    if (!acc[skill.nivel]) {
-      acc[skill.nivel] = [];
-    }
-    acc[skill.nivel].push(skill);
+    if (!acc[skill.category]) acc[skill.category] = [];
+    acc[skill.category].push(skill);
     return acc;
   }, {});
 
-  const skillColors = {
-    Avanzado: {
-      bg: "from-emerald-400 to-teal-500 dark:from-emerald-700 dark:to-teal-800",
-      hover:
-        "hover:from-emerald-500 hover:to-teal-600 dark:hover:from-emerald-600 dark:hover:to-teal-700",
-      shadow: "shadow-emerald-500/20 dark:shadow-emerald-700/30",
-      text: "text-emerald-900 dark:text-emerald-100",
-    },
-    Intermedio: {
-      bg: "from-sky-400 to-blue-500 dark:from-sky-700 dark:to-blue-800",
-      hover:
-        "hover:from-sky-500 hover:to-blue-600 dark:hover:from-sky-600 dark:hover:to-blue-700",
-      shadow: "shadow-sky-500/20 dark:shadow-sky-700/30",
-      text: "text-sky-900 dark:text-sky-100",
-    },
-    Básico: {
-      bg: "from-amber-400 to-orange-500 dark:from-amber-700 dark:to-orange-800",
-      hover:
-        "hover:from-amber-500 hover:to-orange-600 dark:hover:from-amber-600 dark:hover:to-orange-700",
-      shadow: "shadow-amber-500/20 dark:shadow-amber-700/30",
-      text: "text-amber-900 dark:text-amber-100",
-    },
-  };
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 dark:from-dark/30 py-16 px-4 transition-colors duration-300">
-      <motion.h2
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className=" text-4xl font-bold text-center mb-12 bg-clip-text  bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400"
+    <div className="min-h-screen bg-gray-50 dark:bg-[#1b1b1b]  py-8 px-4 sm:px-6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-6xl mx-auto"
       >
-        Tecnologías y Frameworks
-      </motion.h2>
+        <h2 className="text-3xl sm:text-3xl font-bold text-center mb-8 text-gray-800 dark:text-white">
+          Habilidades Técnicas
+        </h2>
 
-      <div className="max-w-7xl mx-auto space-y-12 ">
-        {Object.entries(groupedSkills).map(([nivel, skills], index) => (
-          <motion.div
-            key={nivel}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2 }}
-            className="bg-white dark:bg-gray-800 dark:bg-opacity-50  rounded-3xl p-8 shadow-xl dark:shadow-2xl transition-all duration-300 hover:shadow-2xl dark:hover:shadow-3xl "
-          >
-            <h3 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">
-              {nivel}
-            </h3>
-            <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 ">
-              {skills.map((skill) => (
-                <motion.div
-                  key={skill.name}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`flex flex-col items-center p-4 rounded-2xl
-                    bg-gradient-to-br ${skillColors[nivel].bg} ${skillColors[nivel].hover}
-                    transform transition-all duration-300 ease-in-out
-                    shadow-lg hover:shadow-xl ${skillColors[nivel].shadow}
-                    cursor-pointer group`}
-                >
-                  {skill.icon && (
-                    <div className="relative w-16 h-16 mb-4 xs:w-8 xs:h-8 transition-transform duration-300 group-hover:scale-110 ">
+        <div className="space-y-6">
+          {Object.entries(groupedSkills).map(([category, skills], index) => (
+            <motion.div
+              key={category}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className="bg-white dark:bg-gray-800 border-l-2 mx-42 border-r-2 border-orange-500 rounded-lg p-4 shadow-sm dark:shadow-md"
+            >
+              <h3 className={`text-2xl font-semibold mb-3 text-center    ${categoryColors[category].text}`}>
+                {category}
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+                {skills.map((skill) => (
+                  <motion.div
+                    key={skill.name}
+                    whileHover={{ scale: 1.05 }}
+                    className={`flex flex-col mx-12 items-center p-2 rounded-md border bg-blue-200 dark:bg-slate-500 ${categoryColors[category].border} ${categoryColors[category].bg} transition-all`}
+                  >
+                    <div className="relative w-10 h-10 mb-1">
                       <Image
                         src={skill.icon}
-                        alt={`${skill.name} icon`}
+                        alt={skill.name}
                         layout="fill"
                         objectFit="contain"
-                        className="filter drop-shadow-md  "
                       />
                     </div>
-                  )}
-                  <span
-                    className={`font-semibold text-center ${skillColors[nivel].text}`}
-                  >
-                    {skill.name}
-                  </span>
-                  <span
-                    className={`text-sm mt-2 px-3 py-1   rounded-full font-bold bg-white/20 dark:bg-black/20 ${skillColors[nivel].text}`}
-                  >
-                    {skill.nivel}
-                  </span>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        ))}
-      </div>
+                    <span className="text-xs font-medium text-center text-gray-700 dark:text-gray-200">
+                      {skill.name}
+                    </span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 };

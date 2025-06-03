@@ -57,7 +57,7 @@ export default function Home() {
               />
             </div>
             <div></div>
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="w-1/2 flex  flex-col items-center self-center lg:w-full lg:text-center">
               {/* <h1>HOla</h1> */}
               <AnimatedText
                 text="Convirtiendo visión en realidad con código y diseño."
