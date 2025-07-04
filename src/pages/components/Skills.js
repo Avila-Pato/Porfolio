@@ -21,18 +21,28 @@ const skills = [
   { name: "Django", category: "Backend", icon: "/svg/Django.svg" },
   { name: "PHP", category: "Backend", icon: "/svg/PHP-Dark.svg" },
   { name: "Java", category: "Backend", icon: "/svg/Java-Dark.svg" },
+  { name: "Flask", category: "Backend", icon: "/svg/Flask.svg" },
+
+
 
   // Database
   { name: "MongoDB", category: "Database", icon: "/svg/MongoDB.svg" },
   { name: "MySQL", category: "Database", icon: "/svg/MySQL.svg" },
   { name: "Firebase", category: "Database", icon: "/svg/Firebase-Dark.svg" },
   { name: "SQL", category: "Database", icon: "/svg/SQL.svg" },
+  { name: "PostgreSQL", category: "Database", icon: "/svg/PostgreSQL.svg" },
+  { name: "Prisma", category: "Database", icon: "/svg/Prisma.svg" },
+
+
+  //GitHub
 
   // Tools
   { name: "Git", category: "Tools", icon: "/svg/Git.svg" },
   { name: "VS Code", category: "Tools", icon: "/svg/VSCode-Dark.svg" },
   { name: "Figma", category: "Tools", icon: "/svg/Figma-Dark.svg" },
   { name: "Docker", category: "Tools", icon: "/svg/Docker.svg" },
+  { name: "GitHub", category: "Tools", icon: "/svg/GitHub.svg" },
+
 ];
 
 const categoryColors = {
@@ -97,6 +107,7 @@ const Skills = () => {
                     
                     className={`flex flex-col lg:mx-0 2xl:mx-12 items-center p-2 rounded-md border bg-blue-200 dark:bg-slate-500 ${categoryColors[category].border} ${categoryColors[category].bg} transition-all`}
                   >
+                    
                     <div className="relative w-10 h-10 mb-1 ">
                       <Image
                         src={skill.icon}

@@ -43,8 +43,9 @@ const About = () => {
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText className="md:text-8xl" text="La pasión alimenta el propósito." />
-          <div className="grid w-full  grid-cols-8  sm:gap-8v 2xl:text-lg xs:p-1 sm:p-2 lg:p-2 2xl:p-11 ">
-            <div className="col-span-3 pt-2 lg:pr-12 md:pr-0   gap-2 flex flex-col items-center justify-center xl:col-span-4 md:order-2 md:col-span-8 ">
+          <div className="grid lg:block lg:pr-0 w-full grid-cols-8 sm:gap-8 md:pr-0 2xl:pr-12 2xl:text-lg xs:p-1 sm:p-2 ">
+            <div className="col-span-3 pt-2  md:pr-0 gap-2 2xl:pl-12 xl:pl-0  flex flex-col items-center justify-center xl:col-span-4   md:col-span-8 ">
+
               <h2 className="mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
                 Biografia
               </h2>
@@ -67,7 +68,7 @@ const About = () => {
                 Front-End y el Back-End, además de herramientas complementarias.
               </p>
               <br />
-              <p className="font-medium  tracking-wider md:hidden">
+              <p className="font-medium  tracking-wider ">
                 Mi enfoque metodológico por la innovación, y experiencia previa
                 en turismo me otorgan una perspectiva donde puedo crear
                 experiencias digitales interactivas y funcionales que conectan
@@ -78,14 +79,21 @@ const About = () => {
               </div>
             </div>
             <div
-              className="col-span-3 top-12 left-12   md:left-0 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light xl:col-span-4
-             md:order-1 md:col-span-8  "
+              className="col-span-3 top-12 left-12  md:left-0 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light xl:col-span-4
+             md:order-1 md:col-span-8 2xl:col-span-3  block  lg:hidden"
             >
-              <div className="absolute top-0 -right-3  -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+              <div className="absolute top-0 -right-3  
+                -z-10 
+                w-[102%]
+                h-[103%]
+               
+                rounded-[2rem]
+                 bg-dark
+                  dark:bg-light" />
               <Image
                 src={profilePic}
                 alt="Patricio"
-                className="w-full h-auto rounded-2xl  "
+                className="block lg:hidden w-full h-auto rounded-2xl 2xl:w-[80%] 2xl:ml-12"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw "
               />
