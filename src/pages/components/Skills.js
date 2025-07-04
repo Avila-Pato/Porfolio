@@ -66,7 +66,7 @@ const Skills = () => {
   }, {});
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-[#1b1b1b]  py-8 px-4 sm:px-6">
+    <div className="min-h-screen  dark:bg-[#1b1b1b]  py-8 px-4 sm:px-6">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -86,17 +86,18 @@ const Skills = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-white dark:bg-gray-800 border-l-2 mx-42 border-r-2 border-orange-500 rounded-lg p-4 shadow-sm dark:shadow-md"
             >
-              <h3 className={`text-2xl font-bold mb-3 text-center    ${categoryColors[category].text}`}>
+              <h3 className={`text-2xl font-bold mb-3 text-center     ${categoryColors[category].text}`}>
                 {category}
               </h3>
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+              <div className="grid grid-cols-3  sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
                 {skills.map((skill) => (
                   <motion.div
                     key={skill.name}
                     whileHover={{ scale: 1.05 }}
-                    className={`flex flex-col mx-12 items-center p-2 rounded-md border bg-blue-200 dark:bg-slate-500 ${categoryColors[category].border} ${categoryColors[category].bg} transition-all`}
+                    
+                    className={`flex flex-col lg:mx-0 2xl:mx-12 items-center p-2 rounded-md border bg-blue-200 dark:bg-slate-500 ${categoryColors[category].border} ${categoryColors[category].bg} transition-all`}
                   >
-                    <div className="relative w-10 h-10 mb-1">
+                    <div className="relative w-10 h-10 mb-1 ">
                       <Image
                         src={skill.icon}
                         alt={skill.name}
